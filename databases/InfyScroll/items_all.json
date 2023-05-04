@@ -2,6 +2,7 @@
   {
     "resource_url": "http://wedata.net/items/86111",
     "data": {
+      "this_should_not_be_here": "true",
       "clickElement": "//div[@class='searchPagination-fN0W1 searchPagination-VM8NV']",
       "pageElement": "//div[@class='searchResultsMain-HyzAT']/*",
       "append": "ajax",
