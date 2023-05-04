@@ -8556,7 +8556,7 @@ const fs = __nccwpck_require__(7147);
       console.log(e);
     }
     // This output also isn't needed anymore as we are doing the successful check inside this script when we check that filter.length isn't 0
-    core.setOutput(database + "-successful", successful);
+    // core.setOutput(database + "-successful", successful);
     console.log("action() - successful=" + successful);
   }
 
