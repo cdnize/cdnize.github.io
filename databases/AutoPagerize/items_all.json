@@ -2,7 +2,6 @@
   {
     "resource_url": "http://wedata.net/items/86112",
     "data": {
-      "this_should_not_be_here": "true",
       "pageElement": "//div[contains(@class, \"herald-entry-content\")]",
       "nextLink": "//link[@rel=\"next\"]",
       "url": "^https?://www\\.igorslab\\.de/.*",
