@@ -1,6 +1,6 @@
 [
   {
-    "resource_url": "http://wedata.net/items/86111X",
+    "resource_url": "http://wedata.net/items/86111",
     "data": {
       "clickElement": "//div[@class='searchPagination-fN0W1 searchPagination-VM8NV']",
       "pageElement": "//div[@class='searchResultsMain-HyzAT']/*",
