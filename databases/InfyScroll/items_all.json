@@ -1,5 +1,25 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86120",
+    "data": {
+      "clickElement": "button[aria-label='Go to next reviews']",
+      "pageElement": "div.tt-c-reviews-list__content > *",
+      "append": "ajax",
+      "puppet": "await page.click(\"[data-test='reviewsAccordionClick'] > summary\");\r\nawait page.click(\"button[data-test='more-reviews']\");",
+      "action": "click",
+      "spa": "^https://www\\.nike\\.com/t/",
+      "comment": "SPA Mirror Page Puppeteering Example",
+      "mirrorPage": "puppet",
+      "url": "^https://www\\.nike\\.com/t/",
+      "exampleUrl": "https://www.nike.com/t/lebron-xx-four-horsemen-basketball-shoes-ct1qVm/DJ5423-002"
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "Nike Reviews",
+    "created_at": "2023-05-11T08:26:29+09:00",
+    "updated_at": "2023-05-11T08:53:40+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86113",
     "data": {
       "pageElement": "//div[contains(@class, 'text-gray-300')]/*[not(self::a[contains(@title, 'Report Ad')]) and not(self::span[contains(.,'Ad')]) and not(self::div[contains(@class, 'bg-gradient-to-b')])]",
