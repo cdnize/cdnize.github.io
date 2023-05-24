@@ -1,4 +1,4 @@
 {
-  "specialShow": false,
-  "databaseXEnabled": false
+  "specialShow": true,
+  "databaseXEnabled": true
 }
