@@ -1,5 +1,19 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86142",
+    "data": {
+      "pageElement": "//div[@class='p-dealer-search']//ul[contains(concat(' ',@class,' '),' c-archive02 ')]/li",
+      "nextLink": "//ul[@class='c-pager01']/li[@class='current']/following-sibling::li/a",
+      "url": "^https://wonfes\\.jp/specialsite/general_dealer/",
+      "exampleUrl": "https://wonfes.jp/specialsite/general_dealer/\r\nhttps://wonfes.jp/specialsite/general_dealer/dealer_tag/%e3%83%96%e3%83%ab%e3%83%bc%e3%82%a2%e3%83%bc%e3%82%ab%e3%82%a4%e3%83%96/"
+    },
+    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
+    "created_by": "t_f_m'",
+    "name": "ワンダーフェスティバル ディーラー検索 ワンフェス WF",
+    "created_at": "2023-07-27T20:44:35+09:00",
+    "updated_at": "2023-07-27T20:46:04+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86138",
     "data": {
       "insertBefore": "",
