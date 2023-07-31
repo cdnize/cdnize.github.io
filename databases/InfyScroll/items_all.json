@@ -170,7 +170,7 @@
     "resource_url": "http://wedata.net/items/86079",
     "data": {
       "clickElement": "//button[@aria-label='Next'][contains(.,'Next')]",
-      "pageElement": "//div[@class='search-results-container']/*",
+      "pageElement": "//div[@class='search-results-container']//ul[contains(@class,'search')]/li",
       "append": "ajax",
       "action": "click",
       "spa": "^https://www\\.linkedin\\.com/search/results",
@@ -182,7 +182,7 @@
     "created_by": "infy",
     "name": "LinkedIn Search",
     "created_at": "2023-02-25T09:16:35+09:00",
-    "updated_at": "2023-04-22T00:56:42+09:00"
+    "updated_at": "2023-07-31T01:34:11+09:00"
   },
   {
     "resource_url": "http://wedata.net/items/85954",
