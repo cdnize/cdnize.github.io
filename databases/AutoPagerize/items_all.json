@@ -1,5 +1,20 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86152",
+    "data": {
+      "insertBefore": "",
+      "pageElement": "//div[@class=\"info_list\"]/ul | //div[@class=\"blog_content\"]",
+      "nextLink": "//link[@rel=\"next\"]",
+      "url": "^https://fm-kyoto\\\\.jp/",
+      "exampleUrl": ""
+    },
+    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
+    "created_by": "atk",
+    "name": "α-STATION エフエム京都",
+    "created_at": "2023-09-05T15:05:02+09:00",
+    "updated_at": "2023-09-05T15:05:02+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86150",
     "data": {
       "insertBefore": "",
