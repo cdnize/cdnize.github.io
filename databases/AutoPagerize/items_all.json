@@ -1,5 +1,20 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86174",
+    "data": {
+      "insertBefore": "",
+      "pageElement": "//div[@class='card-ls-2-container']/a",
+      "nextLink": "//link[@rel='next']",
+      "url": "^https://kurukura\\.jp/",
+      "exampleUrl": "https://kurukura.jp/cars/"
+    },
+    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
+    "created_by": "Griever3",
+    "name": "KURU KURA（くるくら）",
+    "created_at": "2023-10-07T19:39:55+09:00",
+    "updated_at": "2023-10-07T19:39:55+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86173",
     "data": {
       "insertBefore": "",
@@ -14353,16 +14368,16 @@
   {
     "resource_url": "http://wedata.net/items/81435",
     "data": {
-      "pageElement": "//div[contains(concat(' ', normalize-space(@class), ' '), ' mtop10 ')]",
-      "nextLink": "//li[@class=\"active\"]/following-sibling::li[1]/a",
+      "pageElement": "//div[contains(concat(' ', @class, ' '), ' rating')]/following-sibling::div[contains(concat(' ', @class, ' '), ' clearfix ') and .//a[@href='#cancel']]\r\n|//div[@class='bg_ch']\r\n|//div[@class='rating']/table/tbody/tr",
+      "nextLink": "//li[@class=\"active\"][number()>0]/following-sibling::li[1]/a",
       "url": "^https?://kabusensor\\.com/",
-      "exampleUrl": "http://kabusensor.com/signal/kai/?t_cd=9&s_cd=2&mk=3"
+      "exampleUrl": "http://kabusensor.com/signal/kai/?t_cd=9&s_cd=2&mk=3\r\nhttps://kabusensor.com/ranking/kaisignal/\r\nhttps://kabusensor.com/ranking/tech/?sh=10&mk=2\r\nhttps://kabusensor.com/screening/?page=2&ma=0&mkt=1&sd=1"
     },
     "database_resource_url": "http://wedata.net/databases/AutoPagerize",
     "created_by": "jigendaddy_be",
     "name": "株センサー",
     "created_at": "2017-07-13T20:49:04+09:00",
-    "updated_at": "2020-07-20T23:58:57+09:00"
+    "updated_at": "2023-10-07T19:30:55+09:00"
   },
   {
     "resource_url": "http://wedata.net/items/81425",
