@@ -21410,17 +21410,17 @@
   },
   {
     "resource_url": "http://wedata.net/items/77246",
-    "name": "Vivaldi.net Forum",
-    "created_by": "Wolfram",
-    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
-    "updated_at": "2017-08-20T14:09:41+09:00",
     "data": {
-      "exampleUrl": "https://forum.vivaldi.net/category/82/team-blog\r\nhttps://forum.vivaldi.net/topic/20015/vivaldi-1-11-focus-on-accessibility",
-      "url": "^https://forum\\.vivaldi\\.net/",
       "pageElement": "//ul[@class='topic-list' or @class='posts']/li",
-      "nextLink": "//a[i/@class='fa fa-chevron-right']"
+      "nextLink": "//li[not(contains(@class, 'disabled'))]/a[i/@class='fa fa-chevron-right']",
+      "url": "^https://forum\\.vivaldi\\.net/",
+      "exampleUrl": "https://forum.vivaldi.net/category/82/team-blog\r\nhttps://forum.vivaldi.net/topic/20015/vivaldi-1-11-focus-on-accessibility"
     },
-    "created_at": "2015-05-22T00:07:46+09:00"
+    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
+    "created_by": "Wolfram",
+    "name": "Vivaldi.net Forum",
+    "created_at": "2015-05-22T00:07:46+09:00",
+    "updated_at": "2023-10-24T19:21:10+09:00"
   },
   {
     "resource_url": "http://wedata.net/items/77245",
