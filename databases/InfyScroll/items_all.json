@@ -1,5 +1,25 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86195",
+    "data": {
+      "clickElement": "//a[not(contains(@class, 'disabled'))][.//*[contains(@class, 'feather-arrow-right')]]",
+      "pageElement": "//div[@class='page-container wide']/div[2]/*",
+      "append": "ajax",
+      "removeElement": "//div[@class='relative']",
+      "disableScrollElement": "//*",
+      "ajaxMode": "native",
+      "action": "click",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/77",
+      "url": "^https://mangadex\\.org/titles/(recent|latest)",
+      "exampleUrl": "https://mangadex.org/titles/latest"
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "MangaDex",
+    "created_at": "2023-12-18T04:12:00+09:00",
+    "updated_at": "2023-12-18T04:21:03+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86131",
     "data": {
       "clickElement": "//button[@class='pagination__next-prev-button next']|//button[@class='css-k54ldh']",
