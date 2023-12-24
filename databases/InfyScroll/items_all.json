@@ -1,5 +1,22 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86197",
+    "data": {
+      "clickElement": "//button[@class='mdc-button mdc-button--raised button-load ng-binding'][not(contains(@class, 'ng-hide'))]",
+      "pageElement": "//div[@class='list mdc-detail-list down-folder']/*",
+      "append": "element",
+      "action": "click",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/78",
+      "url": "^https://www\\.fshare\\.vn/folder",
+      "exampleUrl": "https://www.fshare.vn/folder/H7DXADP8PMOA"
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "FSHARE.VN",
+    "created_at": "2023-12-24T03:49:21+09:00",
+    "updated_at": "2023-12-24T03:49:29+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86195",
     "data": {
       "clickElement": "//a[not(contains(@class, 'disabled'))][.//*[contains(@class, 'feather-arrow-right')]]",
