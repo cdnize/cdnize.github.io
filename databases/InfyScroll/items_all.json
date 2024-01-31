@@ -1,5 +1,22 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86207",
+    "data": {
+      "clickElement": "//button[@class='v-pagination__navigation'][@aria-label='Next page']",
+      "pageElement": "//div[@class='product-table']/div[@class='table-area']",
+      "append": "ajax",
+      "action": "click",
+      "comment": "https://discord.gg/Z63tmCx4q5",
+      "url": "^https://(www)?\\.lcsc\\.com/products/",
+      "exampleUrl": "https://www.lcsc.com/products/Wire-To-Board-Wire-To-Wire-Connector_11068.html"
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "LCSC Electronics",
+    "created_at": "2024-01-31T14:44:29+09:00",
+    "updated_at": "2024-01-31T14:55:49+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86197",
     "data": {
       "clickElement": "//button[@class='mdc-button mdc-button--raised button-load ng-binding'][not(contains(@class, 'ng-hide'))]",
