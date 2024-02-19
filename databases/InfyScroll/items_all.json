@@ -111,7 +111,6 @@
     "updated_at": "2023-09-08T08:29:20+09:00"
   },
   {
-    "resource_url": "http://wedata.net/items/86124",
     "data": {
       "mediaType": "image",
       "append": "media",
@@ -120,15 +119,16 @@
       "selectionStrategy": "smart",
       "base": "10",
       "leadingZeros": "true",
-      "url": "^http://ftp\\.acc\\.umu\\.se/mirror/archive/ftp\\.sunet\\.se/pub/pictures/anime-manga/SailorMoon/Images/TV/001/001",
+      "url": "^https://ftp\\.acc\\.umu\\.se/mirror/archive/ftp\\.sunet\\.se/pub/pictures/anime-manga/SailorMoon/Images/TV/001/001",
       "interval": "1",
-      "exampleUrl": "http://ftp.acc.umu.se/mirror/archive/ftp.sunet.se/pub/pictures/anime-manga/SailorMoon/Images/TV/001/001usa01.jpg"
+      "exampleUrl": "https://ftp.acc.umu.se/mirror/archive/ftp.sunet.se/pub/pictures/anime-manga/SailorMoon/Images/TV/001/001usa01.jpg"
     },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "created_by": "infy",
+    "resource_url": "http://wedata.net/items/86124",
     "name": "Increment URL Example",
     "created_at": "2023-05-25T04:05:53+09:00",
-    "updated_at": "2023-05-25T05:23:25+09:00"
+    "updated_at": "2024-02-19T04:09:17+09:00",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll"
   },
   {
     "resource_url": "http://wedata.net/items/86120",
