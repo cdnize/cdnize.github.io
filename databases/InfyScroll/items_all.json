@@ -1,5 +1,33 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86210",
+    "data": {
+      "style": "",
+      "pageElement": "#vvp-items-grid",
+      "clickElement": "#vvp-items-grid-container > div.a-text-center > ul.a-pagination > li.a-last > a",
+      "append": "ajax",
+      "pageElementIframe": "#vvp-items-grid",
+      "removeElement": "",
+      "puppet": "",
+      "spaf": "",
+      "ajaxMode": "iframe",
+      "loadElement": "",
+      "comment": "The set in autopagerize database didn't work for me even when I localized it to the US, so I used the ajax method. Incremental URL worked as well, but figured it wouldnt hurt to have multiple methods. It's a completly different experience not being confinded to the 46 -50 it loads by default. I'm working on a method using infyscroll to automate pulling the entire inventory and building a database on it the items and do my own custom sorting, filtering, and alerts. The discords, bots, and userscripts that already exist are good too, but again, Having another independent method to get to the same end is never a negative in my book.Hopefully I labeled everything in the right place. is there a way to automate importing saves to here i missed?",
+      "script": "",
+      "spa": "",
+      "action": "click element",
+      "mirrorPage": "",
+      "nextLink": "pattern",
+      "url": "https://www.amazon.com/vine/vine-items?queue=encore",
+      "exampleUrl": "https://www.amazon.com/vine/vine-items?queue=encore&pn=2335752011&cn=&page=37"
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "Eric Korhonen",
+    "name": "Amazon Vine - US",
+    "created_at": "2024-02-26T10:59:44+09:00",
+    "updated_at": "2024-02-26T10:59:44+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86207",
     "data": {
       "clickElement": "//button[@class='v-pagination__navigation'][@aria-label='Next page']",
