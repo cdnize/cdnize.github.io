@@ -1,5 +1,20 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86218",
+    "data": {
+      "insertBefore": "",
+      "pageElement": "//div[@class='single_page_text']",
+      "nextLink": "//span[contains(@class, 'current')][number()>0]/following-sibling::a[1]",
+      "url": "^https://juventus-journal\\.com/archives/\\d+",
+      "exampleUrl": "https://juventus-journal.com/archives/129133"
+    },
+    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
+    "created_by": "Griever3",
+    "name": "J-JOURNAL 記事",
+    "created_at": "2024-04-02T18:03:47+09:00",
+    "updated_at": "2024-04-02T18:03:47+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86217",
     "data": {
       "insertBefore": "",
