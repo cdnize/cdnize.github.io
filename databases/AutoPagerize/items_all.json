@@ -24055,18 +24055,19 @@
   },
   {
     "resource_url": "http://wedata.net/items/76720",
+    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
     "data": {
-      "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
+      "pageElement": "id('content')//*[@class='container index-container' or @id='favcontainer' or @id='tag-container'] | id('content')//*[@id='image-container']/*",
       "insertBefore": "//section[@class='pagination']",
+      "comment": "Adjusted the pageElement to not include the image-container because it causes the image size to be small initially. Updated on behalf of: https://github.com/sixcious/infy-scroll/issues/85",
       "nextLink": "//a[@class='next']",
       "url": "^https?://nhentai\\.net/",
       "exampleUrl": "http://nhentai.net/artist/kokutou-nikke/ http://nhentai.net/?page=3 http://nhentai.net/g/124271/1/"
     },
-    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
     "created_by": "theydonotwant",
     "name": "nHentai",
     "created_at": "2014-12-28T23:26:34+09:00",
-    "updated_at": "2022-11-18T08:32:21+09:00"
+    "updated_at": "2024-05-10T10:48:11+09:00"
   },
   {
     "resource_url": "http://wedata.net/items/76713",
