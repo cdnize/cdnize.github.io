@@ -1,5 +1,33 @@
 [
   {
+    "resource_url": "http://wedata.net/items/86225",
+    "data": {
+      "style": "",
+      "pageElement": "#root > div.css-vdo1l7 > main.css-1i97u2x > div.chakra-stack.css-1ale84t > div.css-11npbe7 > div.css-1gpab2t > *",
+      "clickElement": "#root > div.css-vdo1l7 > main.css-1i97u2x > div.chakra-stack.css-1ale84t > div.css-11npbe7 > div:nth-of-type(3) > div.chakra-stack.css-1igwmid > button:nth-of-type(2)",
+      "append": "ajax",
+      "pageElementIframe": "",
+      "removeElement": "",
+      "puppet": "",
+      "spaf": "",
+      "ajaxMode": "",
+      "loadElement": "",
+      "comment": "",
+      "script": "",
+      "spa": "",
+      "action": "click",
+      "mirrorPage": "",
+      "nextLink": "",
+      "url": "https://janitorai.com*",
+      "exampleUrl": ""
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "Krampus",
+    "name": "JanitorAI - Wow such bots",
+    "created_at": "2024-05-13T08:49:14+09:00",
+    "updated_at": "2024-05-13T08:49:14+09:00"
+  },
+  {
     "resource_url": "http://wedata.net/items/86224",
     "data": {
       "pageElement": "//ul[@class='DiscussionList-discussions']/*",
