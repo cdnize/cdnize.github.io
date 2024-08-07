@@ -19,4 +19,5 @@ outputs:
   is-successful:
     description: 'IS successful state'
 runs:
+  using: 'node20'
   main: 'dist/index.js'
