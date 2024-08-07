@@ -11,7 +11,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 const fs = require('fs');
 
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
 
 (async () => {
 
@@ -27,7 +27,7 @@ import fetch from 'node-fetch';
       const url = core.getInput(database + "-url");
       const response = await fetch(url);
       const json = await response.json();
-      const filter = database === "ap" ? json.filter(d => d.data && d.data.url && d.data.nextLink && d.data.pageElement) : json.filter(d => d.data && d.data.url && d.data.action && d.data.append);
+      const filter = database === "ap" ? json.filter(d => d.data && d.data.url && d.data.nextLink && d.data.pageElement) : json.filter(d => d.data && d.data.url);
       if (filter && filter.length > 0) {
         const file = core.getInput(database + "-file");
         const text = JSON.stringify(json, null, "  ");
