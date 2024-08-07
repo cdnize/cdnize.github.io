@@ -19,7 +19,12 @@ jobs:
     steps:
       # Checkout: To use this repository's action, we must check out the repository
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+      # Setup Node
+      - name: Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.6'
       # Action: Run the action
       - name: Action
         id: action
