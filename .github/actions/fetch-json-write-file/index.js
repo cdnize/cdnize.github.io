@@ -11,7 +11,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 const fs = require('fs');
 
-// import fetch from 'node-fetch';
+import fetch from 'node-fetch';
 
 (async () => {
 
