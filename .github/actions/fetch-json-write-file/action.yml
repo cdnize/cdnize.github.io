@@ -19,5 +19,4 @@ outputs:
   is-successful:
     description: 'IS successful state'
 runs:
-  using: 'node22'
   main: 'dist/index.js'
