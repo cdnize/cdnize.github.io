@@ -2,9 +2,8 @@
   {
     "resource_url": "http://wedata.net/items/86240",
     "data": {
-      "insertBefore": "",
       "pageElement": "//div[@class='act-video-list']",
-      "nextLink": "//div[@class='pagination']/b/a[last()][@title='']\r\n",
+      "nextLink": "//div[@class='pagination']/b/a[text()='次へ']\r\n",
       "url": "^https://www.minnano-av\\.com/",
       "exampleUrl": "https://www.minnano-av.com/actress218689.html"
     },
@@ -12,7 +11,7 @@
     "created_by": "blekai",
     "name": "みんなのAV.com",
     "created_at": "2024-08-04T09:53:36+09:00",
-    "updated_at": "2024-08-04T09:53:36+09:00"
+    "updated_at": "2024-08-18T14:37:33+09:00"
   },
   {
     "resource_url": "http://wedata.net/items/86239",
@@ -12029,20 +12028,6 @@
       "nextLink": "//a[@class=\"next\"]"
     },
     "created_at": "2018-11-20T23:05:03+09:00"
-  },
-  {
-    "name": "東京2020特集 - スポーツナビ",
-    "data": {
-      "url": "^https://2020\\.yahoo\\.co\\.jp/column/",
-      "pageElement": "//section[@class=\"article__body\"]",
-      "exampleUrl": "https://2020.yahoo.co.jp/column/detail/201810250001-spnavi/",
-      "nextLink": "//a[span/text()=\"次へ\"]"
-    },
-    "database_resource_url": "http://wedata.net/databases/AutoPagerize",
-    "created_by": "jpmyke",
-    "resource_url": "http://wedata.net/items/82021",
-    "created_at": "2018-11-16T14:01:22+09:00",
-    "updated_at": "2020-04-04T12:21:03+09:00"
   },
   {
     "resource_url": "http://wedata.net/items/82020",
