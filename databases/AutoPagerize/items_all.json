@@ -4059,33 +4059,32 @@
     "updated_at": "2022-01-24T19:38:36+09:00"
   },
   {
+    "resource_url": "http://wedata.net/items/85824",
     "data": {
-      "insertBefore": "",
       "pageElement": "//div[@class=\"p-body-pageContent\"]//article[contains(concat(\" \", normalize-space(@class), \" \"), \" message \")]",
       "nextLink": "//link[@rel=\"next\"]",
-      "url": "^https?://www\\.racedepartment\\.com/threads/?",
+      "url": "^https?://www\\.(racedepartment\\.com|overtake\\.gg)/threads/?",
       "exampleUrl": "https://www.racedepartment.com/threads/assetto-corsa-latest-news-discussion.44395/"
     },
     "database_resource_url": "http://wedata.net/databases/AutoPagerize",
     "created_by": "awoifajwojfiawf",
-    "resource_url": "http://wedata.net/items/85824",
-    "name": "RaceDepartment Forums",
+    "name": "OverTake (Formerly RaceDepartment)  Forums",
     "created_at": "2022-01-23T20:29:59+09:00",
-    "updated_at": "2022-01-23T20:29:59+09:00"
+    "updated_at": "2024-08-19T05:05:04+09:00"
   },
   {
     "resource_url": "http://wedata.net/items/85823",
     "data": {
       "pageElement": "descendant::*[./*[@data-author]][1]/*[@data-author]",
       "nextLink": "//link[@rel=\"next\"]",
-      "url": "^https?://www\\.racedepartment\\.com/",
+      "url": "^https?://www\\.(racedepartment\\.com|overtake\\.gg)/",
       "exampleUrl": "https://www.racedepartment.com/downloads/categories/ac-tracks.8/\r\nhttps://www.racedepartment.com/search/15502838/?q=test&o=relevance\r\nhttps://www.racedepartment.com/\r\nhttps://www.racedepartment.com/whats-new/media/1019969/\r\nhttps://www.racedepartment.com/store/categories/fanatec.2/\r\n"
     },
     "database_resource_url": "http://wedata.net/databases/AutoPagerize",
     "created_by": "awoifajwojfiawf",
-    "name": "RaceDepartment",
+    "name": "OverTake (Formerly RaceDepartment)",
     "created_at": "2022-01-23T20:15:46+09:00",
-    "updated_at": "2022-01-23T20:40:55+09:00"
+    "updated_at": "2024-08-19T05:04:54+09:00"
   },
   {
     "resource_url": "http://wedata.net/items/85822",
