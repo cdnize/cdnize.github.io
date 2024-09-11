@@ -400,7 +400,7 @@
     "resource_url": "http://wedata.net/items/85939",
     "data": {
       "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
-      "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul",
+      "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul | //section/div/div/div/div/ul | id('root')//div/ul[@class='sc-9y4be5-1 jtUPOE']",
       "append": "ajax",
       "loadElement": "//section//div/ul//figure",
       "spaf": "^https://www\\.pixiv\\.net/",
