@@ -226,6 +226,23 @@
     "database_resource_url": "http://wedata.net/databases/InfyScroll"
   },
   {
+    "created_by": "infy",
+    "resource_url": "http://wedata.net/items/99999",
+    "name": "NH",
+    "created_at": "2024-05-07T04:05:53+09:00",
+    "updated_at": "2024-05-07T04:09:17+09:00",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@class='next']",
+      "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
+      "style": "html.reader #image-container.fit-both { height: auto !important; }",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/85",
+      "url": "",
+      "exampleUrl": "https://nhentai.net/g/446216/1/"
+  },
+  {
     "resource_url": "http://wedata.net/items/86120",
     "data": {
       "clickElement": "//button[@aria-label='Go to next reviews']",
