@@ -239,8 +239,9 @@
       "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
       "style": "html.reader #image-container.fit-both { height: auto !important; }",
       "comment": "https://github.com/sixcious/infy-scroll/issues/85",
-      "url": "",
+      "url": "^https?://nhentai\\.net/",
       "exampleUrl": "https://nhentai.net/g/446216/1/"
+    }
   },
   {
     "resource_url": "http://wedata.net/items/86120",
