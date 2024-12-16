@@ -42,7 +42,7 @@
       "append": "element",
       "pageElementIframe": "import",
       "action": "next",
-      "comment": "Credit to: http://wedata.net/items/501\r\nSee: https://github.com/sixcious/infy-scroll/issues/92\r\n",
+      "comment": "Credit to: http://wedata.net/items/501 See: https://github.com/sixcious/infy-scroll/issues/92",
       "nextLink": "//a[contains(@class,\"sb_pagN\")]",
       "url": "^https?://(?:www|cnweb)4?\\.bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
       "exampleUrl": "https://www.bing.com/search?q=Edge"
@@ -56,7 +56,7 @@
   {
     "resource_url": "http://wedata.net/items/86232",
     "data": {
-      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']\r\n",
+      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']",
       "append": "element",
       "action": "next",
       "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
