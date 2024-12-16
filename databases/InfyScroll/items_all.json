@@ -59,7 +59,7 @@
       "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']\r\n",
       "append": "element",
       "action": "next",
-      "nextLink": "//span[@class='s-pagination-strip']/a[contains(@class,'s-pagination-next')]",
+      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
       "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
       "exampleUrl": "https://www.amazon.com/s?k=toys"
     },
