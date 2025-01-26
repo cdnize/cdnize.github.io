@@ -56,10 +56,10 @@
   {
     "resource_url": "http://wedata.net/items/86232",
     "data": {
-      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']",
-      "append": "element",
       "action": "next",
-      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
+      "append": "element",
+      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]|//ul[@class='a-pagination']/li[@class='a-last']/a",
+      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']|id('cm_cr-review_list')/ul[1]/*",
       "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
       "exampleUrl": "https://www.amazon.com/s?k=toys"
     },
