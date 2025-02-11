@@ -77,7 +77,7 @@
       "nextLink": "//ul[@class='a-pagination']/li[@class='a-last']/a",
       "pageElement": "//div[contains(@class, 'your-orders-content-container__content')]/div[contains(@class, 'order-card')]",
       "pageElementIframe": "trim",
-      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*order-history",
+      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*(order-history|your-orders)",
       "exampleUrl": "https://www.amazon.com/gp/your-account/order-history",
       "comment": "https://discord.gg/Z63tmCx4q5"
     },
