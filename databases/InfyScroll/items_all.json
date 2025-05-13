@@ -1,6 +1,6 @@
 [
   {
-    "resource_url": "http://wedata.net/items/0",
+    "resource_url": "",
     "data": {
       "action": "next",
       "append": "element",
@@ -14,44 +14,44 @@
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "created_by": "infy",
     "name": "Amazon Order History",
-    "created_at": "2025-02-10T08:03:33+09:00",
-    "updated_at": "2025-02-10T08:04:50+09:00"
+    "created_at": "2025-02-10T00:00:00+00:00",
+    "updated_at": "2025-02-10T00:00:00+00:00"
   },
   {
-    "created_by": "infy",
-    "resource_url": "http://wedata.net/items/99998",
-    "name": "Moebooru:Danbooru clones",
-    "created_at": "2024-05-30T00:00:00+00:00",
-    "updated_at": "2024-05-30T00:00:00+00:00",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "resource_url": "",
     "data": {
       "action": "next",
       "append": "element",
       "nextLink": "//a[@class='next_page']",
       "pageElement": "//li[contains(@class, 'creator-id-')]|//div[@id='comment-list']/div[@class='post']|//table[@class='highlightable']",
       "style": ".javascript-hide { display: inline-block !important; }",
-      "comment": "NEW On behalf of: https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645",
       "url": "^https?://(konachan\\.com|yande\\.re|www\\.sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
       "exampleUrl": "https://yande.re/post\r\nhttps://yande.re/comment\r\nhttp://konachan.com/post\r\nhttp://konachan.com/comment\r\nhttps://www.sakugabooru.com/post\r\nhttps://www.sakugabooru.com/comment"
-    }
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "Moebooru:Danbooru clones",
+    "created_at": "2025-01-01T00:00:00+00:00",
+    "updated_at": "2025-01-01T00:00:00+00:00"
   },
   {
-    "created_by": "infy",
-    "resource_url": "http://wedata.net/items/99999",
-    "name": "NH",
-    "created_at": "2024-05-30T00:00:00+00:00",
-    "updated_at": "2024-05-30T00:00:00+00:00",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "resource_url": "",
     "data": {
       "action": "next",
       "append": "element",
       "nextLink": "//a[@class='next']",
       "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
       "style": "html.reader #image-container.fit-both { height: auto !important; }",
-      "comment": "NEW On behalf of: https://github.com/sixcious/infy-scroll/issues/85 Credit to: http://wedata.net/items/76720",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/85 Credit to: http://wedata.net/items/76720",
       "url": "^https?://nhentai\\.net/",
       "exampleUrl": "https://nhentai.net/g/446216/1/"
-    }
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "NH",
+    "created_at": "2025-01-01T00:00:00+00:00",
+    "updated_at": "2025-01-01T00:00:00+00:00"
   },
   {
     "resource_url": "http://wedata.net/items/86243",
@@ -60,7 +60,7 @@
       "append": "element",
       "pageElementIframe": "import",
       "action": "next",
-      "comment": "Credit to: http://wedata.net/items/501 See: https://github.com/sixcious/infy-scroll/issues/92",
+      "comment": "Credit to: http://wedata.net/items/501\r\nSee: https://github.com/sixcious/infy-scroll/issues/92\r\n",
       "nextLink": "//a[contains(@class,\"sb_pagN\")]",
       "url": "^https?://(?:www|cnweb)4?\\.bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
       "exampleUrl": "https://www.bing.com/search?q=Edge"
@@ -72,12 +72,13 @@
     "updated_at": "2024-08-28T06:44:39+09:00"
   },
   {
+    "modified": "true",
     "resource_url": "http://wedata.net/items/86232",
     "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]|//ul[@class='a-pagination']/li[@class='a-last']/a",
       "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']|id('cm_cr-review_list')/ul[1]/*",
+      "append": "element",
+      "action": "next",
+      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]|//ul[@class='a-pagination']/li[@class='a-last']/a",
       "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
       "exampleUrl": "https://www.amazon.com/s?k=toys"
     },
@@ -451,6 +452,7 @@
     "updated_at": "2023-04-29T05:42:10+09:00"
   },
   {
+    "modified": "true",
     "resource_url": "http://wedata.net/items/85939",
     "data": {
       "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
