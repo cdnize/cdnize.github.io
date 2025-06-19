@@ -459,7 +459,7 @@
       "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
       "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul | //section/div/div/div/div/ul | /html/body/div/div/div/div/div/div/div/div/div/div[3]/div/ul",
       "append": "ajax",
-      "loadElement": "//section//div/ul//figure",
+      "loadElement": "//div/ul//figure",
       "spaf": "^https://www\\.pixiv\\.net/",
       "action": "click",
       "url": "^https://www\\.pixiv\\.net/",
