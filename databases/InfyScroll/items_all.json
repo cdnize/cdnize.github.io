@@ -5,7 +5,7 @@
       "action": "click",
       "append": "ajax",
       "clickElement": "//nav[@aria-label='pagination']//a[@data-testid='NextPage']",
-      "pageElement": "//section/div[@data-testid='item-stack']/div[not(.//div[.='Sponsored'])]|//main/section/div/section/div",
+      "pageElement": "//section/div[@data-testid='item-stack']/div[not(.//div[.='Sponsored'])]|//main/section/div/section/div[.//div[@data-testid='enhanced-review-section']]",
       "url": "^https://www\\.walmart\\.com/",
       "exampleUrl": "https://www.walmart.com/search?q=toys",
       "comment": "Walmart search and reviews"
