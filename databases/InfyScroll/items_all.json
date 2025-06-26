@@ -299,6 +299,7 @@
     "database_resource_url": "http://wedata.net/databases/InfyScroll"
   },
   {
+    "modified": "true",
     "resource_url": "http://wedata.net/items/86120",
     "data": {
       "clickElement": "//button[@aria-label='Go to next reviews']",
