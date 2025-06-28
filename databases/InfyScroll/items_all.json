@@ -310,7 +310,7 @@
       "spa": "^https://www\\.nike\\.com/t/",
       "comment": "SPA Mirror Page Puppeteer Example",
       "mirrorPage": "puppet",
-      "url": "^https://www\\.nike\\.com/t/",
+      "url": "!^https://www\\.nike\\.com/t/",
       "exampleUrl": "https://www.nike.com/t/p-6000-shoes-XkgpKW/CD6404-403"
     },
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
