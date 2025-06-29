@@ -307,7 +307,7 @@
       "append": "ajax",
       "puppet": "await page.click(\"#pdp-info-accordions__reviews-accordion > summary\");\r\nawait page.click(\"button[data-testid='more-reviews-button']\");",
       "action": "click",
-      "spa": "^https://www\\.nike\\.com/t/",
+      "spa": "!^https://www\\.nike\\.com/t/",
       "comment": "SPA Mirror Page Puppeteer Example",
       "mirrorPage": "puppet",
       "url": "!^https://www\\.nike\\.com/t/",
