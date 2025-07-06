@@ -1,0 +1,36 @@
+[
+  {
+    "resource_url": "",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//div/a[@data-testid='pagination-next-button']",
+      "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div/*",
+      "iframeXframe": "true",
+      "url": "!infy-scroll-xframe!^https://github\\.com/[^/]+/[^/]+/(?:commits)",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
+    },
+    "database_resource_url": "",
+    "created_by": "infy",
+    "name": "GitHub Commits",
+    "created_at": "2025-07-04T00:00:00+00:00",
+    "updated_at": "2025-07-04T00:00:00+00:00"
+  },
+  {
+    "resource_url": "",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//nav[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
+      "pageElement": "//ul[@data-listview-component='items-list']/*",
+      "iframeXframe": "true",
+      "url": "!infy-scroll-xframe!^https://github\\.com/[^/]+/[^/]+/(?:issues)",
+      "exampleUrl": "https://github.com/actions/toolkit/issues"
+    },
+    "database_resource_url": "",
+    "created_by": "infy",
+    "name": "GitHub Issues",
+    "created_at": "2025-07-03T00:00:00+00:00",
+    "updated_at": "2025-07-03T00:00:00+00:00"
+  }
+]
