@@ -8,7 +8,7 @@
       "pageElement": "//div[@id='posts'] | //div[starts-with(@id,'a-')]/*[@class='striped' or (contains(@class,'post') and not(contains(@class,'posts'))) or self::section and count(@*)=0]",
       "url": "^https?://danbooru\\.donmai\\.us",
       "exampleUrl": "https://danbooru.donmai.us",
-      "comment": "Email. Site adds a class to hide images by default that is removed via a script. Element Iframe (Import) is blank after P2, (Trim) works perfectly but won't work well if the browser is resized, so AJAX. Credit: http://wedata.net/items/81554."
+      "comment": "Email. Credit: http://wedata.net/items/81554"
     },
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "created_by": "infy",
