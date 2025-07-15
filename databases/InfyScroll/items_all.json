@@ -4,6 +4,23 @@
     "data": {
       "action": "click",
       "append": "ajax",
+      "clickElement": "//a[contains(@*,'next')]",
+      "pageElement": "//div[@id='posts'] | //div[starts-with(@id,'a-')]/*[@class='striped' or (contains(@class,'post') and not(contains(@class,'posts'))) or self::section and count(@*)=0]",
+      "url": "^https?://danbooru\\.donmai\\.us",
+      "exampleUrl": "https://danbooru.donmai.us",
+      "comment": "Email. Site adds a class to hide images by default that is removed via a script. Element Iframe (Import) is blank after P2, (Trim) works perfectly but won't work well if the browser is resized, so AJAX. Credit: http://wedata.net/items/81554."
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "Danbooru",
+    "created_at": "2025-07-15T00:00:00+00:00",
+    "updated_at": "2025-07-15T00:00:00+00:00"
+  },
+  {
+    "resource_url": "",
+    "data": {
+      "action": "click",
+      "append": "ajax",
       "clickElement": "//nav[@aria-label='pagination']//a[@data-testid='NextPage']",
       "pageElement": "//section/div[@data-testid='item-stack']/div[not(.//div[.='Sponsored'])]|//main/section/div/section/div[.//div[@data-testid='enhanced-review-section']]",
       "url": "^https://www\\.walmart\\.com/",
