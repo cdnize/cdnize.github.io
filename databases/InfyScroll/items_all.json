@@ -109,7 +109,7 @@
     "modified": "",
     "resource_url": "http://wedata.net/items/86232",
     "data": {
-      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']|id('cm_cr-review_list')/ul[1]/*",
+      "pageElement": "id('search')//div[contains(@class,'s-result-list')]|id('cm_cr-review_list')/ul[1]/*",
       "append": "ajax",
       "action": "click",
       "comment": "Adjusted the entire item from next/element to click/ajax due to the reviews page using dynamic loading",
