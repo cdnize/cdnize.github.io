@@ -106,23 +106,38 @@
     "updated_at": "2024-08-28T06:44:39+09:00"
   },
   {
-    "modified": "",
-    "resource_url": "http://wedata.net/items/86232",
+    "resource_url": "",
     "data": {
-      "pageElement": "id('search')//div[contains(@class,'s-result-list')]|id('cm_cr-review_list')/ul[1]/*",
+      "pageElement": "id('cm_cr-review_list')/ul[1]/*",
       "append": "ajax",
       "action": "click",
-      "comment": "Adjusted the entire item from next/element to click/ajax due to the reviews page using dynamic loading",
-      "clickElement": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]|//ul[@class='a-pagination']/li[@class='a-last']/a",
+      "clickElement": "//ul[@class='a-pagination']/li[@class='a-last']/a",
       "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
       "exampleUrl": "https://www.amazon.com/s?k=toys"
     },
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "created_by": "infy",
-    "name": "Amazon",
+    "name": "Amazon Reviews",
+    "created_at": "2024-07-22T00:00:00+00:00",
+    "updated_at": "2025-07-22T00:00:00+00:00"
+  },
+  {
+    "modified": "",
+    "resource_url": "http://wedata.net/items/86232",
+    "data": {
+      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']",
+      "append": "element",
+      "action": "next",
+      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
+      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
+      "exampleUrl": "https://www.amazon.com/s?k=toys"
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "Amazon Search",
     "created_at": "2024-06-14T08:03:33+09:00",
     "updated_at": "2025-05-25T08:04:50+09:00"
-  },  
+  },
   {
     "resource_url": "http://wedata.net/items/86225",
     "data": {
