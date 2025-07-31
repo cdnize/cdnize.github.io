@@ -2,6 +2,23 @@
   {
     "resource_url": "",
     "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[contains(text(),'下一页') or contains(text(),'Next')]",
+      "pageElement": "//div[contains(@class,'photos-list')]",
+      "style": ".photos-list img { opacity: 1 !important }",
+      "url": "^https://(www\\.)?v2ph.com/album/"
+      "comment": "Google Forms Contribution"
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "anonymous",
+    "name": "V2PH",
+    "created_at": "2025-07-31T00:00:00+00:00",
+    "updated_at": "2025-07-31T00:00:00+00:00"
+  },
+  {
+    "resource_url": "",
+    "data": {
       "action": "click",
       "append": "ajax",
       "clickElement": "//a[contains(@*,'next')]",
