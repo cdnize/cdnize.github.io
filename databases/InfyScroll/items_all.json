@@ -7,7 +7,7 @@
       "nextLink": "//a[contains(text(),'下一页') or contains(text(),'Next')]",
       "pageElement": "//div[contains(@class,'photos-list')]",
       "style": ".photos-list img { opacity: 1 !important }",
-      "url": "^https://(www\\.)?v2ph.com/album/"
+      "url": "^https://(www\\.)?v2ph.com/album/",
       "comment": "Google Forms Contribution"
     },
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
