@@ -8,7 +8,7 @@
       "pageElement": "//div[contains(@class,'photos-list')]",
       "style": ".photos-list img { opacity: 1 !important }",
       "url": "^https://(www\\.)?v2ph.com/album/",
-      "comment": "Google Forms Contribution"
+      "comment": "Database contribution"
     },
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "created_by": "anonymous",
