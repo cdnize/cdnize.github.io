@@ -1,4 +1,22 @@
 [
+    {
+    "resource_url": "",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "name": "Coomer.st",
+      "nextLink": "a.pagination-button-current + a",
+      "pageElement": "div.card-list__items",
+      "pageElementIframe": "import",
+      "url": "^https://coomer\\.st/",
+      "comment": "Website Request (https://github.com/sixcious/infy-scroll/issues/113)"
+    },
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "created_by": "infy",
+    "name": "Coomer.st",
+    "created_at": "2025-08-08T00:00:00+00:00",
+    "updated_at": "2025-08-08T00:00:00+00:00"
+  },
   {
     "resource_url": "",
     "data": {
@@ -8,7 +26,7 @@
       "pageElement": "//div[contains(@class,'photos-list')]",
       "style": ".photos-list img { opacity: 1 !important }",
       "url": "^https://(www\\.)?v2ph.com/album/",
-      "comment": "Database contribution"
+      "comment": "Database Contribution"
     },
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "created_by": "anonymous",
