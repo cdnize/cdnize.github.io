@@ -1,5 +1,19 @@
 [
   {
+    "name": "Golem.de",
+    "created_by": "infy",
+    "created_at": "2025-08-24T21:47:18+00:00",
+    "updated_at": "2025-08-24T21:47:18+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//ul[@class='go-pagination__list']/li[contains(@class,'go-pagination__item--next')]/a",
+      "pageElement": "//main[@class='go-grid']/article/* | //main[@class='go-grid go-grid--full-content']/*",
+      "url": "^https://(www\\.)?golem\\.de/",
+      "comment": "Website Request (https://github.com/sixcious/infy-scroll/issues/114)"
+    }
+  },
+  {
     "name": "Coomer.st",
     "created_by": "infy",
     "created_at": "2025-08-08T00:00:00+00:00",
