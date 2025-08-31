@@ -155,7 +155,7 @@
   {
     "resource_url": "",
     "data": {
-      "pageElement": "id('cm_cr-review_list')/ul[1]/*",
+      "pageElement": "id('cm_cr-review_list')/ul/*",
       "append": "ajax",
       "action": "click",
       "clickElement": "//ul[@class='a-pagination']/li[@class='a-last']/a",
