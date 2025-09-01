@@ -1,16 +1,146 @@
 [
   {
-    "name": "Golem.de",
+    "name": "3",
     "created_by": "infy",
-    "created_at": "2025-08-24T21:47:18+00:00",
-    "updated_at": "2025-08-24T21:47:18+00:00",
+    "created_at": "2022-09-01T13:38:22+09:00",
+    "updated_at": "2022-12-20T04:13:56+09:00",
+    "resource_url": "http://wedata.net/items/85952",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {}
+  },
+  {
+    "name": "4",
+    "created_by": "infy",
+    "created_at": "2022-09-01T13:38:39+09:00",
+    "updated_at": "2022-12-20T04:14:05+09:00",
+    "resource_url": "http://wedata.net/items/85953",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {}
+  },
+  {
+    "name": "5",
+    "created_by": "infy",
+    "created_at": "2022-09-01T13:38:59+09:00",
+    "updated_at": "2022-12-20T04:14:14+09:00",
+    "resource_url": "http://wedata.net/items/85954",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {}
+  },
+  {
+    "name": "Amazon Order History",
+    "created_by": "infy",
+    "created_at": "2025-02-10T00:00:00+00:00",
+    "updated_at": "2025-02-10T00:00:00+00:00",
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//ul[@class='go-pagination__list']/li[contains(@class,'go-pagination__item--next')]/a",
-      "pageElement": "//main[@class='go-grid']/article/* | //main[@class='go-grid go-grid--full-content']/*",
-      "url": "^https://(www\\.)?golem\\.de/",
-      "comment": "Website Request (https://github.com/sixcious/infy-scroll/issues/114)"
+      "nextLink": "//ul[@class='a-pagination']/li[@class='a-last']/a",
+      "pageElement": "//div[contains(@class, 'your-orders-content-container__content')]/*[contains(@class, 'order-card')]",
+      "pageElementIframe": "trim",
+      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*(order-history|your-orders)",
+      "exampleUrl": "https://www.amazon.com/gp/your-account/order-history",
+      "comment": "https://discord.gg/Z63tmCx4q5"
+    }
+  },
+  {
+    "name": "Amazon Reviews",
+    "created_by": "infy",
+    "created_at": "2024-07-22T00:00:00+00:00",
+    "updated_at": "2025-07-22T00:00:00+00:00",
+    "data": {
+      "pageElement": "id('cm_cr-review_list')/ul/*",
+      "append": "ajax",
+      "action": "click",
+      "clickElement": "//ul[@class='a-pagination']/li[@class='a-last']/a",
+      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
+      "exampleUrl": "https://www.amazon.com/s?k=toys"
+    }
+  },
+  {
+    "name": "Amazon Search",
+    "created_by": "infy",
+    "created_at": "2024-06-14T08:03:33+09:00",
+    "updated_at": "2025-05-25T08:04:50+09:00",
+    "resource_url": "http://wedata.net/items/86232",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "modified": "true",
+    "data": {
+      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']",
+      "append": "element",
+      "action": "next",
+      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
+      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
+      "exampleUrl": "https://www.amazon.com/s?k=toys"
+    }
+  },
+  {
+    "name": "Amazon Vine (US)",
+    "created_by": "EricKorhonen",
+    "created_at": "2024-02-26T10:59:44+09:00",
+    "updated_at": "2024-02-26T10:59:44+09:00",
+    "resource_url": "http://wedata.net/items/86210",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "modified": "true",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "#vvp-items-grid-container > div.a-text-center > ul.a-pagination > li.a-last > a",
+      "pageElement": "#vvp-items-grid",
+      "comment": "The set in autopagerize database didn't work for me even when I localized it to the US, so I used the ajax method. Incremental URL worked as well, but figured it wouldnt hurt to have multiple methods. It's a completly different experience not being confinded to the 46 -50 it loads by default. I'm working on a method using infyscroll to automate pulling the entire inventory and building a database on it the items and do my own custom sorting, filtering, and alerts. The discords, bots, and userscripts that already exist are good too, but again, Having another independent method to get to the same end is never a negative in my book.Hopefully I labeled everything in the right place. is there a way to automate importing saves to here i missed?",
+      "url": "https://www.amazon.com/vine/vine-items?queue=encore",
+      "exampleUrl": "https://www.amazon.com/vine/vine-items?queue=encore&pn=2335752011&cn=&page=37"
+    }
+  },
+  {
+    "name": "Bilibili Space Videos",
+    "created_by": "infy",
+    "created_at": "2023-04-23T05:03:14+09:00",
+    "updated_at": "2023-04-26T08:55:41+09:00",
+    "resource_url": "http://wedata.net/items/86109",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "clickElement": "id('submit-video-list')/ul[@class='be-pager']/li[@class='be-pager-next']",
+      "pageElement": "id('submit-video-list')/ul[@class='clearfix cube-list']/*",
+      "append": "ajax",
+      "action": "click",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/57",
+      "url": "^https://space\\.bilibili\\.com/\\d+/video",
+      "exampleUrl": "https://space.bilibili.com/510856133/video"
+    }
+  },
+  {
+    "name": "Bing Search",
+    "created_by": "infy",
+    "created_at": "2024-08-28T06:29:56+09:00",
+    "updated_at": "2024-08-28T06:44:39+09:00",
+    "resource_url": "http://wedata.net/items/86243",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "modified": "true",
+    "data": {
+      "pageElement": "id(\"b_results\")/li[@class=\"b_algo\"]|id(\"results\")",
+      "append": "element",
+      "pageElementIframe": "import",
+      "action": "next",
+      "comment": "Credit to: http://wedata.net/items/501\r\nSee: https://github.com/sixcious/infy-scroll/issues/92\r\n",
+      "nextLink": "//a[contains(@class,\"sb_pagN\")]",
+      "url": "^https?://(?:www|cnweb)4?\\.bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
+      "exampleUrl": "https://www.bing.com/search?q=Edge"
+    }
+  },
+  {
+    "name": "Booru Clones (Konachan, Yande, Sakugabooru)",
+    "created_by": "infy",
+    "created_at": "2025-01-01T00:00:00+00:00",
+    "updated_at": "2025-01-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@class='next_page']",
+      "pageElement": "//li[contains(@class, 'creator-id-')]|//div[@id='comment-list']/div[@class='post']|//table[@class='highlightable']",
+      "style": ".javascript-hide { display: inline-block !important; }",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645",
+      "url": "^https?://(konachan\\.com|yande\\.re|www\\.sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
+      "exampleUrl": "https://yande.re/post\r\nhttps://yande.re/comment\r\nhttp://konachan.com/post\r\nhttp://konachan.com/comment\r\nhttps://www.sakugabooru.com/post\r\nhttps://www.sakugabooru.com/comment"
     }
   },
   {
@@ -30,24 +160,27 @@
     }
   },
   {
-    "resource_url": "",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "//a[contains(text(),'下一页') or contains(text(),'Next')]",
-      "pageElement": "//div[contains(@class,'photos-list')]",
-      "style": ".photos-list img { opacity: 1 !important }",
-      "url": "^https://(www\\.)?v2ph.com/album/",
-      "comment": "Database Contribution"
-    },
+    "name": "Cốc Cốc Search",
+    "created_by": "infy",
+    "created_at": "2023-04-28T13:12:14+09:00",
+    "updated_at": "2023-04-28T13:12:34+09:00",
+    "resource_url": "http://wedata.net/items/86111",
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "anonymous",
-    "name": "V2PH",
-    "created_at": "2025-07-31T00:00:00+00:00",
-    "updated_at": "2025-07-31T00:00:00+00:00"
+    "data": {
+      "clickElement": "//div[@class='searchPagination-fN0W1 searchPagination-VM8NV']",
+      "pageElement": "//div[@class='searchResultsMain-HyzAT']/*",
+      "append": "ajax",
+      "action": "click",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/44",
+      "url": "^https://coccoc\\.com/search",
+      "exampleUrl": "https://coccoc.com/search?query=Th%E1%BB%9Di+ti%E1%BA%BFt+ng%C3%A0y+mai"
+    }
   },
   {
-    "resource_url": "",
+    "name": "Danbooru",
+    "created_by": "infy",
+    "created_at": "2025-07-15T00:00:00+00:00",
+    "updated_at": "2025-07-15T00:00:00+00:00",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -56,215 +189,15 @@
       "url": "^https?://danbooru\\.donmai\\.us",
       "exampleUrl": "https://danbooru.donmai.us",
       "comment": "Email. Credit: http://wedata.net/items/81554"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    }
+  },
+  {
+    "name": "FSHARE.VN",
     "created_by": "infy",
-    "name": "Danbooru",
-    "created_at": "2025-07-15T00:00:00+00:00",
-    "updated_at": "2025-07-15T00:00:00+00:00"
-  },
-  {
-    "resource_url": "",
-    "data": {
-      "action": "click",
-      "append": "ajax",
-      "clickElement": "//nav[@aria-label='pagination']//a[@data-testid='NextPage']",
-      "pageElement": "//section/div[@data-testid='item-stack']/div[not(.//div[.='Sponsored'])]|//main/section/div/section/div[.//div[@data-testid='enhanced-review-section']]",
-      "url": "^https://www\\.walmart\\.com/",
-      "exampleUrl": "https://www.walmart.com/search?q=toys",
-      "comment": "Walmart search and reviews"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Walmart",
-    "created_at": "2025-06-25T00:00:00+00:00",
-    "updated_at": "2025-06-25T00:00:00+00:00"
-  },
-  {
-    "resource_url": "",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "//ul[@class='a-pagination']/li[@class='a-last']/a",
-      "pageElement": "//div[contains(@class, 'your-orders-content-container__content')]/*[contains(@class, 'order-card')]",
-      "pageElementIframe": "trim",
-      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*(order-history|your-orders)",
-      "exampleUrl": "https://www.amazon.com/gp/your-account/order-history",
-      "comment": "https://discord.gg/Z63tmCx4q5"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Amazon Order History",
-    "created_at": "2025-02-10T00:00:00+00:00",
-    "updated_at": "2025-02-10T00:00:00+00:00"
-  },
-  {
-    "resource_url": "",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "//a[@class='next_page']",
-      "pageElement": "//li[contains(@class, 'creator-id-')]|//div[@id='comment-list']/div[@class='post']|//table[@class='highlightable']",
-      "style": ".javascript-hide { display: inline-block !important; }",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645",
-      "url": "^https?://(konachan\\.com|yande\\.re|www\\.sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
-      "exampleUrl": "https://yande.re/post\r\nhttps://yande.re/comment\r\nhttp://konachan.com/post\r\nhttp://konachan.com/comment\r\nhttps://www.sakugabooru.com/post\r\nhttps://www.sakugabooru.com/comment"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Moebooru:Danbooru clones",
-    "created_at": "2025-01-01T00:00:00+00:00",
-    "updated_at": "2025-01-01T00:00:00+00:00"
-  },
-  {
-    "resource_url": "",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "//a[@class='next']",
-      "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
-      "style": "html.reader #image-container.fit-both { height: auto !important; }",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/85 Credit to: http://wedata.net/items/76720",
-      "url": "^https?://nhentai\\.net/",
-      "exampleUrl": "https://nhentai.net/g/446216/1/"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "NH",
-    "created_at": "2025-01-01T00:00:00+00:00",
-    "updated_at": "2025-01-01T00:00:00+00:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86243",
-    "data": {
-      "pageElement": "id(\"b_results\")/li[@class=\"b_algo\"]|id(\"results\")",
-      "append": "element",
-      "pageElementIframe": "import",
-      "action": "next",
-      "comment": "Credit to: http://wedata.net/items/501\r\nSee: https://github.com/sixcious/infy-scroll/issues/92\r\n",
-      "nextLink": "//a[contains(@class,\"sb_pagN\")]",
-      "url": "^https?://(?:www|cnweb)4?\\.bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
-      "exampleUrl": "https://www.bing.com/search?q=Edge"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Microsoft Bing Search",
-    "created_at": "2024-08-28T06:29:56+09:00",
-    "updated_at": "2024-08-28T06:44:39+09:00"
-  },
-  {
-    "resource_url": "",
-    "data": {
-      "pageElement": "id('cm_cr-review_list')/ul/*",
-      "append": "ajax",
-      "action": "click",
-      "clickElement": "//ul[@class='a-pagination']/li[@class='a-last']/a",
-      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
-      "exampleUrl": "https://www.amazon.com/s?k=toys"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Amazon Reviews",
-    "created_at": "2024-07-22T00:00:00+00:00",
-    "updated_at": "2025-07-22T00:00:00+00:00"
-  },
-  {
-    "modified": "",
-    "resource_url": "http://wedata.net/items/86232",
-    "data": {
-      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']",
-      "append": "element",
-      "action": "next",
-      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
-      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
-      "exampleUrl": "https://www.amazon.com/s?k=toys"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Amazon Search",
-    "created_at": "2024-06-14T08:03:33+09:00",
-    "updated_at": "2025-05-25T08:04:50+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86225",
-    "data": {
-      "clickElement": ".css-1gpctw1",
-      "pageElement": ".css-1gg9wg4",
-      "append": "ajax",
-      "action": "click",
-      "url": "https://janitorai.com*"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "Krampus",
-    "name": "JanitorAI - Wow such bots",
-    "created_at": "2024-05-13T08:49:14+09:00",
-    "updated_at": "2024-07-30T13:29:31+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86224",
-    "data": {
-      "pageElement": "//ul[@class='DiscussionList-discussions']/*",
-      "append": "element",
-      "pageElementIframe": "import",
-      "action": "next",
-      "comment": "https://discord.com/channels/1160637517310210078/1160637517788348558",
-      "nextLink": "//*[@rel='next']",
-      "url": "^https://orionfeedback\\.org/",
-      "exampleUrl": "https://orionfeedback.org/"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Orion Public Issue  Tracker",
-    "created_at": "2024-05-06T13:45:07+09:00",
-    "updated_at": "2024-05-06T13:45:20+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86210",
-    "data": {
-      "style": "",
-      "pageElement": "#vvp-items-grid",
-      "clickElement": "#vvp-items-grid-container > div.a-text-center > ul.a-pagination > li.a-last > a",
-      "append": "ajax",
-      "pageElementIframe": "#vvp-items-grid",
-      "removeElement": "",
-      "puppet": "",
-      "spaf": "",
-      "ajaxMode": "iframe",
-      "loadElement": "",
-      "comment": "The set in autopagerize database didn't work for me even when I localized it to the US, so I used the ajax method. Incremental URL worked as well, but figured it wouldnt hurt to have multiple methods. It's a completly different experience not being confinded to the 46 -50 it loads by default. I'm working on a method using infyscroll to automate pulling the entire inventory and building a database on it the items and do my own custom sorting, filtering, and alerts. The discords, bots, and userscripts that already exist are good too, but again, Having another independent method to get to the same end is never a negative in my book.Hopefully I labeled everything in the right place. is there a way to automate importing saves to here i missed?",
-      "script": "",
-      "spa": "",
-      "action": "click element",
-      "mirrorPage": "",
-      "nextLink": "pattern",
-      "url": "https://www.amazon.com/vine/vine-items?queue=encore",
-      "exampleUrl": "https://www.amazon.com/vine/vine-items?queue=encore&pn=2335752011&cn=&page=37"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "Eric Korhonen",
-    "name": "Amazon Vine - US",
-    "created_at": "2024-02-26T10:59:44+09:00",
-    "updated_at": "2024-02-26T10:59:44+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86207",
-    "data": {
-      "clickElement": "//button[@class='v-pagination__navigation'][@aria-label='Next page']",
-      "pageElement": "//div[@class='product-table']/div[@class='table-area']",
-      "append": "ajax",
-      "action": "click",
-      "comment": "https://discord.gg/Z63tmCx4q5",
-      "url": "^https://(www)?\\.lcsc\\.com/products/",
-      "exampleUrl": "https://www.lcsc.com/products/Wire-To-Board-Wire-To-Wire-Connector_11068.html"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "LCSC Electronics",
-    "created_at": "2024-01-31T14:44:29+09:00",
-    "updated_at": "2024-01-31T14:55:49+09:00"
-  },
-  {
+    "created_at": "2023-12-24T03:49:21+09:00",
+    "updated_at": "2023-12-24T03:49:29+09:00",
     "resource_url": "http://wedata.net/items/86197",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "clickElement": "//button[@class='mdc-button mdc-button--raised button-load ng-binding'][not(contains(@class, 'ng-hide'))]",
       "pageElement": "//div[@class='list mdc-detail-list down-folder']/*",
@@ -273,91 +206,15 @@
       "comment": "https://github.com/sixcious/infy-scroll/issues/78",
       "url": "^https://www\\.fshare\\.vn/folder",
       "exampleUrl": "https://www.fshare.vn/folder/H7DXADP8PMOA"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "FSHARE.VN",
-    "created_at": "2023-12-24T03:49:21+09:00",
-    "updated_at": "2023-12-24T03:49:29+09:00"
+    }
   },
   {
-    "resource_url": "http://wedata.net/items/86195",
-    "data": {
-      "clickElement": "//a[not(contains(@class, 'disabled'))][.//*[contains(@class, 'feather-arrow-right')]]",
-      "pageElement": "//div[@class='page-container wide']/div[2]/*",
-      "append": "ajax",
-      "removeElement": "//div[@class='relative']",
-      "disableScrollElement": "//*",
-      "ajaxMode": "native",
-      "action": "click",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/77",
-      "url": "^https://mangadex\\.org/titles/(recent|latest)",
-      "exampleUrl": "https://mangadex.org/titles/latest"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "name": "FTP.ACC.UMU.SE (Increment URL Example)",
     "created_by": "infy",
-    "name": "MangaDex",
-    "created_at": "2023-12-18T04:12:00+09:00",
-    "updated_at": "2023-12-18T04:21:03+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86131",
-    "data": {
-      "clickElement": "//button[@class='pagination__next-prev-button next']|//button[@class='css-k54ldh']",
-      "pageElement": "//div[@class='vo-bg css-1rxtqz8']|//div[@class='css-p5oja0']/*",
-      "append": "ajax",
-      "loadElement": "//img[contains(@class,'css-1tth2jd')]|//img[contains(@class,'css-k35lnn')]",
-      "action": "click",
-      "comment": "SPA Mirror Page Import Example. Important: Not for Startpage's Web due to high CPU usage, but Web (and Mobile Web) could be added by adding the following to the pageElement: |//section[contains(@class,'w-gl')]/*[not(self::h3)]|//div[contains(@class,'w-bg')]/*. Not for Images due to links not being clickable, but Images could be added by adding the following to the pageElement: |//div[contains(@class,'image-main-container')]",
-      "mirrorPage": "import",
-      "url": "^https://www\\.startpage\\.com/",
-      "exampleUrl": "https://www.startpage.com/"
-    },
+    "created_at": "2023-05-25T04:05:53+09:00",
+    "updated_at": "2024-02-19T04:09:17+09:00",
+    "resource_url": "http://wedata.net/items/86124",
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Startpage",
-    "created_at": "2023-06-08T03:57:23+09:00",
-    "updated_at": "2023-06-09T02:36:00+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86128",
-    "data": {
-      "clickElement": "//div[@class='gsc-wrapper']//div[@class='gsc-cursor']/div[@class='gsc-cursor-page gsc-cursor-current-page']/following-sibling::div[1] | //div[@class='gsc-wrapper']//div[@class='gsc-cursor']/div[@aria-label='Next page']",
-      "pageElement": "//div[@class='gsc-wrapper']//div[@class='gsc-results gsc-webResult']/div[@class='gsc-expansionArea']/*",
-      "style": ".gsc-loading-resultsRoot { all: unset !important; }",
-      "append": "ajax",
-      "disableScrollElement": "//*",
-      "ajaxMode": "native",
-      "action": "click",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/62",
-      "url": "^https://[G]?",
-      "exampleUrl": "https://www.searchcraigslist.net/results?q=infinity\r\nhttps://arstechnica.com/search/?q=infinity"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Google Programmable Search Engine",
-    "created_at": "2023-06-01T13:16:42+09:00",
-    "updated_at": "2023-11-15T06:05:57+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86125",
-    "data": {
-      "pageElement": "//div[@class='mb-lg']/*",
-      "append": "element",
-      "pageElementIframe": "import",
-      "action": "next",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/60",
-      "nextLink": "//a[@title='Page suivante']",
-      "url": "^https://www\\.leboncoin\\.fr/recherche",
-      "exampleUrl": "https://www.leboncoin.fr/recherche?text=enfant&locations=r_19&page=6"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Leboncoin",
-    "created_at": "2023-05-27T02:31:59+09:00",
-    "updated_at": "2023-09-08T08:29:20+09:00"
-  },
-  {
     "data": {
       "mediaType": "image",
       "append": "media",
@@ -369,17 +226,217 @@
       "url": "^https://ftp\\.acc\\.umu\\.se/mirror/archive/ftp\\.sunet\\.se/pub/pictures/anime-manga/SailorMoon/Images/TV/001/001",
       "interval": "1",
       "exampleUrl": "https://ftp.acc.umu.se/mirror/archive/ftp.sunet.se/pub/pictures/anime-manga/SailorMoon/Images/TV/001/001usa01.jpg"
-    },
-    "created_by": "infy",
-    "resource_url": "http://wedata.net/items/86124",
-    "name": "Increment URL Example",
-    "created_at": "2023-05-25T04:05:53+09:00",
-    "updated_at": "2024-02-19T04:09:17+09:00",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll"
+    }
   },
   {
-    "modified": "true",
+    "name": "GitHub Commits",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//div/a[@data-testid='pagination-next-button']",
+      "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div/*",
+      "iframeXframe": "true",
+      "url": "<xframe>^https://github\\.com/[^/]+/[^/]+/(?:commits)",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
+    }
+  },
+  {
+    "name": "GitHub Issues",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//nav[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
+      "pageElement": "//ul[@data-listview-component='items-list']/*",
+      "iframeXframe": "true",
+      "url": "<xframe>^https://github\\.com/[^/]+/[^/]+/(?:issues)",
+      "exampleUrl": "https://github.com/actions/toolkit/issues"
+    }
+  },
+  {
+    "name": "Golem.de",
+    "created_by": "infy",
+    "created_at": "2025-08-24T21:47:18+00:00",
+    "updated_at": "2025-08-24T21:47:18+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//ul[@class='go-pagination__list']/li[contains(@class,'go-pagination__item--next')]/a",
+      "pageElement": "//main[@class='go-grid']/article/* | //main[@class='go-grid go-grid--full-content']/*",
+      "url": "^https://(www\\.)?golem\\.de/",
+      "comment": "Website Request (https://github.com/sixcious/infy-scroll/issues/114)"
+    }
+  },
+  {
+    "name": "Google Programmable Search Engine",
+    "created_by": "infy",
+    "created_at": "2023-06-01T13:16:42+09:00",
+    "updated_at": "2023-11-15T06:05:57+09:00",
+    "resource_url": "http://wedata.net/items/86128",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "clickElement": "//div[@class='gsc-wrapper']//div[@class='gsc-cursor']/div[@class='gsc-cursor-page gsc-cursor-current-page']/following-sibling::div[1] | //div[@class='gsc-wrapper']//div[@class='gsc-cursor']/div[@aria-label='Next page']",
+      "pageElement": "//div[@class='gsc-wrapper']//div[@class='gsc-results gsc-webResult']/div[@class='gsc-expansionArea']/*",
+      "style": ".gsc-loading-resultsRoot { all: unset !important; }",
+      "append": "ajax",
+      "disableScrollElement": "//*",
+      "ajaxMode": "native",
+      "action": "click",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/62",
+      "url": "^https://[G]?",
+      "exampleUrl": "https://www.searchcraigslist.net/results?q=infinity\r\nhttps://arstechnica.com/search/?q=infinity"
+    }
+  },
+  {
+    "name": "JanitorAI",
+    "created_by": "Krampus",
+    "created_at": "2024-05-13T08:49:14+09:00",
+    "updated_at": "2024-07-30T13:29:31+09:00",
+    "resource_url": "http://wedata.net/items/86225",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "clickElement": ".css-1gpctw1",
+      "pageElement": ".css-1gg9wg4",
+      "append": "ajax",
+      "action": "click",
+      "url": "^https://janitorai\\.com*"
+    }
+  },
+  {
+    "name": "Kleinanzeigen",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')]",
+      "pageElement": "id('srchrslt-adtable')/*",
+      "iframeXframe": "true",
+      "url": "<xframe>^https://www\\.kleinanzeigen\\.de/",
+      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
+    }
+  },
+  {
+    "name": "LCSC Electronics",
+    "created_by": "infy",
+    "created_at": "2024-01-31T14:44:29+09:00",
+    "updated_at": "2024-01-31T14:55:49+09:00",
+    "resource_url": "http://wedata.net/items/86207",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "clickElement": "//button[@class='v-pagination__navigation'][@aria-label='Next page']",
+      "pageElement": "//div[@class='product-table']/div[@class='table-area']",
+      "append": "ajax",
+      "action": "click",
+      "comment": "https://discord.gg/Z63tmCx4q5",
+      "url": "^https://(www)?\\.lcsc\\.com/products/",
+      "exampleUrl": "https://www.lcsc.com/products/Wire-To-Board-Wire-To-Wire-Connector_11068.html"
+    }
+  },
+  {
+    "name": "Leboncoin",
+    "created_by": "infy",
+    "created_at": "2023-05-27T02:31:59+09:00",
+    "updated_at": "2023-09-08T08:29:20+09:00",
+    "resource_url": "http://wedata.net/items/86125",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "pageElement": "//div[@class='mb-lg']/*",
+      "append": "element",
+      "pageElementIframe": "import",
+      "action": "next",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/60",
+      "nextLink": "//a[@title='Page suivante']",
+      "url": "^https://www\\.leboncoin\\.fr/recherche",
+      "exampleUrl": "https://www.leboncoin.fr/recherche?text=enfant&locations=r_19&page=6"
+    }
+  },
+  {
+    "name": "LinkedIn Search",
+    "created_by": "infy",
+    "created_at": "2023-02-25T09:16:35+09:00",
+    "updated_at": "2023-07-31T01:34:11+09:00",
+    "resource_url": "http://wedata.net/items/86079",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "clickElement": "//button[@aria-label='Next'][contains(.,'Next')]",
+      "pageElement": "//div[@class='search-results-container']//ul[contains(@class,'search')]/li",
+      "append": "ajax",
+      "action": "click",
+      "spa": "^https://www\\.linkedin\\.com/search/results",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/52",
+      "url": "^https://www\\.linkedin\\.com/search/results/",
+      "exampleUrl": "https://www.linkedin.com/search/results/people/?keywords=informatique&origin=SWITCH_SEARCH_VERTICAL&sid=Fpy"
+    }
+  },
+  {
+    "name": "MangaDex",
+    "created_by": "infy",
+    "created_at": "2023-12-18T04:12:00+09:00",
+    "updated_at": "2023-12-18T04:21:03+09:00",
+    "resource_url": "http://wedata.net/items/86195",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "clickElement": "//a[not(contains(@class, 'disabled'))][.//*[contains(@class, 'feather-arrow-right')]]",
+      "pageElement": "//div[@class='page-container wide']/div[2]/*",
+      "append": "ajax",
+      "removeElement": "//div[@class='relative']",
+      "disableScrollElement": "//*",
+      "ajaxMode": "native",
+      "action": "click",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/77",
+      "url": "^https://mangadex\\.org/titles/(recent|latest)",
+      "exampleUrl": "https://mangadex.org/titles/latest"
+    }
+  },
+  {
+    "name": "Manhua.dmzj.com",
+    "created_by": "infy",
+    "created_at": "2023-03-20T09:10:37+09:00",
+    "updated_at": "2023-05-04T05:41:19+09:00",
+    "resource_url": "http://wedata.net/items/86095",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "pageElement": "id('search_list_div')//div[contains(@class, 'tcaricature_block')]",
+      "append": "element",
+      "pageElementIframe": "import",
+      "action": "next",
+      "comment": "email",
+      "nextLink": "id('search_list_div')/div[@class='pages']/a[.='下一页']",
+      "url": "^https?://manhua\\.dmzj\\.com/",
+      "exampleUrl": "http://manhua.dmzj.com/tags/category_search/0-3263-0-all-0-1-0-1.shtml#category_nav_anchor"
+    }
+  },
+  {
+    "name": "NHentai",
+    "created_by": "infy",
+    "created_at": "2025-01-01T00:00:00+00:00",
+    "updated_at": "2025-01-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@class='next']",
+      "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
+      "style": "html.reader #image-container.fit-both { height: auto !important; }",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/85 Credit to: http://wedata.net/items/76720",
+      "url": "^https?://nhentai\\.net/",
+      "exampleUrl": "https://nhentai.net/g/446216/1/"
+    }
+  },
+  {
+    "name": "Nike Reviews",
+    "created_by": "infy",
+    "created_at": "2023-05-11T08:26:29+09:00",
+    "updated_at": "2023-06-08T04:01:42+09:00",
     "resource_url": "http://wedata.net/items/86120",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "modified": "true",
     "data": {
       "clickElement": "//button[@aria-label='Go to next reviews']",
       "pageElement": "//div[@class='tt-c-reviews-list__content']/*",
@@ -391,147 +448,52 @@
       "mirrorPage": "puppet",
       "url": "!^https://www\\.nike\\.com/t/",
       "exampleUrl": "https://www.nike.com/t/p-6000-shoes-XkgpKW/CD6404-403"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Nike Reviews",
-    "created_at": "2023-05-11T08:26:29+09:00",
-    "updated_at": "2023-06-08T04:01:42+09:00"
+    }
   },
   {
-    "resource_url": "http://wedata.net/items/86113",
-    "data": {
-      "pageElement": "//div[(contains(@class, 'text-gray-300')) and not(contains(@class,'dark:text-gray-300'))]/*\r\n[\r\nnot(self::a[contains(@title,'Report Ad')])\r\nand not(self::div//div[@x-show='!aiResults.authorized'])\r\nand not(local-name()='svg')\r\nand not(self::div//div[contains(@class,'bg-presearch-alternative')])\r\nand not(self::div//div[@x-text='ad.description'])\r\n]",
-      "append": "element",
-      "pageElementIframe": "trim",
-      "action": "next",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/44",
-      "nextLink": "//div[contains(@class, 'text-presearch-alternative border-presearch-alternative')]/following-sibling::div/a",
-      "url": "^https://presearch\\.com/",
-      "exampleUrl": "https://presearch.com/search?q=infinity"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "name": "Orion Public Issue Tracker",
     "created_by": "infy",
-    "name": "Presearch",
-    "created_at": "2023-05-05T01:27:51+09:00",
-    "updated_at": "2024-06-14T08:49:43+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86111",
-    "data": {
-      "clickElement": "//div[@class='searchPagination-fN0W1 searchPagination-VM8NV']",
-      "pageElement": "//div[@class='searchResultsMain-HyzAT']/*",
-      "append": "ajax",
-      "action": "click",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/44",
-      "url": "^https://coccoc\\.com/search",
-      "exampleUrl": "https://coccoc.com/search?query=Th%E1%BB%9Di+ti%E1%BA%BFt+ng%C3%A0y+mai"
-    },
+    "created_at": "2024-05-06T13:45:07+09:00",
+    "updated_at": "2024-05-06T13:45:20+09:00",
+    "resource_url": "http://wedata.net/items/86224",
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Cốc Cốc Search",
-    "created_at": "2023-04-28T13:12:14+09:00",
-    "updated_at": "2023-04-28T13:12:34+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86109",
     "data": {
-      "clickElement": "id('submit-video-list')/ul[@class='be-pager']/li[@class='be-pager-next']",
-      "pageElement": "id('submit-video-list')/ul[@class='clearfix cube-list']/*",
-      "append": "ajax",
-      "action": "click",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/57",
-      "url": "^https://space\\.bilibili\\.com/\\d+/video",
-      "exampleUrl": "https://space.bilibili.com/510856133/video"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Bilibili Space Videos",
-    "created_at": "2023-04-23T05:03:14+09:00",
-    "updated_at": "2023-04-26T08:55:41+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/86095",
-    "data": {
-      "pageElement": "id('search_list_div')//div[contains(@class, 'tcaricature_block')]",
+      "pageElement": "//ul[@class='DiscussionList-discussions']/*",
       "append": "element",
       "pageElementIframe": "import",
       "action": "next",
-      "comment": "email",
-      "nextLink": "id('search_list_div')/div[@class='pages']/a[.='下一页']",
-      "url": "^https?://manhua\\.dmzj\\.com/",
-      "exampleUrl": "http://manhua.dmzj.com/tags/category_search/0-3263-0-all-0-1-0-1.shtml#category_nav_anchor"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Manhua.dmzj.com",
-    "created_at": "2023-03-20T09:10:37+09:00",
-    "updated_at": "2023-05-04T05:41:19+09:00"
+      "comment": "https://discord.com/channels/1160637517310210078/1160637517788348558",
+      "nextLink": "//*[@rel='next']",
+      "url": "^https://orionfeedback\\.org/",
+      "exampleUrl": "https://orionfeedback.org/"
+    }
   },
   {
-    "resource_url": "http://wedata.net/items/86079",
+    "name": "Pixiv (AJAX)",
+    "created_by": "infy",
+    "created_at": "2022-08-01T12:28:27+09:00",
+    "updated_at": "2025-06-20T00:00:00+00:00",
+    "resource_url": "http://wedata.net/items/85939",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "modified": "true",
     "data": {
-      "clickElement": "//button[@aria-label='Next'][contains(.,'Next')]",
-      "pageElement": "//div[@class='search-results-container']//ul[contains(@class,'search')]/li",
+      "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
+      "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul | //section/div/div/div/div/ul | /html/body/div/div/div/div/div/div/div/div/div/div[3]/div/ul",
       "append": "ajax",
-      "action": "click",
-      "spa": "^https://www\\.linkedin\\.com/search/results",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/52",
-      "url": "^https://www\\.linkedin\\.com/search/results/",
-      "exampleUrl": "https://www.linkedin.com/search/results/people/?keywords=informatique&origin=SWITCH_SEARCH_VERTICAL&sid=Fpy"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "LinkedIn Search",
-    "created_at": "2023-02-25T09:16:35+09:00",
-    "updated_at": "2023-07-31T01:34:11+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/85954",
-    "data": {},
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "5",
-    "created_at": "2022-09-01T13:38:59+09:00",
-    "updated_at": "2022-12-20T04:14:14+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/85953",
-    "data": {},
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "4",
-    "created_at": "2022-09-01T13:38:39+09:00",
-    "updated_at": "2022-12-20T04:14:05+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/85952",
-    "data": {},
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "3",
-    "created_at": "2022-09-01T13:38:22+09:00",
-    "updated_at": "2022-12-20T04:13:56+09:00"
-  },
-  {
-    "resource_url": "http://wedata.net/items/85951",
-    "data": {
-      "clickElement": "//div[@class='pager']/a[contains(@class, 'next')][./div[@class='arrow']]",
-      "pageElement": "//div[contains(@class, 'works-grid-list')]",
-      "append": "ajax",
+      "loadElement": "//div/ul//figure",
       "spaf": "^https://www\\.pixiv\\.net/",
       "action": "click",
       "url": "^https://www\\.pixiv\\.net/",
       "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Pixiv Mobile",
-    "created_at": "2022-09-01T13:37:57+09:00",
-    "updated_at": "2023-04-29T05:42:33+09:00"
+    }
   },
   {
+    "name": "Pixiv (AJAX Native)",
+    "created_by": "infy",
+    "created_at": "2022-09-01T13:37:25+09:00",
+    "updated_at": "2023-04-29T05:42:10+09:00",
     "resource_url": "http://wedata.net/items/85950",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
       "pageElement": "html[@lang='ja']//ul[@class='sc-l7cibp-1 krFoBL']/*|html[not(@lang='ja')]//div[@class='sc-l7cibp-0 juyBTC']/*",
@@ -542,30 +504,90 @@
       "action": "click",
       "url": "!^https://www\\.pixiv\\.net/",
       "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "created_by": "infy",
-    "name": "Pixiv (AJAX Native)",
-    "created_at": "2022-09-01T13:37:25+09:00",
-    "updated_at": "2023-04-29T05:42:10+09:00"
+    }
   },
   {
-    "modified": "true",
-    "resource_url": "http://wedata.net/items/85939",
+    "name": "Pixiv Mobile",
+    "created_by": "infy",
+    "created_at": "2022-09-01T13:37:57+09:00",
+    "updated_at": "2023-04-29T05:42:33+09:00",
+    "resource_url": "http://wedata.net/items/85951",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
-      "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
-      "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul | //section/div/div/div/div/ul | /html/body/div/div/div/div/div/div/div/div/div/div[3]/div/ul",
+      "clickElement": "//div[@class='pager']/a[contains(@class, 'next')][./div[@class='arrow']]",
+      "pageElement": "//div[contains(@class, 'works-grid-list')]",
       "append": "ajax",
-      "loadElement": "//div/ul//figure",
       "spaf": "^https://www\\.pixiv\\.net/",
       "action": "click",
       "url": "^https://www\\.pixiv\\.net/",
       "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
-    },
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    }
+  },
+  {
+    "name": "Presearch",
     "created_by": "infy",
-    "name": "Pixiv (AJAX)",
-    "created_at": "2022-08-01T12:28:27+09:00",
-    "updated_at": "2025-06-20T00:00:00+00:00"
+    "created_at": "2023-05-05T01:27:51+09:00",
+    "updated_at": "2024-06-14T08:49:43+09:00",
+    "resource_url": "http://wedata.net/items/86113",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "pageElement": "//div[(contains(@class, 'text-gray-300')) and not(contains(@class,'dark:text-gray-300'))]/*\r\n[\r\nnot(self::a[contains(@title,'Report Ad')])\r\nand not(self::div//div[@x-show='!aiResults.authorized'])\r\nand not(local-name()='svg')\r\nand not(self::div//div[contains(@class,'bg-presearch-alternative')])\r\nand not(self::div//div[@x-text='ad.description'])\r\n]",
+      "append": "element",
+      "pageElementIframe": "trim",
+      "action": "next",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/44",
+      "nextLink": "//div[contains(@class, 'text-presearch-alternative border-presearch-alternative')]/following-sibling::div/a",
+      "url": "^https://presearch\\.com/",
+      "exampleUrl": "https://presearch.com/search?q=infinity"
+    }
+  },
+  {
+    "name": "Startpage",
+    "created_by": "infy",
+    "created_at": "2023-06-08T03:57:23+09:00",
+    "updated_at": "2023-06-09T02:36:00+09:00",
+    "resource_url": "http://wedata.net/items/86131",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "clickElement": "//button[@class='pagination__next-prev-button next']|//button[@class='css-k54ldh']",
+      "pageElement": "//div[@class='vo-bg css-1rxtqz8']|//div[@class='css-p5oja0']/*",
+      "append": "ajax",
+      "loadElement": "//img[contains(@class,'css-1tth2jd')]|//img[contains(@class,'css-k35lnn')]",
+      "action": "click",
+      "comment": "SPA Mirror Page Import Example. Important: Not for Startpage's Web due to high CPU usage, but Web (and Mobile Web) could be added by adding the following to the pageElement: |//section[contains(@class,'w-gl')]/*[not(self::h3)]|//div[contains(@class,'w-bg')]/*. Not for Images due to links not being clickable, but Images could be added by adding the following to the pageElement: |//div[contains(@class,'image-main-container')]",
+      "mirrorPage": "import",
+      "url": "^https://www\\.startpage\\.com/",
+      "exampleUrl": "https://www.startpage.com/"
+    }
+  },
+  {
+    "name": "V2PH",
+    "created_by": "anonymous",
+    "created_at": "2025-07-31T00:00:00+00:00",
+    "updated_at": "2025-07-31T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[contains(text(),'下一页') or contains(text(),'Next')]",
+      "pageElement": "//div[contains(@class,'photos-list')]",
+      "style": ".photos-list img { opacity: 1 !important }",
+      "url": "^https://(www\\.)?v2ph.com/album/",
+      "comment": "Database Contribution"
+    }
+  },
+  {
+    "name": "Walmart",
+    "created_by": "infy",
+    "created_at": "2025-06-25T00:00:00+00:00",
+    "updated_at": "2025-06-25T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//nav[@aria-label='pagination']//a[@data-testid='NextPage']",
+      "pageElement": "//section/div[@data-testid='item-stack']/div[not(.//div[.='Sponsored'])]|//main/section/div/section/div[.//div[@data-testid='enhanced-review-section']]",
+      "url": "^https://www\\.walmart\\.com/",
+      "exampleUrl": "https://www.walmart.com/search?q=toys",
+      "comment": "Walmart search and reviews"
+    }
   }
 ]
