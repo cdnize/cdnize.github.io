@@ -238,8 +238,8 @@
       "append": "ajax",
       "clickElement": "//div/a[@data-testid='pagination-next-button']",
       "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div/*",
-      "iframeXframe": "true",
-      "url": "<xframe>^https://github\\.com/[^/]+/[^/]+/(?:commits)",
+      "xf": "true",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:commits)",
       "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
     }
   },
@@ -253,8 +253,8 @@
       "append": "ajax",
       "clickElement": "//nav[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
       "pageElement": "//ul[@data-listview-component='items-list']/*",
-      "iframeXframe": "true",
-      "url": "<xframe>^https://github\\.com/[^/]+/[^/]+/(?:issues)",
+      "xf": "true",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:issues)",
       "exampleUrl": "https://github.com/actions/toolkit/issues"
     }
   },
@@ -317,8 +317,8 @@
       "append": "ajax",
       "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')]",
       "pageElement": "id('srchrslt-adtable')/*",
-      "iframeXframe": "true",
-      "url": "<xframe>^https://www\\.kleinanzeigen\\.de/",
+      "xf": "true",
+      "url": "<xf>^https://www\\.kleinanzeigen\\.de/",
       "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
     }
   },
