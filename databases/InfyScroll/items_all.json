@@ -229,6 +229,36 @@
     }
   },
   {
+    "name": "GitHub Commits",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//div/a[@data-testid='pagination-next-button']",
+      "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div/*",
+      "xf": "true",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:commits)",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
+    }
+  },
+  {
+    "name": "GitHub Issues",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//nav[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
+      "pageElement": "//ul[@data-listview-component='items-list']/*",
+      "xf": "true",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:issues)",
+      "exampleUrl": "https://github.com/actions/toolkit/issues"
+    }
+  },
+  {
     "name": "Golem.de",
     "created_by": "infy",
     "created_at": "2025-08-24T21:47:18+00:00",
@@ -275,6 +305,21 @@
       "append": "ajax",
       "action": "click",
       "url": "^https://janitorai\\.com*"
+    }
+  },
+  {
+    "name": "Kleinanzeigen",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')]",
+      "pageElement": "id('srchrslt-adtable')/*",
+      "xf": "true",
+      "url": "<xf>^https://www\\.kleinanzeigen\\.de/",
+      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
     }
   },
   {
