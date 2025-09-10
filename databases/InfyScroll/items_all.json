@@ -237,7 +237,7 @@
       "action": "click",
       "append": "ajax",
       "clickElement": "//div/a[@data-testid='pagination-next-button']",
-      "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div/*",
+      "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
       "xf": "true",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:commits)",
       "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
