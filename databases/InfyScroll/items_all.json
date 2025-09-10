@@ -236,7 +236,7 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "//div/a[@data-testid='pagination-next-button']",
+      "clickElement": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
       "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
       "xf": "true",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:commits)",
