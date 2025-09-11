@@ -74,7 +74,7 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "id('submit-video-list')/ul[@class='be-pager']/li[@class='be-pager-next']",
+      "clickElement": "//div[@class='vui_pagenation--btns']/button[@class='vui_button vui_pagenation--btn vui_pagenation--btn-side']",
       "pageElement": "//div[@class='video']/div[@class='video-body']/div[@class='video-list grid-mode']",
       "url": "^https://space\\.bilibili\\.com/\\d+.*/video",
       "exampleUrl": "https://space.bilibili.com/510856133/video",
@@ -112,7 +112,7 @@
       "pageElement": "//li[contains(@class, 'creator-id-')]|//div[@id='comment-list']/div[@class='post']|//table[@class='highlightable']",
       "style": ".javascript-hide { display: inline-block !important; }",
       "url": "^https?://(konachan\\.com|yande\\.re|www\\.sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
-      "exampleUrl": "https://yande.re/post\r\nhttps://yande.re/comment\r\nhttp://konachan.com/post\r\nhttp://konachan.com/comment\r\nhttps://www.sakugabooru.com/post\r\nhttps://www.sakugabooru.com/comment",
+      "exampleUrl": "https://yande.re/post https://yande.re/comment http://konachan.com/post http://konachan.com/comment https://www.sakugabooru.com/post https://www.sakugabooru.com/comment",
       "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645"
     }
   },
@@ -262,7 +262,7 @@
       "disableScrollElement": "//*",
       "style": ".gsc-loading-resultsRoot { all: unset !important; }",
       "url": "^https://[G]?",
-      "exampleUrl": "https://www.searchcraigslist.net/results?q=infinity\r\nhttps://arstechnica.com/search/?q=infinity",
+      "exampleUrl": "https://www.searchcraigslist.net/results?q=infinity https://arstechnica.com/search/?q=infinity",
       "comment": "https://github.com/sixcious/infy-scroll/issues/62"
     }
   },
@@ -308,9 +308,9 @@
       "action": "click",
       "append": "ajax",
       "clickElement": "//button[@class='v-pagination__navigation'][@aria-label='Next page']",
-      "pageElement": "//div[@class='product-table']/div[@class='table-area']",
-      "url": "^https://(www)?\\.lcsc\\.com/products/",
-      "exampleUrl": "https://www.lcsc.com/products/Wire-To-Board-Wire-To-Wire-Connector_11068.html",
+      "pageElement": "//table[@class='tableContentTable']/tbody",
+      "url": "^https://(www)?\\.lcsc\\.com/.*/\\d+",
+      "exampleUrl": "https://www.lcsc.com/category/11068.html",
       "comment": "https://discord.gg/Z63tmCx4q5"
     }
   },
@@ -324,7 +324,7 @@
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//a[@title='Page suivante']",
+      "nextLink": "//a[@data-spark-component='pagination-next-trigger']",
       "pageElement": "//div[@class='mb-lg']/*",
       "pageElementIframe": "import",
       "url": "^https://www\\.leboncoin\\.fr/recherche",
@@ -343,9 +343,9 @@
       "action": "click",
       "append": "ajax",
       "clickElement": "//button[@aria-label='Next'][contains(.,'Next')]",
-      "pageElement": "//div[@class='search-results-container']//ul[contains(@class,'search')]/li",
+      "pageElement": "//div[@class='search-results-container']",
       "spa": "^https://www\\.linkedin\\.com/search/results",
-      "url": "^https://www\\.linkedin\\.com/search/results/",
+      "xurl": "<>^https://www\\.linkedin\\.com/search/results/",
       "exampleUrl": "https://www.linkedin.com/search/results/people/?keywords=informatique&origin=SWITCH_SEARCH_VERTICAL&sid=Fpy",
       "comment": "https://github.com/sixcious/infy-scroll/issues/52"
     }
@@ -562,7 +562,7 @@
       "clickElement": "//nav[@aria-label='pagination']//a[@data-testid='NextPage']",
       "pageElement": "//section/div[@data-testid='item-stack']/div[not(.//div[.='Sponsored'])]|//main/section/div/section/div[.//div[@data-testid='enhanced-review-section']]",
       "url": "^https://www\\.walmart\\.com/",
-      "exampleUrl": "https://www.walmart.com/search?q=toys",
+      "exampleUrl": "https://www.walmart.com/search?q=toys https://www.walmart.com/reviews/product/724919200",
       "comment": "Walmart search and reviews"
     }
   }
