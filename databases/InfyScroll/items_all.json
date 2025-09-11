@@ -9,6 +9,7 @@
       "append": "element",
       "nextLink": "//div[@class='pagination']/ul/li[@class='active']/following-sibling::li/a",
       "pageElement": "//div[@class='table-list-wrap']/table[contains(@class,'table-list')]/tbody/*",
+      "style": ".table-list td.coll-1.name { padding-right: 70px !important; }",
       "url": "^https://1337x.(to)/",
       "exampleUrl": "https://1337x.to/search/qxr/1/"
     }
