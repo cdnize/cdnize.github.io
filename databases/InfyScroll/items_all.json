@@ -580,5 +580,34 @@
       "exampleUrl": "https://www.walmart.com/search?q=toys https://www.walmart.com/reviews/product/724919200",
       "comment": "Walmart search and reviews"
     }
+  },
+  {
+    "name": "XVIDEOS",
+    "created_by": "x",
+    "created_at": "2025-09-12T18:51:30+00:00",
+    "updated_at": "2025-09-12T18:51:30+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//li[./a[@class=\"active\"]]/following-sibling::li[1]/a",
+      "pageElement": "//div[contains(@class,'mozaique')]/*",
+      "pageElementIframe": "import",
+      "url": "^https://www\\.xvideos\\.(com|red)",
+      "exampleUrl": "https://www.xvideos.com/new/2"
+    }
+  },
+  {
+    "name": "XVIDEOS Tab",
+    "created_by": "x",
+    "created_at": "2025-09-12T18:55:50+00:00",
+    "updated_at": "2025-09-12T18:55:50+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "a.no-page.next-page",
+      "pageElement": ".tab.active > div.mozaique > div.thumb-block",
+      "url": "^https://www\\.xvideos\\.com/.*(tabVideos|tabRed)",
+      "exampleUrl": "https://www.xvideos.com/models/skye-young2#_tabVideos"
+    }
   }
 ]
