@@ -589,7 +589,7 @@
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//li[./a[@class=\"active\"]]/following-sibling::li[1]/a",
+      "nextLink": "//li[./a[@class='active']]/following-sibling::li[1]/a | //div[contains(@class,'pagination')]/a[@class='current']/following-sibling::a",
       "pageElement": "//div[contains(@class,'mozaique')]/*",
       "pageElementIframe": "import",
       "url": "^https://www\\.xvideos\\.(com|red)",
@@ -606,7 +606,7 @@
       "append": "ajax",
       "clickElement": "a.no-page.next-page",
       "pageElement": ".tab.active > div.mozaique > div.thumb-block",
-      "url": "^https://www\\.xvideos\\.com/.*(tabVideos|tabRed)",
+      "url": "^https://www\\.xvideos\\.(com|red)/.*(tabVideos|tabRed)",
       "exampleUrl": "https://www.xvideos.com/models/skye-young2#_tabVideos"
     }
   }
