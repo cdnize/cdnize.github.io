@@ -308,7 +308,7 @@
       "append": "ajax",
       "clickElement": ".css-1gpctw1",
       "pageElement": ".css-1gg9wg4",
-      "url": "^https://janitorai\\.com*",
+      "url": "^https://janitorai\\.com",
       "exampleUrl": "https://janitorai.com/search?mode=all"
     }
   },
