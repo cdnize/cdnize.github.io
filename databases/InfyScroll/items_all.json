@@ -190,7 +190,7 @@
       "append": "ajax",
       "clickElement": "div.pagination > button[aria-label='pagination next'], div.pagination > button[aria-label='pagination'][disabled] + button",
       "pageElement": "div.container > div > main > section > section > div > *",
-      "url": "^https://filecr\\.com/.*",
+      "url": "^https://filecr\\.com/",
       "exampleUrl": "https://filecr.com/ms-windows/"
     }
   },
