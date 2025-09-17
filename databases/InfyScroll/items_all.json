@@ -180,6 +180,21 @@
     }
   },
   {
+    "name": "FileCR",
+    "created_by": "FileCR",
+    "updated_by": "infy",
+    "created_at": "2025-09-17T19:05:33+00:00",
+    "updated_at": "2025-09-17T19:05:33+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.pagination > button[aria-label='pagination next'], div.pagination > button[aria-label='pagination'][disabled] + button",
+      "pageElement": "div.container > div > main > section > section > div > *",
+      "url": "^https://filecr\\.com/.*",
+      "exampleUrl": "https://filecr.com/ms-windows/"
+    }
+  },
+  {
     "name": "FSHARE.VN",
     "created_by": "infy",
     "created_at": "2023-12-24T03:49:21+09:00",
@@ -548,6 +563,21 @@
       "xurl": "<>^https://www\\.startpage\\.com/",
       "exampleUrl": "https://www.startpage.com/",
       "comment": "SPA Mirror Page Import Example. Important: Not for Startpage's Web due to high CPU usage, but Web (and Mobile Web) could be added by adding the following to the pageElement: |//section[contains(@class,'w-gl')]/*[not(self::h3)]|//div[contains(@class,'w-bg')]/*. Not for Images due to links not being clickable, but Images could be added by adding the following to the pageElement: |//div[contains(@class,'image-main-container')]"
+    }
+  },
+  {
+    "name": "Thingiverse",
+    "created_by": "FileCR",
+    "updated_by": "infy",
+    "created_at": "2025-09-17T19:24:52+00:00",
+    "updated_at": "2025-09-17T19:24:52+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.Pagination__pagination--yQeH6 > a[aria-label='Next page']",
+      "pageElement": "div.Layout__content--q0zji > div > div.ItemCardGrid__itemCardGrid--oBQiy",
+      "url": "^https://www\\.thingiverse\\.com/",
+      "exampleUrl": "https://www.thingiverse.com/?page=3"
     }
   },
   {
