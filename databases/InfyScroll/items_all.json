@@ -25,7 +25,7 @@
       "nextLink": "//ul[@class='a-pagination']/li[@class='a-last']/a",
       "pageElement": "//div[contains(@class, 'your-orders-content-container__content')]/*[contains(@class, 'order-card')]",
       "pageElementIframe": "trim",
-      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*(order-history|your-orders)",
+      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*(order-history|your-orders)",
       "exampleUrl": "https://www.amazon.com/gp/your-account/order-history",
       "comment": "https://discord.gg/Z63tmCx4q5"
     }
@@ -40,7 +40,7 @@
       "append": "ajax",
       "clickElement": "//ul[@class='a-pagination']/li[@class='a-last']/a",
       "pageElement": "id('cm_cr-review_list')/ul/*",
-      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
+      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
       "exampleUrl": "https://www.amazon.com/product-reviews/B0CPP2JGZY"
     }
   },
@@ -57,7 +57,7 @@
       "append": "element",
       "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
       "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']",
-      "url": "^https?://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
+      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
       "exampleUrl": "https://www.amazon.com/s?k=toys"
     }
   },
@@ -110,7 +110,7 @@
       "nextLink": "//a[contains(@class,\"sb_pagN\")]",
       "pageElement": "id(\"b_results\")/li[@class=\"b_algo\"]|id(\"results\")",
       "pageElementIframe": "import",
-      "url": "^https?://(?:www|cnweb)4?\\.bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
+      "url": "^https://(?:www|cnweb)4?\\.bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
       "exampleUrl": "https://www.bing.com/search?q=Edge",
       "comment": "Credit to: http://wedata.net/items/501\r\nSee: https://github.com/sixcious/infy-scroll/issues/92\r\n"
     }
@@ -126,7 +126,7 @@
       "nextLink": "//a[@class='next_page']",
       "pageElement": "//li[contains(@class, 'creator-id-')]|//div[@id='comment-list']/div[@class='post']|//table[@class='highlightable']",
       "style": ".javascript-hide { display: inline-block !important; }",
-      "url": "^https?://(konachan\\.com|yande\\.re|www\\.sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
+      "url": "^https://(konachan\\.com|yande\\.re|www\\.sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
       "exampleUrl": "https://yande.re/post https://yande.re/comment http://konachan.com/post http://konachan.com/comment https://www.sakugabooru.com/post https://www.sakugabooru.com/comment",
       "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645"
     }
@@ -174,7 +174,7 @@
       "append": "ajax",
       "clickElement": "//a[contains(@*,'next')]",
       "pageElement": "//div[@id='posts'] | //div[starts-with(@id,'a-')]/*[@class='striped' or (contains(@class,'post') and not(contains(@class,'posts'))) or self::section and count(@*)=0]",
-      "url": "^https?://danbooru\\.donmai\\.us",
+      "url": "^https://danbooru\\.donmai\\.us",
       "exampleUrl": "https://danbooru.donmai.us",
       "comment": "Email. Credit: http://wedata.net/items/81554"
     }
@@ -413,7 +413,7 @@
       "nextLink": "id('search_list_div')/div[@class='pages']/a[.='下一页']",
       "pageElement": "id('search_list_div')//div[contains(@class, 'tcaricature_block')]",
       "pageElementIframe": "import",
-      "url": "^https?://manhua\\.dmzj\\.com/",
+      "url": "^https://manhua\\.dmzj\\.com/",
       "exampleUrl": "http://manhua.dmzj.com/tags/category_search/0-3263-0-all-0-1-0-1.shtml#category_nav_anchor",
       "comment": "email"
     }
@@ -429,7 +429,7 @@
       "nextLink": "//a[@class='next']",
       "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
       "style": "html.reader #image-container.fit-both { height: auto !important; }",
-      "url": "^https?://nhentai\\.net/",
+      "url": "^https://nhentai\\.net/",
       "exampleUrl": "https://nhentai.net/g/446216/1/",
       "comment": "https://github.com/sixcious/infy-scroll/issues/85 Credit to: http://wedata.net/items/76720"
     }
@@ -563,6 +563,37 @@
       "xurl": "<>^https://www\\.startpage\\.com/",
       "exampleUrl": "https://www.startpage.com/",
       "comment": "SPA Mirror Page Import Example. Important: Not for Startpage's Web due to high CPU usage, but Web (and Mobile Web) could be added by adding the following to the pageElement: |//section[contains(@class,'w-gl')]/*[not(self::h3)]|//div[contains(@class,'w-bg')]/*. Not for Images due to links not being clickable, but Images could be added by adding the following to the pageElement: |//div[contains(@class,'image-main-container')]"
+    }
+  },
+  {
+    "name": "TBS NEWS DIG - Articles",
+    "created_by": "infy",
+    "created_at": "2025-09-22T03:20:58+00:00",
+    "updated_at": "2025-09-22T03:20:58+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[contains(concat(' ', normalize-space(@class), ' '), ' article-next ')]",
+      "pageElement": "//div[contains(concat(' ', normalize-space(@class), ' '), ' article-body ')]",
+      "style": ".lazy { opacity : 1 !important; }",
+      "url": "^https://newsdig\\.tbs\\.co\\.jp/articles/",
+      "exampleUrl": "https://newsdig.tbs.co.jp/articles/-/162617?display=1",
+      "comment": "Anonymous Database Contribution/Request. Originally created by brib2 (http://wedata.net/items/85922)"
+    }
+  },
+  {
+    "name": "TBS NEWS DIG - List",
+    "created_by": "infy",
+    "created_at": "2025-09-22T03:24:04+00:00",
+    "updated_at": "2025-09-22T03:24:04+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//ul/li[./a[@class='m-pagination-item__link is-active']]/following-sibling::li[1]/a",
+      "pageElement": "//main[@class='l-main']/div[contains(@class,'l-article')]/article",
+      "style": ".lazy { opacity: 1 !important; }",
+      "url": "^https://newsdig\\.tbs\\.co\\.jp/list/",
+      "exampleUrl": "https://newsdig.tbs.co.jp/list/latest"
     }
   },
   {
