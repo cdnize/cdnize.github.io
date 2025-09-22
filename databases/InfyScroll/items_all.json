@@ -74,7 +74,7 @@
       "append": "ajax",
       "clickElement": "#vvp-items-grid-container > div.a-text-center > ul.a-pagination > li.a-last > a",
       "pageElement": "#vvp-items-grid",
-      "url": "^https://www\\.amazon\\.com/vine/vine-items\\?queue=encore",
+      "url": "^https://(www\\.)?amazon\\.com/vine/vine-items\\?queue=encore",
       "exampleUrl": "https://www.amazon.com/vine/vine-items?queue=encore&pn=2335752011&cn=&page=37",
       "comment": "The set in autopagerize database didn't work for me even when I localized it to the US, so I used the ajax method. Incremental URL worked as well, but figured it wouldnt hurt to have multiple methods. It's a completly different experience not being confinded to the 46 -50 it loads by default. I'm working on a method using infyscroll to automate pulling the entire inventory and building a database on it the items and do my own custom sorting, filtering, and alerts. The discords, bots, and userscripts that already exist are good too, but again, Having another independent method to get to the same end is never a negative in my book.Hopefully I labeled everything in the right place. is there a way to automate importing saves to here i missed?"
     }
@@ -126,7 +126,7 @@
       "nextLink": "//a[@class='next_page']",
       "pageElement": "//li[contains(@class, 'creator-id-')]|//div[@id='comment-list']/div[@class='post']|//table[@class='highlightable']",
       "style": ".javascript-hide { display: inline-block !important; }",
-      "url": "^https://(konachan\\.com|yande\\.re|www\\.sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
+      "url": "^https://(konachan\\.com|yande\\.re|(www\\.)?sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
       "exampleUrl": "https://yande.re/post https://yande.re/comment http://konachan.com/post http://konachan.com/comment https://www.sakugabooru.com/post https://www.sakugabooru.com/comment",
       "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645"
     }
@@ -339,7 +339,7 @@
       "append": "ajax",
       "clickElement": "//button[@class='v-pagination__navigation'][@aria-label='Next page']",
       "pageElement": "//table[@class='tableContentTable']/tbody",
-      "url": "^https://(www)?\\.lcsc\\.com/.*/\\d+",
+      "url": "^https://(www\\.)?lcsc\\.com/.*/\\d+",
       "exampleUrl": "https://www.lcsc.com/category/11068.html",
       "comment": "https://discord.gg/Z63tmCx4q5"
     }
@@ -413,9 +413,9 @@
       "nextLink": "id('search_list_div')/div[@class='pages']/a[.='下一页']",
       "pageElement": "id('search_list_div')//div[contains(@class, 'tcaricature_block')]",
       "pageElementIframe": "import",
-      "url": "^https://manhua\\.dmzj\\.com/",
+      "url": "^https?://manhua\\.dmzj\\.com/",
       "exampleUrl": "http://manhua.dmzj.com/tags/category_search/0-3263-0-all-0-1-0-1.shtml#category_nav_anchor",
-      "comment": "email"
+      "comment": "Email. May be http or insecure"
     }
   },
   {
