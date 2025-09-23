@@ -256,6 +256,7 @@
       "append": "ajax",
       "clickElement": "//nav[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
       "pageElement": "//ul[@data-listview-component='items-list']/*",
+      "scrollUpdateAddress": "false",
       "xf": "true",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:issues)",
       "exampleUrl": "https://github.com/actions/toolkit/issues"
