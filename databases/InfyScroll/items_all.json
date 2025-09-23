@@ -590,7 +590,7 @@
       "action": "next",
       "append": "element",
       "nextLink": "//ul/li[./a[@class='m-pagination-item__link is-active']]/following-sibling::li[1]/a",
-      "pageElement": "//main[@class='l-main']/div[contains(@class,'l-article')]/article",
+      "pageElement": "//main/div/article",
       "style": ".lazy { opacity: 1 !important; }",
       "url": "^https://newsdig\\.tbs\\.co\\.jp/list/",
       "exampleUrl": "https://newsdig.tbs.co.jp/list/latest"
