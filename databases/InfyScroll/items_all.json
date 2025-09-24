@@ -322,10 +322,11 @@
       "action": "click",
       "append": "ajax",
       "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')]",
-      "pageElement": "id('srchrslt-adtable')/*",
+      "pageElement": "id('srchrslt-adtable')/* | id('srp-results')/*",
       "xf": "true",
       "url": "<xf>^https://www\\.kleinanzeigen\\.de/",
-      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
+      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0",
+      "comment": "The pageElement covers both desktop and mobile"
     }
   },
   {
