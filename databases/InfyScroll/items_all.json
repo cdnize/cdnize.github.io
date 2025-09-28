@@ -483,6 +483,7 @@
       "append": "ajax",
       "clickElement": "button.next-epi-btn",
       "pageElement": "#book-box > *",
+      "initDelay": "3000",
       "spa": "^https://global\\.novelpia\\.com",
       "url": "^https://global\\.novelpia\\.com/viewer/",
       "exampleUrl": "https://global.novelpia.com/viewer/31327",
