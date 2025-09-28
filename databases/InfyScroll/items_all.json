@@ -467,6 +467,7 @@
       "append": "ajax",
       "clickElement": "div.pagination > button.page-btn.current + button:not(.arrow)",
       "pageElement": "#container > div.novel-list > div.nv-list-wrapper > *, #container > div.chapter-list div.list-item-wrapper > div.list-item",
+      "spa": "^https://global\\.novelpia\\.com",
       "url": "^https://global\\.novelpia\\.com/novel(/|s)",
       "exampleUrl": "https://global.novelpia.com/novel/66",
       "comment": "https://github.com/sixcious/infy-scroll/issues/117"
@@ -482,6 +483,7 @@
       "append": "ajax",
       "clickElement": "button.next-epi-btn",
       "pageElement": "#book-box > div",
+      "spa": "^https://global\\.novelpia\\.com",
       "url": "^https://global\\.novelpia\\.com/viewer/",
       "exampleUrl": "https://global.novelpia.com/viewer/31327",
       "comment": "https://github.com/sixcious/infy-scroll/issues/117"
