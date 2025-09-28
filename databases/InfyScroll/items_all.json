@@ -458,6 +458,36 @@
     }
   },
   {
+    "name": "Novelpia Novel",
+    "created_by": "infy",
+    "created_at": "2025-09-28T05:54:02+00:00",
+    "updated_at": "2025-09-28T05:54:02+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.pagination > button.page-btn.current + button:not(.arrow)",
+      "pageElement": "#container > div.novel-list > div.nv-list-wrapper > *, #container > div.chapter-list div.list-item-wrapper > div.list-item",
+      "url": "^https://global\\.novelpia\\.com/novel(/|s)",
+      "exampleUrl": "https://global.novelpia.com/novel/66",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/117"
+    }
+  },
+  {
+    "name": "Novelpia Viewer",
+    "created_by": "infy",
+    "created_at": "2025-09-28T05:57:13+00:00",
+    "updated_at": "2025-09-28T05:57:13+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "button.next-epi-btn",
+      "pageElement": "#book-box > div",
+      "url": "^https://global\\.novelpia\\.com/viewer/",
+      "exampleUrl": "https://global.novelpia.com/viewer/31327",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/117"
+    }
+  },
+  {
     "name": "Orion Public Issue Tracker",
     "created_by": "infy",
     "created_at": "2024-05-06T13:45:07+09:00",
