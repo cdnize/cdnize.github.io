@@ -563,6 +563,23 @@
     }
   },
   {
+    "name": "Posfie",
+    "created_by": "htsign",
+    "updated_by": "infy",
+    "created_at": "2025-10-05T02:57:55+00:00",
+    "updated_at": "2025-10-05T02:57:55+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//*[contains(@class,'nav-previous')][not(contains(@class,'pull'))]/a|//*[contains(@class,'current')][number()>0]/following-sibling::a[1]|(//li|//span|//div)[(.//*|.)[contains(@class,'current')]][number()>0]/following-sibling::*[self::li or self::span or self::div][1]/a[not(starts-with(@href, '#'))]",
+      "pageElement": "//main/div[contains(@class, 'contents_main')]/div[contains(@class, 'user_show_posts_box')] | //article/section[contains(concat(' ', @class, ' '), 'entry_main')]",
+      "loadElement": "//img[contains(@class,'lazy')][not(@data-ll-status='loaded')] | //img[contains(@class,'lzpk')][not(@data-ll-status='loaded')]",
+      "url": "^https://posfie\\.com",
+      "exampleUrl": "https://posfie.com/@mumimushunyu/p/fwxsRA6",
+      "comment": "Database Contribution updated to support lazily loaded images and the front page"
+    }
+  },
+  {
     "name": "Presearch",
     "created_by": "infy",
     "created_at": "2023-05-05T01:27:51+09:00",
@@ -600,7 +617,7 @@
     }
   },
   {
-    "name": "TBS NEWS DIG - Articles",
+    "name": "TBS NEWS DIG Articles",
     "created_by": "infy",
     "created_at": "2025-09-22T03:20:58+00:00",
     "updated_at": "2025-09-22T03:20:58+00:00",
@@ -616,7 +633,7 @@
     }
   },
   {
-    "name": "TBS NEWS DIG - List",
+    "name": "TBS NEWS DIG List",
     "created_by": "infy",
     "created_at": "2025-09-22T03:24:04+00:00",
     "updated_at": "2025-09-22T03:24:04+00:00",
