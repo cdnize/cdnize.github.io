@@ -40,7 +40,7 @@
       "append": "ajax",
       "clickElement": "//ul[@class='a-pagination']/li[@class='a-last']/a",
       "pageElement": "id('cm_cr-review_list')/ul/*",
-      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
+      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*[review]?",
       "exampleUrl": "https://www.amazon.com/product-reviews/B0CPP2JGZY"
     }
   },
@@ -206,7 +206,7 @@
       "append": "element",
       "clickElement": "//button[@class='mdc-button mdc-button--raised button-load ng-binding'][not(contains(@class, 'ng-hide'))]",
       "pageElement": "//div[@class='list mdc-detail-list down-folder']/*",
-      "url": "^https://www\\.fshare\\.vn/folder",
+      "url": "^https://(www\\.)?fshare\\.vn/folder",
       "exampleUrl": "https://www.fshare.vn/folder/H7DXADP8PMOA",
       "comment": "https://github.com/sixcious/infy-scroll/issues/78"
     }
@@ -324,7 +324,7 @@
       "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')] | id('paging-next')",
       "pageElement": "id('srchrslt-adtable')/* | id('srp-results')/*",
       "xf": "true",
-      "url": "<xf>^https://www\\.kleinanzeigen\\.de/",
+      "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/",
       "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0",
       "comment": "The clickElement and pageElement cover both desktop | mobile"
     }
@@ -359,7 +359,7 @@
       "nextLink": "//a[@data-spark-component='pagination-next-trigger']",
       "pageElement": "//div[@class='mb-lg']/*",
       "pageElementIframe": "import",
-      "url": "^https://www\\.leboncoin\\.fr/recherche",
+      "url": "^https://(www\\.)?leboncoin\\.fr/recherche",
       "exampleUrl": "https://www.leboncoin.fr/recherche?text=enfant&locations=r_19&page=6",
       "comment": "https://github.com/sixcious/infy-scroll/issues/60"
     }
@@ -376,8 +376,8 @@
       "append": "ajax",
       "clickElement": "//button[@aria-label='Next'][contains(.,'Next')]",
       "pageElement": "//div[@class='search-results-container']",
-      "spa": "^https://www\\.linkedin\\.com/search/results",
-      "xurl": "<>^https://www\\.linkedin\\.com/search/results/",
+      "spa": "^https://(www\\.)?linkedin\\.com/search/results",
+      "xurl": "<>^https://(www\\.)?linkedin\\.com/search/results/",
       "exampleUrl": "https://www.linkedin.com/search/results/people/?keywords=informatique&origin=SWITCH_SEARCH_VERTICAL&sid=Fpy",
       "comment": "https://github.com/sixcious/infy-scroll/issues/52"
     }
@@ -451,8 +451,8 @@
       "pageElement": "//div[@class='tt-c-reviews-list__content']/*",
       "puppet": "await page.click(\"#pdp-info-accordions__reviews-accordion > summary\");\r\nawait page.click(\"button[data-testid='more-reviews-button']\");",
       "mirrorPage": "puppet",
-      "spa": "<>^https://www\\.nike\\.com/t/",
-      "xurl": "<>^https://www\\.nike\\.com/t/",
+      "spa": "<>^https://(www\\.)?nike\\.com/t/",
+      "xurl": "<>^https://(www\\.)?nike\\.com/t/",
       "exampleUrl": "https://www.nike.com/t/p-6000-shoes-XkgpKW/CD6404-403",
       "comment": "SPA Mirror Page Puppeteer Example"
     }
@@ -521,8 +521,8 @@
       "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
       "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul | //section/div/div/div/div/ul | /html/body/div/div/div/div/div/div/div/div/div/div[3]/div/ul",
       "loadElement": "//div/ul//figure",
-      "spaf": "^https://www\\.pixiv\\.net/",
-      "url": "^https://www\\.pixiv\\.net/",
+      "spaf": "^https://(www\\.)?pixiv\\.net/",
+      "url": "^https://(www\\.)?pixiv\\.net/",
       "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
     }
   },
@@ -540,8 +540,8 @@
       "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
       "pageElement": "html[@lang='ja']//ul[@class='sc-l7cibp-1 krFoBL']/*|html[not(@lang='ja')]//div[@class='sc-l7cibp-0 juyBTC']/*",
       "removeElement": "//li[@class='sc-l7cibp-2 gpVAva'][not(.//div[@type='illust'])]|//div[@class='sc-1rgyha8-0 leTtkh']|(//*[@class='sc-l7cibp-3 gCRmsl'])[position()<last()]",
-      "spaf": "<>^https://www\\.pixiv\\.net/",
-      "url": "<>^https://www\\.pixiv\\.net/",
+      "spaf": "<>^https://(www\\.)?pixiv\\.net/",
+      "url": "<>^https://(www\\.)?pixiv\\.net/",
       "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
     }
   },
@@ -557,8 +557,8 @@
       "append": "ajax",
       "clickElement": "//div[@class='pager']/a[contains(@class, 'next')][./div[@class='arrow']]",
       "pageElement": "//div[contains(@class,'works-grid-list')]",
-      "spaf": "^https://www\\.pixiv\\.net/",
-      "url": "^https://www\\.pixiv\\.net/",
+      "spaf": "^https://(www\\.)?pixiv\\.net/",
+      "url": "^https://(www\\.)?pixiv\\.net/[mobile]?",
       "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
     }
   },
@@ -571,12 +571,12 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "//*[contains(@class,'nav-previous')][not(contains(@class,'pull'))]/a|//*[contains(@class,'current')][number()>0]/following-sibling::a[1]|(//li|//span|//div)[(.//*|.)[contains(@class,'current')]][number()>0]/following-sibling::*[self::li or self::span or self::div][1]/a[not(starts-with(@href, '#'))]",
+      "clickElement": "//*[contains(@class,'nav-previous')][not(contains(@class,'pull'))]/a|//*[contains(@class,'current')][number()>0]/following-sibling::a[1]|(//li|//span|//div)[(.//*|.)[contains(@class,'current')]][number()>0]/following-sibling::*[self::li or self::span or self::div][1]/a[not(starts-with(@href, '#'))] | //div[@class='pager']/a[@class='page'][@rel='next']",
       "pageElement": "//main/div[contains(@class, 'contents_main')]/div[contains(@class, 'user_show_posts_box')] | //article/section[contains(concat(' ', @class, ' '), 'entry_main')]",
       "loadElement": "//img[contains(@class,'lazy')][not(@data-ll-status='loaded')] | //img[contains(@class,'lzpk')][not(@data-ll-status='loaded')]",
       "url": "^https://posfie\\.com",
       "exampleUrl": "https://posfie.com/@mumimushunyu/p/fwxsRA6",
-      "comment": "Database Contribution updated to support lazily loaded images and the front page"
+      "comment": "Database Contribution updated by infy to support lazily loaded images, the front page, and the mobile version of the site"
     }
   },
   {
@@ -611,7 +611,7 @@
       "pageElement": "id('main')/div",
       "loadElement": "//img[contains(@class,'css-1tth2jd')]|//img[contains(@class,'css-k35lnn')]",
       "mirrorPage": "import",
-      "xurl": "<>^https://www\\.startpage\\.com/",
+      "xurl": "<>^https://(www\\.)?startpage\\.com/",
       "exampleUrl": "https://www.startpage.com/",
       "comment": "SPA Mirror Page Import Example. Important: Not for Startpage's Web due to high CPU usage, but Web (and Mobile Web) could be added by adding the following to the pageElement: |//section[contains(@class,'w-gl')]/*[not(self::h3)]|//div[contains(@class,'w-bg')]/*. Not for Images due to links not being clickable, but Images could be added by adding the following to the pageElement: |//div[contains(@class,'image-main-container')]"
     }
@@ -658,7 +658,7 @@
       "append": "ajax",
       "clickElement": "div.Pagination__pagination--yQeH6 > a[aria-label='Next page']",
       "pageElement": "div.Layout__content--q0zji > div > div.ItemCardGrid__itemCardGrid--oBQiy",
-      "url": "^https://www\\.thingiverse\\.com/",
+      "url": "^https://(www\\.)?thingiverse\\.com/",
       "exampleUrl": "https://www.thingiverse.com/?page=3"
     }
   },
@@ -688,7 +688,7 @@
       "append": "ajax",
       "clickElement": "//nav[@aria-label='pagination']//a[@data-testid='NextPage']",
       "pageElement": "//section/div[@data-testid='item-stack']/div[not(.//div[.='Sponsored'])]|//main/section/div/section/div[.//div[@data-testid='enhanced-review-section']]",
-      "url": "^https://www\\.walmart\\.com/",
+      "url": "^https://(www\\.)?walmart\\.com/",
       "exampleUrl": "https://www.walmart.com/search?q=toys https://www.walmart.com/reviews/product/724919200",
       "comment": "Walmart search and reviews"
     }
@@ -704,7 +704,7 @@
       "nextLink": "//li[./a[@class='active']]/following-sibling::li[1]/a | //div[contains(@class,'pagination')]/a[@class='current']/following-sibling::a",
       "pageElement": "//div[contains(@class,'mozaique')]/*",
       "pageElementIframe": "import",
-      "url": "^https://www\\.xvideos\\.(com|red)",
+      "url": "^https://(www\\.)?xvideos\\.(com|red)",
       "exampleUrl": "https://www.xvideos.com/new/2"
     }
   },
@@ -718,7 +718,7 @@
       "append": "ajax",
       "clickElement": "a.no-page.next-page",
       "pageElement": ".tab.active > div.mozaique > div.thumb-block",
-      "url": "^https://www\\.xvideos\\.(com|red)/.*(tabVideos|tabRed)",
+      "url": "^https://(www\\.)?xvideos\\.(com|red)/.*(tabVideos|tabRed)",
       "exampleUrl": "https://www.xvideos.com/models/skye-young2#_tabVideos"
     }
   }
