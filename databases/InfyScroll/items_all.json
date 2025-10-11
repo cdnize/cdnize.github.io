@@ -132,6 +132,19 @@
     }
   },
   {
+    "name": "Chrome Web Store Reviews",
+    "created_by": "x",
+    "created_at": "2025-10-07T17:13:25+00:00",
+    "updated_at": "2025-10-07T17:13:25+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "body > c-wiz > div > div > main > div > div > div > button",
+      "url": "^https://chromewebstore\\.google\\.com/detail/.*/.*/reviews",
+      "exampleUrl": "https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb/reviews"
+    }
+  },
+  {
     "name": "Coomer.st",
     "created_by": "infy",
     "created_at": "2025-08-08T00:00:00+00:00",
@@ -483,10 +496,11 @@
       "append": "ajax",
       "clickElement": "button.next-epi-btn",
       "pageElement": "#book-box > *",
+      "initDelay": "2000",
       "spa": "^https://global\\.novelpia\\.com",
       "url": "^https://global\\.novelpia\\.com/viewer/",
       "exampleUrl": "https://global.novelpia.com/viewer/31327",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/117"
+      "comment": "https://github.com/sixcious/infy-scroll/issues/117 initDelay for Page 2 divider"
     }
   },
   {
