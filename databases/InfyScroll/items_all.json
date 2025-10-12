@@ -533,7 +533,7 @@
       "action": "click",
       "append": "ajax",
       "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
-      "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul | //section/div/div/div/div/ul | /html/body/div/div/div/div/div/div/div/div/div/div[3]/div/ul",
+      "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul | //section/div/div/div/div/ul | //section/div/div/div/div/div/ul | /html/body/div/div/div/div/div/div/div/div/div/div[3]/div/ul",
       "loadElement": "//div/ul//figure",
       "spaf": "^https://(www\\.)?pixiv\\.net/",
       "url": "^https://(www\\.)?pixiv\\.net/",
