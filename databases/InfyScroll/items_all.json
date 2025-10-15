@@ -255,24 +255,38 @@
       "clickElement": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
       "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
       "xf": "true",
-      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:commits)",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/commits",
       "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
     }
   },
   {
-    "name": "GitHub Issues",
+    "name": "GitHub Issues and Orgs",
     "created_by": "infy",
     "created_at": "2025-08-01T00:00:00+00:00",
     "updated_at": "2025-08-01T00:00:00+00:00",
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "//nav[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
-      "pageElement": "//ul[@data-listview-component='items-list']/*",
+      "clickElement": "//*[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
+      "pageElement": "//ul[@data-listview-component='items-list']/* | id('org-packages')/div | id('org-members-table')/ul",
       "scrollUpdateAddress": "false",
       "xf": "true",
-      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(?:issues)",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(issues|repositories|packages|people)",
       "exampleUrl": "https://github.com/actions/toolkit/issues"
+    }
+  },
+  {
+    "name": "GitHub Projects",
+    "created_by": "infy",
+    "created_at": "2025-10-15T19:22:35+00:00",
+    "updated_at": "2025-10-15T19:22:35+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "//button[@data-test-selector='project-load-more-button']",
+      "pageElement": "id('memexes-results')//ul",
+      "url": "^https://github\\.com/[^/]+/[^/]+/projects",
+      "exampleUrl": "https://github.com/orgs/microsoft/projects"
     }
   },
   {
