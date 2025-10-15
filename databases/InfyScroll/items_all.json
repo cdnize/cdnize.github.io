@@ -284,7 +284,7 @@
       "action": "click",
       "append": "element",
       "clickElement": "//button[@data-test-selector='project-load-more-button']",
-      "pageElement": "id('memexes-results')//ul",
+      "pageElement": "id('memexes-results')/div[contains(@class,'Box')]/ul",
       "url": "^https://github\\.com/[^/]+/[^/]+/projects",
       "exampleUrl": "https://github.com/orgs/microsoft/projects"
     }
