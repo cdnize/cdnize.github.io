@@ -597,11 +597,11 @@
     "created_at": "2025-10-05T02:57:55+00:00",
     "updated_at": "2025-10-05T02:57:55+00:00",
     "data": {
-      "action": "click",
-      "append": "ajax",
-      "clickElement": "//*[contains(@class,'nav-previous')][not(contains(@class,'pull'))]/a|//*[contains(@class,'current')][number()>0]/following-sibling::a[1]|(//li|//span|//div)[(.//*|.)[contains(@class,'current')]][number()>0]/following-sibling::*[self::li or self::span or self::div][1]/a[not(starts-with(@href, '#'))] | //div[@class='pager']/a[@class='page'][@rel='next']",
+      "action": "next",
+      "append": "element",
+      "nextLink": "//*[contains(@class,'nav-previous')][not(contains(@class,'pull'))]/a|//*[contains(@class,'current')][number()>0]/following-sibling::a[1]|(//li|//span|//div)[(.//*|.)[contains(@class,'current')]][number()>0]/following-sibling::*[self::li or self::span or self::div][1]/a[not(starts-with(@href, '#'))] | //div[@class='pager']/a[@class='page'][@rel='next']",
       "pageElement": "//main/div[contains(@class, 'contents_main')]/div[contains(@class, 'user_show_posts_box')] | //article/section[contains(concat(' ', @class, ' '), 'entry_main')]",
-      "loadElement": "//img[contains(@class,'lazy')][not(@data-ll-status='loaded')] | //img[contains(@class,'lzpk')][not(@data-ll-status='loaded')]",
+      "pageElementIframe": "import",
       "url": "^https://posfie\\.com",
       "exampleUrl": "https://posfie.com/@mumimushunyu/p/fwxsRA6",
       "comment": "Database Contribution updated by infy to support lazily loaded images, the front page, and the mobile version of the site"
