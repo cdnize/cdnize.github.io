@@ -364,8 +364,8 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "ul.nav > li:not(.disabled) > #nextPanel",
-      "pageElement": "#comicImages > *",
+      "clickElement": "div.navbar:not(.hidden) ul > li:not(.disabled) > #nextPanel, div.mobile-navbar:not(.hidden) ul > li > a#mobile-nextPanel > img.arrow_active:not(.hidden)",
+      "pageElement": "#comicImages:not(.hidden) > *, #mobileImages:not(.hidden) > *",
       "url": "^https://hitomi\\.la/reader/",
       "exampleUrl": "https://hitomi.la/reader/3318905.html",
       "comment": "Updated by infy to use a safe example URL"
