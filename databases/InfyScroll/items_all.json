@@ -8,10 +8,27 @@
       "action": "next",
       "append": "element",
       "nextLink": "//div[@class='pagination']/ul/li[@class='active']/following-sibling::li/a",
-      "pageElement": "//div[@class='table-list-wrap']/table[contains(@class,'table-list')]/tbody/*",
+      "pageElement": "//div[@class='table-list-wrap']/table[contains(@class,'table-list')]/tbody/* | //div[@class='library-box']/ul/*",
       "style": ".table-list td.coll-1.name { padding-right: 70px !important; }",
       "url": "^https://x?1337x\\.(to|st|ws|eu|se|cc)/",
       "exampleUrl": "https://1337x.to/search/qxr/1/"
+    }
+  },
+  {
+    "name": "1337x Comments",
+    "created_by": "infy",
+    "created_at": "2025-09-12T19:49:10+00:00",
+    "updated_at": "2025-09-12T19:49:10+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "id('Pagination')/a[@class='next']",
+      "pageElement": "id('comment')/*",
+      "iframeSandbox": "*disallow-top-navigation*",
+      "xf": "true",
+      "url": "<xf>^https://x?1337x\\.(to|st|ws|eu|se|cc)/torrent/.*/",
+      "exampleUrl": "https://1337x.to/",
+      "comment": "Added for completeness. Full example URL omitted intentionally"
     }
   },
   {
