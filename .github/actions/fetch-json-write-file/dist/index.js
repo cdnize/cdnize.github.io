@@ -8542,7 +8542,8 @@ const fs = __nccwpck_require__(7147);
       const response = await node_fetch__WEBPACK_IMPORTED_MODULE_0___default()(url);
       const json = await response.json();
       const filter = database === "ap" ? json.filter(d => d.data && d.data.url && d.data.nextLink && d.data.pageElement) : json.filter(d => d.data && d.data.url);
-      if (filter && filter.length > 0) {
+      // TODO: 3824 items was the last count of items on August 31 2024, set back to 0 when site is back
+      if (filter && filter.length > 3824) {
         const file = core.getInput(database + "-file");
         const text = JSON.stringify(json, null, "  ");
         // This output isn't really needed anymore as we are writing the file inside this script, but just for future reference:
@@ -8562,7 +8563,8 @@ const fs = __nccwpck_require__(7147);
 
   // Perform the actions for each database in successive order (await each fetch request just to be safe?)
   await action("ap");
-  // (TODO: Temporarily commenting this out) await action("is");
+  // TODO: Temporarily commenting this out
+  // await action("is");
 
 })();
 })();
