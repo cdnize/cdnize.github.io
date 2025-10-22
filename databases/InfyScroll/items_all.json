@@ -8,10 +8,11 @@
       "action": "next",
       "append": "element",
       "nextLink": "//div[@class='pagination']/ul/li[@class='active']/following-sibling::li/a",
-      "pageElement": "//div[@class='table-list-wrap']/table[contains(@class,'table-list')]/tbody/* | //div[@class='library-box']/ul/*",
+      "pageElement": "//div[@class='table-list-wrap']/table[contains(@class,'table-list')]/tbody/*",
       "style": ".table-list td.coll-1.name { padding-right: 70px !important; }",
       "url": "^https://x?1337x\\.(to|st|ws|eu|se|cc)/",
-      "exampleUrl": "https://1337x.to/search/qxr/1/"
+      "exampleUrl": "https://1337x.to/search/qxr/1/",
+      "comment": "Add | //div[@class='library-box']/ul/* to the pageElement for the movie library page, but you will need to click on the page divider links"
     }
   },
   {
