@@ -708,7 +708,7 @@
     }
   },
   {
-    "name": "Slickdeals Comments/Threads/Search",
+    "name": "Slickdeals Comments/Threads/Search/Deals",
     "created_by": "infy",
     "created_at": "2025-10-23T23:32:47+00:00",
     "updated_at": "2025-10-23T23:32:47+00:00",
@@ -716,13 +716,13 @@
       "action": "next",
       "append": "element",
       "nextLink": "div.pagenav_box > a.search_pagenav.search_pagenav_current + a",
-      "pageElement": "#comment_list > *, #posts > *, #results_table > tbody > *",
-      "url": "^https://slickdeals\\.net/(f|newsearch)",
+      "pageElement": "#comment_list > *, #posts > *, #results_table > tbody > *, #hottopic_threadbits > *",
+      "url": "^https://slickdeals\\.net/",
       "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h?v=1"
     }
   },
   {
-    "name": "Slickdeals Deals",
+    "name": "Slickdeals Deals (AJAX)",
     "created_by": "infy",
     "created_at": "2025-10-23T23:32:48+00:00",
     "updated_at": "2025-10-23T23:32:48+00:00",
