@@ -1,5 +1,9 @@
 [
   {
+    "name": "!",
+    "databaseExcludeUrls": ["^https://danbooru\\.donmai\\.us/posts/\\d+","^https://yandex\\.com/search"]
+  },
+  {
     "name": "1337x",
     "created_by": "x",
     "created_at": "2025-09-11T04:51:15+00:00",
@@ -691,6 +695,48 @@
     }
   },
   {
+    "name": "Qwant",
+    "created_by": "infy",
+    "created_at": "2025-10-23T18:35:20+00:00",
+    "updated_at": "2025-10-23T18:35:20+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "//button[@data-testid='buttonShowMore']",
+      "url": "^https://(www\\.)?qwant\\.com/\\?",
+      "exampleUrl": "https://www.qwant.com/?q=infinity&t=web"
+    }
+  },
+  {
+    "name": "Slickdeals Comments/Threads/Search",
+    "created_by": "infy",
+    "created_at": "2025-10-23T23:32:47+00:00",
+    "updated_at": "2025-10-23T23:32:47+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.pagenav_box > a.search_pagenav.search_pagenav_current + a",
+      "pageElement": "#comment_list > *, #posts > *, #results_table > tbody > *",
+      "url": "^https://slickdeals\\.net/(f|newsearch)",
+      "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h?v=1"
+    }
+  },
+  {
+    "name": "Slickdeals Deals",
+    "created_by": "infy",
+    "created_at": "2025-10-23T23:32:48+00:00",
+    "updated_at": "2025-10-23T23:32:48+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.bp-c-pagination > div:not(.bp-c-pagination_ends--disabled) > button[aria-label='next']",
+      "pageElement": "ul.bp-p-filterGrid_items",
+      "loadElement": "img[data-lazy-src]",
+      "url": "^https://slickdeals\\.net/[^/]+/",
+      "exampleUrl": "https://slickdeals.net/tv-deals/"
+    }
+  },
+  {
     "name": "Startpage",
     "created_by": "infy",
     "created_at": "2023-06-08T03:57:23+09:00",
@@ -828,6 +874,34 @@
       "pageElement": ".tab.active > div.mozaique > div.thumb-block",
       "url": "^https://(www\\.)?xvideos\\.(com|red)/.*(tabVideos|tabRed)",
       "exampleUrl": "https://www.xvideos.com/models/skye-young2#_tabVideos"
+    }
+  },
+  {
+    "name": "Yandex",
+    "created_by": "infy",
+    "created_at": "2025-08-23T18:45:31+00:00",
+    "updated_at": "2025-08-23T18:45:31+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.Pager-Content > div.Pager-ListItem_type_next > a.Pager-Item_type_next",
+      "pageElement": "#search-result > *",
+      "pageElementIframe": "import",
+      "url": "^https://yandex\\.com/search",
+      "exampleUrl": "https://yandex.com/search?text=infinity"
+    }
+  },
+  {
+    "name": "Yandex Mobile/Videos",
+    "created_by": "infy",
+    "created_at": "2025-08-23T18:57:07+00:00",
+    "updated_at": "2025-08-23T18:57:07+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "button.Pager-More, button.NextPageButton",
+      "exampleUrl": "https://yandex.com/video/touch/search?text=hello",
+      "url": "^https://yandex\\.com/(video(/touch)?/)?search"
     }
   }
 ]
