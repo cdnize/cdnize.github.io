@@ -347,6 +347,20 @@
     }
   },
   {
+    "name": "Google Search Mobile (Click)",
+    "created_by": "infy",
+    "created_at": "2020-08-01T00:00:00+00:00",
+    "updated_at": "2020-08-01T00:00:00+00:00",
+    "data": {
+      "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/search",
+      "action": "click",
+      "append": "element",
+      "clickElement": "#botstuff div[jsaction] > a[jsaction][data-ve-view][role='button']:not([aria-hidden='true'])",
+      "pageElement": "div[data-async-context*='query'] > *",
+      "exampleUrl": "https://www.google.com/search?q=hello"
+    }
+  },
+  {
     "name": "Hitomi",
     "created_by": "infy",
     "created_at": "2025-10-19T12:47:13+00:00",
@@ -729,7 +743,7 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "div.bp-c-pagination > div:not(.bp-c-pagination_ends--disabled) > button[aria-label='next']",
+      "clickElement": "div.bp-c-pagination > div:not(.bp-c-pagination_ends--disabled) > button[data-page='next']",
       "pageElement": "ul.bp-p-filterGrid_items",
       "loadElement": "img[data-lazy-src]",
       "url": "^https://slickdeals\\.net/[^/]+/",
