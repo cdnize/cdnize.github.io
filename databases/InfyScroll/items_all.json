@@ -215,6 +215,20 @@
     }
   },
   {
+    "name": "DeviantArt",
+    "created_by": "infy",
+    "created_at": "2025-10-25T04:11:13+00:00",
+    "updated_at": "2025-10-25T04:11:13+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.Ams6gx > div > *",
+      "url": "^https://www\\.deviantart\\.com/",
+      "exampleUrl": "https://www.deviantart.com/search?q=joyfool"
+    }
+  },
+  {
     "name": "FileCR",
     "created_by": "FileCR",
     "updated_by": "infy",
@@ -687,7 +701,7 @@
       "pageElementIframe": "import",
       "url": "^https://posfie\\.com",
       "exampleUrl": "https://posfie.com/@mumimushunyu/p/fwxsRA6",
-      "comment": "Database Contribution updated by infy to support lazily loaded images, the front page, and the mobile version of the site"
+      "comment": "Updated by infy to support lazily loaded images, the front page, and the mobile version of the site"
     }
   },
   {
@@ -782,7 +796,7 @@
       "style": ".lazy { opacity : 1 !important; }",
       "url": "^https://newsdig\\.tbs\\.co\\.jp/articles/",
       "exampleUrl": "https://newsdig.tbs.co.jp/articles/-/162617?display=1",
-      "comment": "Anonymous Database Contribution/Request. Originally created by brib2 (http://wedata.net/items/85922)"
+      "comment": "Anonymous Database Contribution fulfilled by infy. Originally created by brib2 (http://wedata.net/items/85922)"
     }
   },
   {
@@ -843,7 +857,7 @@
       "style": ".photos-list img { opacity: 1 !important }",
       "url": "^https://(www\\.)?v2ph.com/album/",
       "exampleUrl": "https://www.v2ph.com/album/YTY-9146",
-      "comment": "Database Contribution (Requires Authentication)"
+      "comment": "Anonymous Database Contribution (Requires Authentication)"
     }
   },
   {
