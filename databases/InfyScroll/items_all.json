@@ -369,9 +369,8 @@
       "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/search",
       "action": "click",
       "append": "element",
-      "clickElement": "#botstuff div[jsaction] > a[jsaction][data-ve-view][role='button']:not([style*='display: none']):not([style*='display:none'])",
+      "clickElement": "#botstuff div[jsaction] > a[jsaction][data-ve-view][role='button']",
       "pageElement": "div[data-async-context*='query'] > *",
-      "style": "#infy-scroll-bottom + .infy-scroll-divider, script + .infy-scroll-divider:has(+ #infy-scroll-bottom) { display: none !important; }",
       "exampleUrl": "https://www.google.com/search?q=infinity"
     }
   },
