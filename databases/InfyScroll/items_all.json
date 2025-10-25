@@ -347,17 +347,17 @@
     }
   },
   {
-    "name": "Google Search Mobile (Click)",
+    "name": "Google Search Mobile",
     "created_by": "infy",
-    "created_at": "2020-08-01T00:00:00+00:00",
-    "updated_at": "2020-08-01T00:00:00+00:00",
+    "created_at": "2020-08-01T08:00:00+00:00",
+    "updated_at": "2020-08-01T08:00:00+00:00",
     "data": {
       "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/search",
       "action": "click",
       "append": "element",
-      "clickElement": "#botstuff div[jsaction] > a[jsaction][data-ve-view][role='button']:not([aria-hidden='true'])",
+      "clickElement": "#botstuff div[jsaction] > a[jsaction][data-ve-view][role='button']:not([style*='display: none']):not([style*='display:none'])",
       "pageElement": "div[data-async-context*='query'] > *",
-      "exampleUrl": "https://www.google.com/search?q=hello"
+      "exampleUrl": "https://www.google.com/search?q=infinity"
     }
   },
   {
