@@ -371,6 +371,7 @@
       "append": "element",
       "clickElement": "#botstuff div[jsaction] > a[jsaction][data-ve-view][role='button']:not([style*='display: none']):not([style*='display:none'])",
       "pageElement": "div[data-async-context*='query'] > *",
+      "style": "#infy-scroll-bottom + .infy-scroll-divider { display: none !important; }",
       "exampleUrl": "https://www.google.com/search?q=infinity"
     }
   },
