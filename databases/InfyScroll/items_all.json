@@ -37,6 +37,21 @@
     }
   },
   {
+    "name": "Alibaba",
+    "created_by": "infy",
+    "created_at": "2025-10-20T17:24:17+00:00",
+    "updated_at": "2025-10-20T17:24:17+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.searchx-pagination-list > *:has(*.pagination-item.current) + a",
+      "pageElement": "div#sse-fluent-offerlist-ssr > div.organic-list.viewtype-gallery, main.container > section.content > div[data-spm='supplier']",
+      "url": "<xf>^https://www\\.alibaba\\.com/.*search",
+      "xf": "true",
+      "exampleUrl": "https://www.alibaba.com/trade/search?SearchText=infinity"
+    }
+  },
+  {
     "name": "Amazon Order History",
     "created_by": "infy",
     "created_at": "2025-02-10T00:00:00+00:00",
@@ -102,6 +117,24 @@
     }
   },
   {
+    "name": "Baidu",
+    "created_by": "infy",
+    "created_at": "2025-10-27T16:38:09+00:00",
+    "updated_at": "2025-10-27T16:38:09+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "#page > div > strong + a",
+      "pageElement": "#content_left",
+      "removeElement": "div.cosc-card",
+      "appendDelay": "3000",
+      "style": ".infy-scroll-divider { margin: 16px 0 !important; width: 608px !important; } #content_left { margin-bottom: 16px !important; } #container.sam_newgrid .right-fixed, #container.sam_newgrid .right-ceiling, #container.sam_newgrid .right-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling, #container.sam_newgrid .right-ai-accompanies-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling { position: static !important; }",
+      "url": "^https://www\\.baidu\\.com/s",
+      "exampleUrl": "https://www.baidu.com/s?wd=infinity",
+      "comment": "TODO"
+    }
+  },
+  {
     "name": "Bilibili Space Videos",
     "created_by": "infy",
     "created_at": "2023-04-23T05:03:14+09:00",
@@ -151,6 +184,24 @@
       "url": "^https://(konachan\\.com|yande\\.re|(www\\.)?sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
       "exampleUrl": "https://yande.re/post https://yande.re/comment http://konachan.com/post http://konachan.com/comment https://www.sakugabooru.com/post https://www.sakugabooru.com/comment",
       "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645"
+    }
+  },
+  {
+    "name": "Brave Search",
+    "created_by": "infy",
+    "created_at": "2025-10-25T21:36:40+00:00",
+    "updated_at": "2025-10-25T21:36:40+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "initDelay": "2000",
+      "nextLink": "div#pagination > div + a.button, div#pagination:has(a.button:first-child:last-child) > a.button",
+      "pageElement": "//div[@id='results']/*[not(contains(@class,'standalone'))] | //div[contains(@class,'results')]/*[not(contains(@class,'standalone'))]",
+      "removeElement": "//div[@id='results']//comment() | //div[contains(@class,'results')]//comment()",
+      "removeElementRootDocument": "true",
+      "url": "^https://search\\.brave\\.com/",
+      "exampleUrl": "https://search.brave.com/search?q=infinity",
+      "comment": "comment()"
     }
   },
   {
@@ -226,6 +277,35 @@
       "pageElement": "div.Ams6gx > div > *",
       "url": "^https://www\\.deviantart\\.com/",
       "exampleUrl": "https://www.deviantart.com/search?q=joyfool"
+    }
+  },
+  {
+    "name": "DuckDuckGo",
+    "created_by": "infy",
+    "created_at": "2025-10-25T21:20:12+00:00",
+    "updated_at": "2025-10-25T21:20:12+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "id('more-results') | //button[@class][.='Load More']",
+      "url": "^https://duckduckgo\\.com/",
+      "exampleUrl": "https://duckduckgo.com/?q=infinity"
+    }
+  },
+  {
+    "name": "Ecosia",
+    "created_by": "infy",
+    "created_at": "2025-10-25T21:09:02+00:00",
+    "updated_at": "2025-10-25T21:09:02+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@data-test-id='next-button'] | //a[@data-test-id='pagination-control-next']",
+      "pageElement": "//div[@class='mainline__content']/div[.//article] | //div[@class='news__results-content']/* | //div[@class='videos__results-content']/*",
+      "pageElementIframe": "import",
+      "xf": "true",
+      "url": "<xf>^https://www\\.ecosia\\.org/",
+      "exampleUrl": "https://www.ecosia.org/search?q=infinity"
     }
   },
   {
@@ -323,6 +403,20 @@
       "pageElement": "id('memexes-results')/div[contains(@class,'Box')]/ul",
       "url": "^https://github\\.com/[^/]+/[^/]+/projects",
       "exampleUrl": "https://github.com/orgs/microsoft/projects"
+    }
+  },
+  {
+    "name": "GitHub Search",
+    "created_by": "infy",
+    "created_at": "2025-10-27T17:42:49+00:00",
+    "updated_at": "2025-10-27T17:42:49+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div[data-testid='results-list'] > *",
+      "url": "^https://github\\.com/search",
+      "exampleUrl": "https://github.com/search?q=progress&type=code"
     }
   },
   {
@@ -542,6 +636,37 @@
       "url": "^https?://manhua\\.dmzj\\.com/",
       "exampleUrl": "http://manhua.dmzj.com/tags/category_search/0-3263-0-all-0-1-0-1.shtml#category_nav_anchor",
       "comment": "Email. May be http or insecure"
+    }
+  },
+  {
+    "name": "Naver (TODO)",
+    "created_by": "infy",
+    "created_at": "2025-10-25T22:42:46+00:00",
+    "updated_at": "2025-10-25T22:42:46+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "#main_pack div.sc_page > a.btn_next",
+      "pageElement": "div.fds-web-list-root > *",
+      "disableRemoveElement": "div[data-slog-visible='true'] > *",
+      "xurl": "^https://search\\.naver\\.com/",
+      "exampleUrl": "https://search.naver.com/search.naver?query=infinity"
+    }
+  },
+  {
+    "name": "Naver",
+    "created_by": "infy",
+    "created_at": "2025-10-27T02:51:06+00:00",
+    "updated_at": "2025-10-27T02:51:06+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "#main_pack div.sc_page > a.btn_next",
+      "pageElement": "#content",
+      "removeElement": "#sub_pack, .api_sc_page_wrap",
+      "style": "#content.pack_group + .infy-scroll-divider { margin: 0 0 0 28px !important; width: 675px !important; }",
+      "url": "^https://search\\.naver\\.com/",
+      "exampleUrl": "https://search.naver.com/search.naver?query=infinity"
     }
   },
   {
@@ -917,19 +1042,6 @@
       "pageElementIframe": "import",
       "url": "^https://yandex\\.com/search",
       "exampleUrl": "https://yandex.com/search?text=infinity"
-    }
-  },
-  {
-    "name": "Yandex Mobile/Videos",
-    "created_by": "infy",
-    "created_at": "2025-08-23T18:57:07+00:00",
-    "updated_at": "2025-08-23T18:57:07+00:00",
-    "data": {
-      "action": "click",
-      "append": "none",
-      "clickElement": "button.Pager-More, button.NextPageButton",
-      "exampleUrl": "https://yandex.com/video/touch/search?text=hello",
-      "url": "^https://yandex\\.com/(video(/touch)?/)?search"
     }
   }
 ]
