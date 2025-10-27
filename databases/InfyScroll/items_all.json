@@ -287,7 +287,7 @@
     "data": {
       "action": "click",
       "append": "none",
-      "clickElement": "id('more-results') | //button[@class][.='Load More']",
+      "clickElement": "//section[@data-testid='mainline']//button[@id='more-results'] | //section[@data-testid='no-results-message']//button[@class][.='Load More']",
       "url": "^https://duckduckgo\\.com/",
       "exampleUrl": "https://duckduckgo.com/?q=infinity"
     }
