@@ -46,7 +46,7 @@
       "append": "ajax",
       "clickElement": "div.searchx-pagination-list > *:has(*.pagination-item.current) + a",
       "pageElement": "div#sse-fluent-offerlist-ssr > div.organic-list.viewtype-gallery, main.container > section.content > div[data-spm='supplier']",
-      "url": "<xf>^https://www\\.alibaba\\.com/.*search",
+      "url": "<xf>^https://(www\\.)?alibaba\\.com/.*search",
       "xf": "true",
       "exampleUrl": "https://www.alibaba.com/trade/search?SearchText=infinity"
     }
@@ -129,7 +129,7 @@
       "removeElement": "div.cosc-card",
       "appendDelay": "3000",
       "style": ".infy-scroll-divider { margin: 16px 0 !important; width: 608px !important; } #content_left { margin-bottom: 16px !important; } #container.sam_newgrid .right-fixed, #container.sam_newgrid .right-ceiling, #container.sam_newgrid .right-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling, #container.sam_newgrid .right-ai-accompanies-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling { position: static !important; }",
-      "url": "^https://www\\.baidu\\.com/s",
+      "url": "^https://(www\\.)?baidu\\.com/s",
       "exampleUrl": "https://www.baidu.com/s?wd=infinity",
       "comment": "TODO"
     }
@@ -275,7 +275,7 @@
       "append": "element",
       "nextLink": "[rel='next']",
       "pageElement": "div.Ams6gx > div > *",
-      "url": "^https://www\\.deviantart\\.com/",
+      "url": "^https://(www\\.)?deviantart\\.com/",
       "exampleUrl": "https://www.deviantart.com/search?q=joyfool"
     }
   },
@@ -304,7 +304,7 @@
       "pageElement": "//div[@class='mainline__content']/div[.//article] | //div[@class='news__results-content']/* | //div[@class='videos__results-content']/*",
       "pageElementIframe": "import",
       "xf": "true",
-      "url": "<xf>^https://www\\.ecosia\\.org/",
+      "url": "<xf>^https://(www\\.)?ecosia\\.org/",
       "exampleUrl": "https://www.ecosia.org/search?q=infinity"
     }
   },
