@@ -52,6 +52,36 @@
     }
   },
   {
+    "name": "AliExpress",
+    "created_by": "infy",
+    "created_at": "2025-10-28T22:52:05+00:00",
+    "updated_at": "2025-10-28T22:52:05+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.comet-pagination > li.comet-pagination-next > button.comet-pagination-item-link:not([disabled])",
+      "pageElement": "#card-list > *",
+      "spa": "^https://(www\\.)?aliexpress\\.(com|us)",
+      "url": "^https://(www\\.)?aliexpress\\.(com|us)/",
+      "exampleUrl": "https://www.aliexpress.com/w/wholesale-infinity.html"
+    }
+  },
+  {
+    "name": "AliExpress RU",
+    "created_by": "infy",
+    "created_at": "2025-10-28T23:07:30+00:00",
+    "updated_at": "2025-10-28T23:07:30+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div[class*='Pagination__pagination'] > div > a[class*='RedSeoPagination__active'] + a:not([class*='disabled'])",
+      "pageElement": "div[class*='SnowSearchProductFeed_List']",
+      "pageElementIframe": "import",
+      "url": "^https://aliexpress\\.ru/",
+      "exampleUrl": "https://aliexpress.ru/wholesale?SearchText=infinity"
+    }
+  },
+  {
     "name": "Amazon Order History",
     "created_by": "infy",
     "created_at": "2025-02-10T00:00:00+00:00",
@@ -127,7 +157,8 @@
       "nextLink": "#page > div > strong + a",
       "pageElement": "#content_left",
       "removeElement": "div.cosc-card",
-      "appendDelay": "3000",
+      "initDelay": "2000",
+      "appendDelay": "5000",
       "style": ".infy-scroll-divider { margin: 16px 0 !important; width: 608px !important; } #content_left { margin-bottom: 16px !important; } #container.sam_newgrid .right-fixed, #container.sam_newgrid .right-ceiling, #container.sam_newgrid .right-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling, #container.sam_newgrid .right-ai-accompanies-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling { position: static !important; }",
       "url": "^https://(www\\.)?baidu\\.com/s",
       "exampleUrl": "https://www.baidu.com/s?wd=infinity",
@@ -135,7 +166,7 @@
     }
   },
   {
-    "name": "Bilibili Space Videos",
+    "name": "Bilibili",
     "created_by": "infy",
     "created_at": "2023-04-23T05:03:14+09:00",
     "updated_at": "2023-04-26T08:55:41+09:00",
@@ -144,11 +175,13 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "//div[@class='vui_pagenation--btns']/button[@class='vui_button vui_pagenation--btn vui_pagenation--btn-side']",
-      "pageElement": "//div[@class='video']/div[@class='video-body']/div[@class='video-list grid-mode']",
-      "url": "^https://space\\.bilibili\\.com/\\d+.*/video",
+      "clickElement": "div.vui_pagenation--btns > button.vui_button--active + button:not([disabled])",
+      "pageElement": "div.video-list.row, div.video-list.grid-mode",
+      "initDelay": "2000",
+      "appendDelay": "11000",
+      "url": "^https://([\\w]+\\.)?bilibili\\.com/",
       "exampleUrl": "https://space.bilibili.com/510856133/video",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/57"
+      "comment": "https://github.com/sixcious/infy-scroll/issues/57 (TODO)"
     }
   },
   {
@@ -293,6 +326,40 @@
     }
   },
   {
+    "name": "Ebay Search",
+    "created_by": "infy",
+    "created_at": "2025-10-29T00:04:43+00:00",
+    "updated_at": "2025-10-29T00:04:43+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav.pagination > a.pagination__next",
+      "pageElement": "#srp-river-results > ul.srp-results.srp-list > li[data-listingid]",
+      "lazyLoad": "manual",
+      "lazyLoadDestination": "src",
+      "lazyLoadSource": "data-defer-load",
+      "url": "^https://www\\.ebay\\.com/sch/",
+      "exampleUrl": "https://www.ebay.com/sch/i.html?_nkw=infinity"
+    }
+  },
+  {
+    "name": "Ebay Categories",
+    "created_by": "infy",
+    "created_at": "2025-10-29T00:27:08+00:00",
+    "updated_at": "2025-10-29T00:27:08+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav.pagination > a.pagination__next",
+      "pageElement": "ul.brwrvr__item-results.brwrvr__item-results--list > li, ul.brwrvr__item-results.brwrvr__item-results--gallery > li:has(div[class*='item-card__body'])",
+      "lazyLoad": "manual",
+      "lazyLoadDestination": "src",
+      "lazyLoadSource": "data-originalsrc",
+      "url": "^https://www\\.ebay\\.com/\\w+/",
+      "exampleUrl": "https://www.ebay.com/b/Blu-ray-Discs/617/bn_230748"
+    }
+  },
+  {
     "name": "Ecosia",
     "created_by": "infy",
     "created_at": "2025-10-25T21:09:02+00:00",
@@ -306,6 +373,20 @@
       "xf": "true",
       "url": "<xf>^https://(www\\.)?ecosia\\.org/",
       "exampleUrl": "https://www.ecosia.org/search?q=infinity"
+    }
+  },
+  {
+    "name": "Fandom",
+    "created_by": "infy",
+    "created_at": "2025-10-28T19:23:01+00:00",
+    "updated_at": "2025-10-28T19:23:01+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.unified-search-pagination > ul > li > a.paginator-next",
+      "pageElement": "ul.unified-search__results > *",
+      "url": "^https://(\\w+\\.)?fandom\\.com/wiki/Special:Search",
+      "exampleUrl": "https://community.fandom.com/wiki/Special:Search?query=infinity"
     }
   },
   {
@@ -417,6 +498,20 @@
       "pageElement": "div[data-testid='results-list'] > *",
       "url": "^https://github\\.com/search",
       "exampleUrl": "https://github.com/search?q=progress&type=code"
+    }
+  },
+  {
+    "name": "Globo",
+    "created_by": "infy",
+    "created_at": "2025-10-28T19:11:36+00:00",
+    "updated_at": "2025-10-28T19:11:36+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "#content > div.results.results-- > div.results__content > div.pagination.widget > a.fundo-cor-produto.pagination__load-more",
+      "pageElement": "#content > div.results.results-- > div.results__content > ul.results__list > *",
+      "url": "^https://(www\\.)?globo\\.com/busca/",
+      "exampleUrl": "https://www.globo.com/busca/?q=infinity"
     }
   },
   {
@@ -758,7 +853,7 @@
     }
   },
   {
-    "name": "Pixiv (AJAX)",
+    "name": "Pixiv",
     "created_by": "infy",
     "created_at": "2022-08-01T12:28:27+09:00",
     "updated_at": "2025-06-20T00:00:00+00:00",
@@ -790,8 +885,8 @@
       "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
       "pageElement": "html[@lang='ja']//ul[@class='sc-l7cibp-1 krFoBL']/*|html[not(@lang='ja')]//div[@class='sc-l7cibp-0 juyBTC']/*",
       "removeElement": "//li[@class='sc-l7cibp-2 gpVAva'][not(.//div[@type='illust'])]|//div[@class='sc-1rgyha8-0 leTtkh']|(//*[@class='sc-l7cibp-3 gCRmsl'])[position()<last()]",
-      "spaf": "<>^https://(www\\.)?pixiv\\.net/",
-      "url": "<>^https://(www\\.)?pixiv\\.net/",
+      "spaf": "^https://(www\\.)?pixiv\\.net/",
+      "xurl": "^https://(www\\.)?pixiv\\.net/",
       "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
     }
   },
@@ -861,6 +956,35 @@
     }
   },
   {
+    "name": "Realestate.com.au",
+    "created_by": "infy",
+    "created_at": "2025-10-20T18:06:42+00:00",
+    "updated_at": "2025-10-20T18:06:42+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.results-page div.tiered-results-container > ul.tiered-results > *",
+      "pageElementIframe": "import",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?realestate.com.au/",
+      "exampleUrl": "https://www.realestate.com.au/buy/list-1"
+    }
+  },
+  {
+    "name": "Samsung",
+    "created_by": "infy",
+    "created_at": "2025-10-28T23:31:11+00:00",
+    "updated_at": "2025-10-28T23:31:11+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "#results > div.container-wrapper > div.container div[class*='viewMoreButton']",
+      "url": "^https://(www\\.)?samsung.com/",
+      "exampleUrl": "https://www.samsung.com/us/mobile/phones/all-phones/"
+    }
+  },
+  {
     "name": "Slickdeals Comments/Threads/Search/Deals",
     "created_by": "infy",
     "created_at": "2025-10-23T23:32:47+00:00",
@@ -906,6 +1030,21 @@
       "xurl": "<>^https://(www\\.)?startpage\\.com/",
       "exampleUrl": "https://www.startpage.com/",
       "comment": "SPA Mirror Page Import Example. Important: Not for Startpage's Web due to high CPU usage, but Web (and Mobile Web) could be added by adding the following to the pageElement: |//section[contains(@class,'w-gl')]/*[not(self::h3)]|//div[contains(@class,'w-bg')]/*. Not for Images due to links not being clickable, but Images could be added by adding the following to the pageElement: |//div[contains(@class,'image-main-container')]"
+    }
+  },
+  {
+    "name": "Temu",
+    "created_by": "infy",
+    "created_at": "2025-10-28T16:45:52+00:00",
+    "updated_at": "2025-10-28T16:45:52+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "div[role='region'] > div[role='link'] > div[role='button']",
+      "pageElement": "div.autoFitGoodsList > *, div.autoFitList > *",
+      "style": ".infy-scroll-divider { margin: 16px auto !important; }",
+      "url": "^https://www\\.temu\\.com/",
+      "exampleUrl": "https://www.temu.com/search_result.html?search_key=infinity"
     }
   },
   {
@@ -1001,7 +1140,37 @@
     }
   },
   {
-    "name": "XVIDEOS",
+    "name": "XHamster",
+    "created_by": "x",
+    "created_at": "2025-10-12T21:54:01+00:00",
+    "updated_at": "2025-10-12T21:54:01+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next'], div.pager-container ul > li.next  > a",
+      "pageElement": "div:has(+ *[data-role*='pagination'])",
+      "pageElementIframe": "import",
+      "url": "^https://xhamster\\.com/",
+      "exampleUrl": "https://xhamster.com/",
+      "comment": "Updated to support all pages of the site"
+    }
+  },
+  {
+    "name": "XNXX Multi",
+    "created_by": "x",
+    "created_at": "2025-10-12T18:51:30+00:00",
+    "updated_at": "2025-10-12T18:51:30+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.pagination > span.page.current + a",
+      "pageElement": "div.main > div.container-fluid > div.row",
+      "url": "^https://multi\\.xnxx\\.com/",
+      "exampleUrl": "https://multi.xnxx.com/"
+    }
+  },
+  {
+    "name": "XVIDEOS / XNXX",
     "created_by": "x",
     "created_at": "2025-09-12T18:51:30+00:00",
     "updated_at": "2025-09-12T18:51:30+00:00",
@@ -1011,12 +1180,12 @@
       "nextLink": "//li[./a[@class='active']]/following-sibling::li[1]/a | //div[contains(@class,'pagination')]/a[@class='current']/following-sibling::a",
       "pageElement": "//div[contains(@class,'mozaique')]/*",
       "pageElementIframe": "import",
-      "url": "^https://(www\\.)?xvideos\\.(com|red)",
+      "url": "^https://(www\\.)?(xvideos|xnxx)\\.(com|red)",
       "exampleUrl": "https://www.xvideos.com/new/2"
     }
   },
   {
-    "name": "XVIDEOS Tab",
+    "name": "XVIDEOS / XNXX Tab",
     "created_by": "x",
     "created_at": "2025-09-12T18:55:50+00:00",
     "updated_at": "2025-09-12T18:55:50+00:00",
@@ -1024,9 +1193,23 @@
       "action": "click",
       "append": "ajax",
       "clickElement": "a.no-page.next-page",
-      "pageElement": ".tab.active > div.mozaique > div.thumb-block",
-      "url": "^https://(www\\.)?xvideos\\.(com|red)/.*(tabVideos|tabRed)",
+      "pageElement": ".tab.active > div.mozaique > div.thumb-block, #psvideos > div.mozaique > div.thumb-block",
+      "url": "^https://(www\\.)?(xvideos|xnxx)\\.(com|red)/.*(tabVideos|tabRed|_videos)",
       "exampleUrl": "https://www.xvideos.com/models/skye-young2#_tabVideos"
+    }
+  },
+  {
+    "name": "Yahoo! News JP",
+    "created_by": "infy",
+    "created_at": "2025-10-28T18:54:48+00:00",
+    "updated_at": "2025-10-28T18:54:48+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": ".newsFeed_list + div button[data-cl-params], ul + div.newsFeed_more > button[data-cl-params]",
+      "pageElement": ".newsFeed_list > *, #contentsWrap > ul",
+      "url": "^https://news\\.yahoo\\.co\\.jp/",
+      "exampleUrl": "https://news.yahoo.co.jp/"
     }
   },
   {
@@ -1040,7 +1223,9 @@
       "nextLink": "div.Pager-Content > div.Pager-ListItem_type_next > a.Pager-Item_type_next",
       "pageElement": "#search-result > *",
       "pageElementIframe": "import",
-      "url": "^https://yandex\\.com/search",
+      "initDelay": "5000",
+      "appendDelay": "6000",
+      "url": "^https://(yandex\\.(com|net|org)|ya\\.ru)/search",
       "exampleUrl": "https://yandex.com/search?text=infinity"
     }
   }
