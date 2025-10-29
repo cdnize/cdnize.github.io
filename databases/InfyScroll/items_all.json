@@ -334,7 +334,7 @@
       "action": "next",
       "append": "element",
       "nextLink": "nav.pagination > a.pagination__next",
-      "pageElement": "#srp-river-results > ul.srp-results.srp-list > li[data-listingid]",
+      "pageElement": "#srp-river-results > ul.srp-results > li[data-listingid]",
       "lazyLoad": "manual",
       "lazyLoadDestination": "src",
       "lazyLoadSource": "data-defer-load",
