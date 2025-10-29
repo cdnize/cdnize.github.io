@@ -158,7 +158,7 @@
       "pageElement": "#content_left",
       "removeElement": "div.cosc-card",
       "initDelay": "2000",
-      "appendDelay": "5000",
+      "appendDelay": "8000",
       "style": ".infy-scroll-divider { margin: 16px 0 !important; width: 608px !important; } #content_left { margin-bottom: 16px !important; } #container.sam_newgrid .right-fixed, #container.sam_newgrid .right-ceiling, #container.sam_newgrid .right-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling, #container.sam_newgrid .right-ai-accompanies-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling { position: static !important; }",
       "url": "^https://(www\\.)?baidu\\.com/s",
       "exampleUrl": "https://www.baidu.com/s?wd=infinity",
@@ -178,7 +178,7 @@
       "clickElement": "div.vui_pagenation--btns > button.vui_button--active + button:not([disabled])",
       "pageElement": "div.video-list.row, div.video-list.grid-mode",
       "initDelay": "2000",
-      "appendDelay": "11000",
+      "appendDelay": "12000",
       "url": "^https://(\\w+\\.)?bilibili\\.com/",
       "exampleUrl": "https://space.bilibili.com/510856133/video",
       "comment": "https://github.com/sixcious/infy-scroll/issues/57 (TODO)"
@@ -1223,8 +1223,8 @@
       "nextLink": "div.Pager-Content > div.Pager-ListItem_type_next > a.Pager-Item_type_next",
       "pageElement": "#search-result > *",
       "pageElementIframe": "import",
-      "initDelay": "5000",
-      "appendDelay": "6000",
+      "initDelay": "4000",
+      "appendDelay": "8000",
       "url": "^https://(yandex\\.(com|net|org)|ya\\.ru)/search",
       "exampleUrl": "https://yandex.com/search?text=infinity"
     }
