@@ -166,6 +166,49 @@
     }
   },
   {
+    "name": "BBC News",
+    "created_by": "infy",
+    "created_at": "2025-10-29T18:20:40+00:00",
+    "updated_at": "2025-10-29T18:20:40+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div[data-testid='pagination'] > button[aria-label*='Next']:not([disabled])",
+      "pageElement": "div[data-testid='alaska-grid'], div[data-testid='nebraska-grid'], div[data-testid='VirginIslands-grid']",
+      "url": "^https://(www\\.)?bbc\\.com/",
+      "exampleUrl": "https://www.bbc.com/innovation"
+    }
+  },
+  {
+    "name": "BBC News UK",
+    "created_by": "infy",
+    "created_at": "2025-10-29T18:47:48+00:00",
+    "updated_at": "2025-10-29T18:47:48+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav ol > li:has(a[aria-current='page']) + li a",
+      "pageElement": "#main-content ol[role='list']:has(div[type='article'])",
+      "url": "^https://(www\\.)?bbc\\.co\\.uk/",
+      "exampleUrl": "https://www.bbc.co.uk/news/technology"
+    }
+  },
+  {
+    "name": "Best Buy",
+    "created_by": "infy",
+    "created_at": "2025-10-29T22:58:43+00:00",
+    "updated_at": "2025-10-29T22:58:43+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.pagination-container > a[aria-label='Next page']",
+      "pageElement": "#main-results > *[class*='product-grid-view-container']",
+      "spa": "^https://(www\\.)?bestbuy\\.com/site/",
+      "url": "^https://(www\\.)?bestbuy\\.com/site/",
+      "exampleUrl": "https://www.bestbuy.com/site/searchpage.jsp?st=infinity"
+    }
+  },
+  {
     "name": "Bilibili",
     "created_by": "infy",
     "created_at": "2023-04-23T05:03:14+09:00",
@@ -284,6 +327,20 @@
     }
   },
   {
+    "name": "Coupang",
+    "created_by": "infy",
+    "created_at": "2025-10-29T19:03:50+00:00",
+    "updated_at": "2025-10-29T19:03:50+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div[class*='Pagination'] > a[data-page='next']",
+      "pageElement": "#product-list > *",
+      "url": "^https://(www\\.)?coupang\\.com/",
+      "exampleUrl": "https://www.coupang.com/np/categories/498704"
+    }
+  },
+  {
     "name": "Danbooru",
     "created_by": "infy",
     "created_at": "2025-07-15T00:00:00+00:00",
@@ -338,7 +395,7 @@
       "lazyLoad": "manual",
       "lazyLoadDestination": "src",
       "lazyLoadSource": "data-defer-load",
-      "url": "^https://www\\.ebay\\.com/sch/",
+      "url": "^https://(www\\.)?ebay\\.com/sch/",
       "exampleUrl": "https://www.ebay.com/sch/i.html?_nkw=infinity"
     }
   },
@@ -355,7 +412,7 @@
       "lazyLoad": "manual",
       "lazyLoadDestination": "src",
       "lazyLoadSource": "data-originalsrc",
-      "url": "^https://www\\.ebay\\.com/\\w+/",
+      "url": "^https://(www\\.)?ebay\\.com/\\w+/",
       "exampleUrl": "https://www.ebay.com/b/Blu-ray-Discs/617/bn_230748"
     }
   },
@@ -373,6 +430,21 @@
       "xf": "true",
       "url": "<xf>^https://(www\\.)?ecosia\\.org/",
       "exampleUrl": "https://www.ecosia.org/search?q=infinity"
+    }
+  },
+  {
+    "name": "Etsy",
+    "created_by": "infy",
+    "created_at": "2025-10-29T21:23:44+00:00",
+    "updated_at": "2025-10-29T21:23:44+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav[data-clg-id*='Pagination'] div:has(a[aria-current='true']) + div a",
+      "pageElement": "ul[data-results-grid-container]",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?etsy\\.com/search",
+      "exampleUrl": "https://www.etsy.com/search?q=infinity"
     }
   },
   {
@@ -611,6 +683,34 @@
     }
   },
   {
+    "name": "Indeed Companies",
+    "created_by": "infy",
+    "created_at": "2025-10-29T20:41:59+00:00",
+    "updated_at": "2025-10-29T20:41:59+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul[data-testid='pagination'] > li > a[data-testid='next-page']",
+      "pageElement": "ul[data-testid='TopCompaniesList'] > *",
+      "url": "^https://(\\w+\\.)?indeed\\.com/companies/",
+      "exampleUrl": "https://www.indeed.com/companies/best-Information-Technology-companies"
+    }
+  },
+  {
+    "name": "Indeed Jobs",
+    "created_by": "infy",
+    "created_at": "2025-10-29T20:16:50+00:00",
+    "updated_at": "2025-10-29T20:16:50+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > ul > li > a[data-testid='pagination-page-next']",
+      "pageElement": "#mosaic-provider-jobcards > ul > *",
+      "url": "^https://(\\w+\\.)?indeed\\.com/jobs",
+      "exampleUrl": "https://www.indeed.com/jobs?q=teacher"
+    }
+  },
+  {
     "name": "JanitorAI",
     "created_by": "Krampus",
     "created_at": "2024-05-13T08:49:14+09:00",
@@ -731,6 +831,21 @@
       "url": "^https?://manhua\\.dmzj\\.com/",
       "exampleUrl": "http://manhua.dmzj.com/tags/category_search/0-3263-0-all-0-1-0-1.shtml#category_nav_anchor",
       "comment": "Email. May be http or insecure"
+    }
+  },
+  {
+    "name": "Mercari JP",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//div[@data-testid='pagination-next-button']/a",
+      "pageElement": "//div[@id='item-grid']",
+      "pageElementIframe": "import",
+      "url": "^https://jp\\.mercari\\.com/",
+      "exampleUrl": "https://jp.mercari.com/search?keyword=infinity"
     }
   },
   {
@@ -1043,7 +1158,7 @@
       "clickElement": "div[role='region'] > div[role='link'] > div[role='button']",
       "pageElement": "div.autoFitGoodsList > *, div.autoFitList > *",
       "style": ".infy-scroll-divider { margin: 16px auto !important; }",
-      "url": "^https://www\\.temu\\.com/",
+      "url": "^https://(www\\.)?temu\\.com/",
       "exampleUrl": "https://www.temu.com/search_result.html?search_key=infinity"
     }
   },
@@ -1227,6 +1342,35 @@
       "appendDelay": "8000",
       "url": "^https://(yandex\\.(com|net|org)|ya\\.ru)/search",
       "exampleUrl": "https://yandex.com/search?text=infinity"
+    }
+  },
+  {
+    "name": "YCombinator (Hacker News)",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "#bigbox > td > table > tbody > *",
+      "style": "#bigbox > td > table > tbody > tr:has(a[rel='next']) { display: none !important; }",
+      "url": "^https://news\\.ycombinator\\.com",
+      "exampleUrl": "https://news.ycombinator.com"
+    }
+  },
+  {
+    "name": "Zillow Professionals",
+    "created_by": "infy",
+    "created_at": "2025-10-29T19:53:27+00:00",
+    "updated_at": "2025-10-29T19:53:27+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[class*='Pagination'] > ul > li > button[rel='next']",
+      "pageElement": "div[class*='Grid-']:has(a[class*='StyledCard']), table:has(+ nav[class*='Pagination']) > tbody > *",
+      "url": "^https://(www\\.)?zillow\\.com/professionals/",
+      "exampleUrl": "https://www.zillow.com/professionals/real-estate-agent-reviews/carmel-by-the-sea-ca/"
     }
   }
 ]
