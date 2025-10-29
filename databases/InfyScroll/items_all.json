@@ -351,7 +351,7 @@
       "action": "next",
       "append": "element",
       "nextLink": "nav.pagination > a.pagination__next",
-      "pageElement": "ul.brwrvr__item-results.brwrvr__item-results--list > li, ul.brwrvr__item-results.brwrvr__item-results--gallery > li:has(div[class*='item-card__body'])",
+      "pageElement": "ul.brwrvr__item-results > li:has(div[class*='item-card__body'])",
       "lazyLoad": "manual",
       "lazyLoadDestination": "src",
       "lazyLoadSource": "data-originalsrc",
