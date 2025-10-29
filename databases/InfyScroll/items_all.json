@@ -179,7 +179,7 @@
       "pageElement": "div.video-list.row, div.video-list.grid-mode",
       "initDelay": "2000",
       "appendDelay": "11000",
-      "url": "^https://([\\w]+\\.)?bilibili\\.com/",
+      "url": "^https://(\\w+\\.)?bilibili\\.com/",
       "exampleUrl": "https://space.bilibili.com/510856133/video",
       "comment": "https://github.com/sixcious/infy-scroll/issues/57 (TODO)"
     }
