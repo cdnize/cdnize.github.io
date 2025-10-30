@@ -698,20 +698,6 @@
     }
   },
   {
-    "name": "Indeed Jobs",
-    "created_by": "infy",
-    "created_at": "2025-10-29T20:16:50+00:00",
-    "updated_at": "2025-10-29T20:16:50+00:00",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "nav > ul > li > a[data-testid='pagination-page-next']",
-      "pageElement": "#mosaic-provider-jobcards > ul > *",
-      "url": "^https://(\\w+\\.)?indeed\\.com/jobs",
-      "exampleUrl": "https://www.indeed.com/jobs?q=teacher"
-    }
-  },
-  {
     "name": "JanitorAI",
     "created_by": "Krampus",
     "created_at": "2024-05-13T08:49:14+09:00",
