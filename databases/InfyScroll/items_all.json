@@ -203,6 +203,7 @@
       "append": "ajax",
       "clickElement": "div.pagination-container > a[aria-label='Next page']",
       "pageElement": "#main-results > *[class*='product-grid-view-container']",
+      "loadElement": "#main-results > *[class*='product-grid-view-container'] > *:has(div.a-skeleton-shimmer)",
       "spa": "^https://(www\\.)?bestbuy\\.com/site/",
       "url": "^https://(www\\.)?bestbuy\\.com/site/",
       "exampleUrl": "https://www.bestbuy.com/site/searchpage.jsp?st=infinity"
