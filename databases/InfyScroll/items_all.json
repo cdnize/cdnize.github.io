@@ -1,7 +1,7 @@
 [
   {
     "name": "!",
-    "databaseExcludeUrls": ["^https://danbooru\\.donmai\\.us/posts/\\d+","^https://yandex\\.com/search"]
+    "databaseExcludeUrls": ["^https://danbooru\\.donmai\\.us/posts/\\d+", "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/"]
   },
   {
     "name": "1337x",
@@ -242,7 +242,7 @@
       "nextLink": "//a[contains(@class,\"sb_pagN\")]",
       "pageElement": "id(\"b_results\")/li[@class=\"b_algo\"]|id(\"results\")",
       "pageElementIframe": "import",
-      "url": "^https://(?:www|cnweb)4?\\.bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
+      "url": "^https://(\\w+\\.)?bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
       "exampleUrl": "https://www.bing.com/search?q=Edge",
       "comment": "Credit to: http://wedata.net/items/501\r\nSee: https://github.com/sixcious/infy-scroll/issues/92\r\n"
     }
@@ -396,7 +396,7 @@
       "lazyLoad": "manual",
       "lazyLoadDestination": "src",
       "lazyLoadSource": "data-defer-load",
-      "url": "^https://(www\\.)?ebay\\.com/sch/",
+      "url": "^https://(\\w+\\.)?ebay\\.(?:\\w{2,3}(?:\\.\\w{2})?)/sch/",
       "exampleUrl": "https://www.ebay.com/sch/i.html?_nkw=infinity"
     }
   },
@@ -413,7 +413,7 @@
       "lazyLoad": "manual",
       "lazyLoadDestination": "src",
       "lazyLoadSource": "data-originalsrc",
-      "url": "^https://(www\\.)?ebay\\.com/\\w+/",
+      "url": "^https://(\\w+\\.)?ebay\\.(?:\\w{2,3}(?:\\.\\w{2})?)/\\w+/",
       "exampleUrl": "https://www.ebay.com/b/Blu-ray-Discs/617/bn_230748"
     }
   },
@@ -623,6 +623,21 @@
     }
   },
   {
+    "name": "Google Search",
+    "created_by": "infy",
+    "created_at": "2025-10-31T17:53:50+00:00",
+    "updated_at": "2025-10-31T17:53:50+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "id('pnnext')|id('navbar navcnt nav')//td[span]/following-sibling::td[1]/a|id('nn')/parent::a",
+      "pageElement": "id('rso')|id('center_col')/style[contains(.,'relative')][id('rso')]",
+      "pageElementIframe": "import",
+      "url": "^https?://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/(?:c(?:se|ustom)|search|webhp|m|#)[is]?",
+      "exampleUrl": "https://www.google.com/search?q=infinity"
+    }
+  },
+  {
     "name": "Google Search Mobile",
     "created_by": "infy",
     "created_at": "2020-08-01T08:00:00+00:00",
@@ -681,6 +696,21 @@
       "url": "^https://hitomi\\.la/reader/",
       "exampleUrl": "https://hitomi.la/reader/3318905.html",
       "comment": "Updated by infy to use a safe example URL"
+    }
+  },
+  {
+    "name": "Home Depot",
+    "created_by": "infy",
+    "created_at": "2025-10-31T03:18:37+00:00",
+    "updated_at": "2025-10-31T03:18:37+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[role='navigation'] > ul > li > *:has(svg[data-testid='ArrowForwardIcon']):not([aria-disabled='true'])",
+      "pageElement": "div.results-wrapped > div.sui-w-full",
+      "url": "^https://(www\\.)?homedepot\\.com/(b|s)/",
+      "exampleUrl": "https://www.homedepot.com/s/infinity",
+      "comment": "AJAX due to next-to-last pages in the pagination no longer being links"
     }
   },
   {
@@ -864,6 +894,20 @@
       "style": "#content.pack_group + .infy-scroll-divider { margin: 0 0 0 28px !important; width: 675px !important; }",
       "url": "^https://search\\.naver\\.com/",
       "exampleUrl": "https://search.naver.com/search.naver?query=infinity"
+    }
+  },
+  {
+    "name": "Naver Blog",
+    "created_by": "infy",
+    "created_at": "2025-10-30T17:07:51+00:00",
+    "updated_at": "2025-10-30T17:07:51+00:00",
+    "data": {
+      "url": "^https://section\\.blog\\.naver\\.com/",
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.pagination > a.button_next, div.pagination > span:has(a[aria-current='page']) + span > a",
+      "pageElement": "#content > section[class*='list'] > div[class*='list'] > *",
+      "exampleUrl": "https://section.blog.naver.com/BlogHome.naver"
     }
   },
   {
@@ -1135,6 +1179,20 @@
     }
   },
   {
+    "name": "Target",
+    "created_by": "infy",
+    "created_at": "2025-10-31T02:39:11+00:00",
+    "updated_at": "2025-10-31T02:39:11+00:00",
+    "data": {
+      "url": "^https://(www\\.)?target\\.com/(s\\?|c/)",
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div[data-test='pagination'] > button[data-test='next']:not([disabled])",
+      "pageElement": "div[data-test='product-grid']",
+      "exampleUrl": "https://www.target.com/s?searchTerm=infinity"
+    }
+  },
+  {
     "name": "Temu",
     "created_by": "infy",
     "created_at": "2025-10-28T16:45:52+00:00",
@@ -1327,7 +1385,7 @@
       "pageElementIframe": "import",
       "initDelay": "4000",
       "appendDelay": "8000",
-      "url": "^https://(yandex\\.(com|net|org)|ya\\.ru)/search",
+      "url": "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/",
       "exampleUrl": "https://yandex.com/search?text=infinity"
     }
   },
@@ -1344,6 +1402,21 @@
       "style": "#bigbox > td > table > tbody > tr:has(a[rel='next']) { display: none !important; }",
       "url": "^https://news\\.ycombinator\\.com",
       "exampleUrl": "https://news.ycombinator.com"
+    }
+  },
+  {
+    "name": "Yelp",
+    "created_by": "infy",
+    "created_at": "2025-10-31T01:38:30+00:00",
+    "updated_at": "2025-10-31T01:38:30+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "#main-content > ul[class*='list']:has(div[data-testid='search-results-divider']) > *",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?yelp\\.com/search",
+      "exampleUrl": "https://www.yelp.com/search?find_desc=Things+To+Do"
     }
   },
   {
