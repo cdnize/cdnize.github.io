@@ -248,7 +248,7 @@
     }
   },
   {
-    "name": "Booru Clones (Konachan, Yande, Sakugabooru)",
+    "name": "Booru Sites (Konachan, Sakugabooru, Yande)",
     "created_by": "infy",
     "created_at": "2025-01-01T00:00:00+00:00",
     "updated_at": "2025-01-01T00:00:00+00:00",
@@ -258,7 +258,7 @@
       "nextLink": "//a[@class='next_page']",
       "pageElement": "//li[contains(@class, 'creator-id-')]|//div[@id='comment-list']/div[@class='post']|//table[@class='highlightable']",
       "style": ".javascript-hide { display: inline-block !important; }",
-      "url": "^https://(konachan\\.com|yande\\.re|(www\\.)?sakugabooru\\.com)/(post|comment)($|\\?|#|/search\\?)",
+      "url": "^https://(www\\.)?(konachan\\.com|sakugabooru\\.com|yande\\.re)/(post|comment)($|\\?|#|/search\\?)",
       "exampleUrl": "https://yande.re/post https://yande.re/comment http://konachan.com/post http://konachan.com/comment https://www.sakugabooru.com/post https://www.sakugabooru.com/comment",
       "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645"
     }
@@ -633,6 +633,7 @@
       "nextLink": "id('pnnext')|id('navbar navcnt nav')//td[span]/following-sibling::td[1]/a|id('nn')/parent::a",
       "pageElement": "id('rso')|id('center_col')/style[contains(.,'relative')][id('rso')]",
       "pageElementIframe": "import",
+      "scrollIframeEnabled": "false",
       "url": "^https?://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/(?:c(?:se|ustom)|search|webhp|m|#)[is]?",
       "exampleUrl": "https://www.google.com/search?q=infinity"
     }
@@ -708,6 +709,7 @@
       "append": "ajax",
       "clickElement": "nav[role='navigation'] > ul > li > *:has(svg[data-testid='ArrowForwardIcon']):not([aria-disabled='true'])",
       "pageElement": "div.results-wrapped > div.sui-w-full",
+      "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?homedepot\\.com/(b|s)/",
       "exampleUrl": "https://www.homedepot.com/s/infinity",
       "comment": "AJAX due to next-to-last pages in the pagination no longer being links"
