@@ -1,7 +1,7 @@
 [
   {
     "name": "!",
-    "databaseExcludeUrls": ["^https://danbooru\\.donmai\\.us/posts/\\d+", "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/"]
+    "databaseExcludeUrls": ["^https://www\\.flickr\\.com/photos/[^/]+/\\d, ^https://danbooru\\.donmai\\.us/posts/\\d+", "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/"]
   },
   {
     "name": "1337x",
@@ -118,7 +118,6 @@
     "updated_at": "2025-05-25T08:04:50+09:00",
     "resource_url": "http://wedata.net/items/86232",
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "modified": "true",
     "data": {
       "action": "next",
       "append": "element",
@@ -135,7 +134,6 @@
     "updated_at": "2024-02-26T10:59:44+09:00",
     "resource_url": "http://wedata.net/items/86210",
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "modified": "true",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -235,7 +233,6 @@
     "updated_at": "2024-08-28T06:44:39+09:00",
     "resource_url": "http://wedata.net/items/86243",
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "modified": "true",
     "data": {
       "action": "next",
       "append": "element",
@@ -244,7 +241,7 @@
       "pageElementIframe": "import",
       "url": "^https://(\\w+\\.)?bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
       "exampleUrl": "https://www.bing.com/search?q=Edge",
-      "comment": "Credit to: http://wedata.net/items/501\r\nSee: https://github.com/sixcious/infy-scroll/issues/92\r\n"
+      "comment": "Credit to: http://wedata.net/items/501 See: https://github.com/sixcious/infy-scroll/issues/92"
     }
   },
   {
@@ -325,6 +322,20 @@
       "url": "^https://coccoc\\.com/search",
       "exampleUrl": "https://coccoc.com/search?query=Th%E1%BB%9Di+ti%E1%BA%BFt+ng%C3%A0y+mai",
       "comment": "https://github.com/sixcious/infy-scroll/issues/44"
+    }
+  },
+  {
+    "name": "Costco",
+    "created_by": "infy",
+    "created_at": "2025-11-03T01:07:54+00:00",
+    "updated_at": "2025-11-03T01:07:54+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[aria-label='pagination'] > ul > li:has(button[aria-current='page']) + li > button:not([disabled])",
+      "pageElement": "#productList > *",
+      "url": "^https://(www\\.)?costco\\.com/",
+      "exampleUrl": "https://www.costco.com/televisions.html"
     }
   },
   {
@@ -478,6 +489,35 @@
     }
   },
   {
+    "name": "Flickr Photos",
+    "created_by": "infy",
+    "created_at": "2025-11-03T05:15:55+00:00",
+    "updated_at": "2025-11-03T05:15:55+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@rel='next']",
+      "pageElement": "//div[@role='main']/div[starts-with(@class,'view photo-list-view')]",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?flickr\\.com/photos/[^/]+/",
+      "exampleUrl": "https://www.flickr.com/photos/photokitten/"
+    }
+  },
+  {
+    "name": "Flickr Tags",
+    "created_by": "infy",
+    "created_at": "2025-11-03T05:29:18+00:00",
+    "updated_at": "2025-11-03T05:29:18+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.view.photo-list-view",
+      "url": "^https://(www\\.)?flickr\\.com/photos/tags/",
+      "exampleUrl": "https://www.flickr.com/photos/tags/cat"
+    }
+  },
+  {
     "name": "FSHARE.VN",
     "created_by": "infy",
     "created_at": "2023-12-24T03:49:21+09:00",
@@ -618,7 +658,7 @@
       "disableScrollElement": "//*",
       "style": ".gsc-loading-resultsRoot { all: unset !important; }",
       "url": "^https://[G]?",
-      "exampleUrl": "https://www.searchcraigslist.net/results?q=infinity https://arstechnica.com/search/?q=infinity",
+      "exampleUrl": "https://gibiru.com/results.html?q=infinity https://www.searchcraigslist.net/results?q=infinity",
       "comment": "https://github.com/sixcious/infy-scroll/issues/62"
     }
   },
@@ -853,6 +893,19 @@
     }
   },
   {
+    "name": "Medium",
+    "created_by": "infy",
+    "created_at": "2025-11-03T04:49:15+00:00",
+    "updated_at": "2025-11-03T04:49:15+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "div > button.aj.fi.al.am.an.ao.ap.aq.ar.as.at:has(> svg)",
+      "url": "^https://medium\\.com/search/",
+      "exampleUrl": "https://medium.com/search/posts?q=infinity"
+    }
+  },
+  {
     "name": "Mercari JP",
     "created_by": "infy",
     "created_at": "2025-08-01T00:00:00+00:00",
@@ -865,6 +918,20 @@
       "pageElementIframe": "import",
       "url": "^https://jp\\.mercari\\.com/",
       "exampleUrl": "https://jp.mercari.com/search?keyword=infinity"
+    }
+  },
+  {
+    "name": "Mojeek Search",
+    "created_by": "infy",
+    "created_at": "2025-11-01T01:11:25+00:00",
+    "updated_at": "2025-11-01T01:11:25+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.pagination > ul > li:has(span):not(li:has(a)) + li a",
+      "pageElement": "div.results > ul.results-standard > *",
+      "url": "^https://(www\\.)?mojeek\\.com/search",
+      "exampleUrl": "https://www.mojeek.com/search?q=infinity"
     }
   },
   {
@@ -929,24 +996,19 @@
     }
   },
   {
-    "name": "Nike Reviews",
+    "name": "Niconico Video",
     "created_by": "infy",
-    "created_at": "2023-05-11T08:26:29+09:00",
-    "updated_at": "2023-06-08T04:01:42+09:00",
-    "resource_url": "http://wedata.net/items/86120",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "modified": "true",
+    "created_at": "2025-11-03T00:00:13+00:00",
+    "updated_at": "2025-11-03T00:00:13+00:00",
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "//button[@aria-label='Go to next reviews']",
-      "pageElement": "//div[@class='tt-c-reviews-list__content']/*",
-      "puppet": "await page.click(\"#pdp-info-accordions__reviews-accordion > summary\");\r\nawait page.click(\"button[data-testid='more-reviews-button']\");",
-      "mirrorPage": "puppet",
-      "spa": "<>^https://(www\\.)?nike\\.com/t/",
-      "xurl": "<>^https://(www\\.)?nike\\.com/t/",
-      "exampleUrl": "https://www.nike.com/t/p-6000-shoes-XkgpKW/CD6404-403",
-      "comment": "SPA Mirror Page Puppeteer Example"
+      "clickElement": "nav[data-scope='pagination'] > a[aria-current='page'] + a:not([data-disabled])",
+      "pageElement": "div.grid-area_main.d_flex.flex-d_column.gap_x3 > div > div.d_flex.flex-d_column.gap_x3 > *",
+      "scrollUpdateAddress": "false",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?nicovideo.jp/(search|tag)/",
+      "exampleUrl": "https://www.nicovideo.jp/search/infinity"
     }
   },
   {
@@ -1007,7 +1069,6 @@
     "updated_at": "2025-06-20T00:00:00+00:00",
     "resource_url": "http://wedata.net/items/85939",
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "modified": "true",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1120,6 +1181,20 @@
     }
   },
   {
+    "name": "Reuters",
+    "created_by": "infy",
+    "created_at": "2025-11-03T05:02:20+00:00",
+    "updated_at": "2025-11-03T05:02:20+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "span.text-button-module__button_label__0SF4u[data-testid]",
+      "pageElement": "ul.feed-list-module__list__UTW6i > *",
+      "url": "^https://(www\\.)?reuters\\.com/",
+      "exampleUrl": "https://www.reuters.com/technology/artificial-intelligence/"
+    }
+  },
+  {
     "name": "Samsung",
     "created_by": "infy",
     "created_at": "2025-10-28T23:31:11+00:00",
@@ -1175,7 +1250,7 @@
       "pageElement": "id('main')/div",
       "loadElement": "//img[contains(@class,'css-1tth2jd')]|//img[contains(@class,'css-k35lnn')]",
       "mirrorPage": "import",
-      "xurl": "<>^https://(www\\.)?startpage\\.com/",
+      "xurl": "^https://(www\\.)?startpage\\.com/",
       "exampleUrl": "https://www.startpage.com/",
       "comment": "SPA Mirror Page Import Example. Important: Not for Startpage's Web due to high CPU usage, but Web (and Mobile Web) could be added by adding the following to the pageElement: |//section[contains(@class,'w-gl')]/*[not(self::h3)]|//div[contains(@class,'w-bg')]/*. Not for Images due to links not being clickable, but Images could be added by adding the following to the pageElement: |//div[contains(@class,'image-main-container')]"
     }
@@ -1186,7 +1261,7 @@
     "created_at": "2025-10-31T02:39:11+00:00",
     "updated_at": "2025-10-31T02:39:11+00:00",
     "data": {
-      "url": "^https://(www\\.)?target\\.com/(s\\?|c/)",
+      "url": "^https://(www\\.)?target\\.com/(s|c)(\\?|/)",
       "action": "click",
       "append": "ajax",
       "clickElement": "div[data-test='pagination'] > button[data-test='next']:not([disabled])",
@@ -1358,6 +1433,20 @@
       "pageElement": ".tab.active > div.mozaique > div.thumb-block, #psvideos > div.mozaique > div.thumb-block",
       "url": "^https://(www\\.)?(xvideos|xnxx)\\.(com|red)/.*(tabVideos|tabRed|_videos)",
       "exampleUrl": "https://www.xvideos.com/models/skye-young2#_tabVideos"
+    }
+  },
+  {
+    "name": "Yahoo! Search JP",
+    "created_by": "infy",
+    "created_at": "2025-11-03T00:44:45+00:00",
+    "updated_at": "2025-11-03T00:44:45+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.Pagenation__next > a",
+      "pageElement": "div.Contents__innerGroupBody > *",
+      "url": "^https://search\\.yahoo\\.co\\.jp/search",
+      "exampleUrl": "https://search.yahoo.co.jp/search?p=infinity"
     }
   },
   {
