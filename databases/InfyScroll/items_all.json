@@ -145,6 +145,36 @@
     }
   },
   {
+    "name": "AOL Search",
+    "created_by": "infy",
+    "created_at": "2025-11-03T22:24:51+00:00",
+    "updated_at": "2025-11-03T22:24:51+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.pagination a.next",
+      "pageElement": "#web > ol.searchCenterMiddle > li:not(.first)",
+      "url": "^https://search\\.aol\\.com/",
+      "exampleUrl": "https://search.aol.com/aol/search?q=infinity"
+    }
+  },
+  {
+    "name": "Ask Search",
+    "created_by": "infy",
+    "created_at": "2025-11-03T22:14:23+00:00",
+    "updated_at": "2025-11-03T22:14:23+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul[data-testid='pagination-list'] > a.next",
+      "pageElement": "div[data-testid='results'] > *:not(.people-also-ask)",
+      "pageElementIframe": "import",
+      "url": "<xf>^https://(www\\.)?ask\\.com/web",
+      "xf": "true",
+      "exampleUrl": "https://www.ask.com/web?q=infinity"
+    }
+  },
+  {
     "name": "Baidu",
     "created_by": "infy",
     "created_at": "2025-10-27T16:38:09+00:00",
@@ -155,7 +185,6 @@
       "nextLink": "#page > div > strong + a",
       "pageElement": "#content_left",
       "removeElement": "div.cosc-card",
-      "initDelay": "1000",
       "appendDelay": "8000",
       "style": ".infy-scroll-divider { margin: 16px 0 !important; width: 608px !important; } #content_left { margin-bottom: 16px !important; } #container.sam_newgrid .right-fixed, #container.sam_newgrid .right-ceiling, #container.sam_newgrid .right-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling, #container.sam_newgrid .right-ai-accompanies-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling { position: static !important; }",
       "url": "^https://(www\\.)?baidu\\.com/s",
@@ -513,8 +542,24 @@
       "append": "element",
       "nextLink": "[rel='next']",
       "pageElement": "div.view.photo-list-view",
+      "style": ".infy-scroll-divider { margin: 48px auto 32px auto !important; }",
       "url": "^https://(www\\.)?flickr\\.com/photos/tags/",
-      "exampleUrl": "https://www.flickr.com/photos/tags/cat"
+      "exampleUrl": "https://www.flickr.com/photos/tags/infinity"
+    }
+  },
+  {
+    "name": "Flipkart",
+    "created_by": "infy",
+    "created_at": "2025-11-03T20:02:03+00:00",
+    "updated_at": "2025-11-03T20:02:03+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > a._9QVEpD:last-child",
+      "pageElement": "div.DOjaWF.gdgoEp:has(> div.DOjaWF.YJG4Cf) > div.cPHDOP:not(:has(nav)):not(:has(div.b5p4CI))",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?flipkart\\.com/",
+      "exampleUrl": "https://www.flipkart.com/search?q=infinity"
     }
   },
   {
@@ -674,7 +719,7 @@
       "pageElement": "id('rso')|id('center_col')/style[contains(.,'relative')][id('rso')]",
       "pageElementIframe": "import",
       "scrollIframeEnabled": "false",
-      "url": "^https?://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/(?:c(?:se|ustom)|search|webhp|m|#)[is]?",
+      "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/(?:c(?:se|ustom)|search|webhp|m|#)",
       "exampleUrl": "https://www.google.com/search?q=infinity"
     }
   },
@@ -732,8 +777,8 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "div.navbar:not(.hidden) ul > li:not(.disabled) > #nextPanel, div.mobile-navbar:not(.hidden) ul > li > a#mobile-nextPanel > img.arrow_active:not(.hidden)",
-      "pageElement": "#comicImages:not(.hidden) > *, #mobileImages:not(.hidden) > *",
+      "clickElement": "div.navbar:not(.hidden) ul > li:not(.disabled) > #nextPanel",
+      "pageElement": "#comicImages:not(.hidden) > *",
       "url": "^https://hitomi\\.la/reader/",
       "exampleUrl": "https://hitomi.la/reader/3318905.html",
       "comment": "Updated by infy to use a safe example URL"
@@ -770,6 +815,20 @@
     }
   },
   {
+    "name": "India Times",
+    "created_by": "infy",
+    "created_at": "2025-11-03T18:11:49+00:00",
+    "updated_at": "2025-11-03T18:11:49+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[class*='MuiPagination'] > ul > li > button[aria-label*='next page']",
+      "pageElement": "div.card_wrapper.manage-list-pagination:has(nav[class*='MuiPagination']) > a",
+      "url": "^https://(www\\.)?indiatimes\\.com/",
+      "exampleUrl": "https://www.indiatimes.com/topics/infinity"
+    }
+  },
+  {
     "name": "JanitorAI",
     "created_by": "Krampus",
     "created_at": "2024-05-13T08:49:14+09:00",
@@ -793,12 +852,11 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')] | id('paging-next')",
-      "pageElement": "id('srchrslt-adtable')/* | id('srp-results')/*",
+      "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')]",
+      "pageElement": "id('srchrslt-adtable')/*",
       "xf": "true",
       "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/",
-      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0",
-      "comment": "The clickElement and pageElement cover both desktop | mobile"
+      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
     }
   },
   {
@@ -1165,6 +1223,20 @@
     }
   },
   {
+    "name": "Rakuten JP Search",
+    "created_by": "infy",
+    "created_at": "2025-11-03T16:50:37+00:00",
+    "updated_at": "2025-11-03T16:50:37+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.dui-pagination > a.item.nextPage",
+      "pageElement": "div.searchResults div[class*='search-results'] > div[class*='grid-container']",
+      "url": "^https://search\\.rakuten\\.co\\.jp/search/",
+      "exampleUrl": "https://search.rakuten.co.jp/search/mall/infinity"
+    }
+  },
+  {
     "name": "Realestate.com.au",
     "created_by": "infy",
     "created_at": "2025-10-20T18:06:42+00:00",
@@ -1205,6 +1277,35 @@
       "clickElement": "#results > div.container-wrapper > div.container div[class*='viewMoreButton']",
       "url": "^https://(www\\.)?samsung.com/",
       "exampleUrl": "https://www.samsung.com/us/mobile/phones/all-phones/"
+    }
+  },
+  {
+    "name": "Scribd",
+    "created_by": "infy",
+    "created_at": "2025-11-03T17:28:39+00:00",
+    "updated_at": "2025-11-03T17:28:39+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul[class*='Pagination-module_wrapper'] > button[aria-label='next']",
+      "pageElement": "ul[data-e2e='ugc-search-results'] > *",
+      "url": "^https://(www\\.)?scribd\\.com/search?",
+      "exampleUrl": "https://www.scribd.com/search?query=infinity"
+    }
+  },
+  {
+    "name": "Shutterstock",
+    "created_by": "infy",
+    "created_at": "2025-11-04T00:57:55+00:00",
+    "updated_at": "2025-11-04T00:57:55+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "#main-content > div.MuiBox-root > div.MuiBox-root > div > div[class*='-gridContainer-root'] > *",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?shutterstock\\.com/([^/]+/)?search/",
+      "exampleUrl": "https://www.shutterstock.com/video/search/infinity"
     }
   },
   {
