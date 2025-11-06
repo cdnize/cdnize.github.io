@@ -1352,7 +1352,7 @@
       "clickElement": "#main > div.pagination-container > div.pagination > form > button",
       "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *, #main div.image-grid-container > *",
       "scrollUpdateAddress": "false",
-      "url": "^https://www\\.startpage\\.com/.*q(uery)?=",
+      "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=",
       "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
       "comment": "Currently only for q= or query= URLs or via address bar web searches; use cat=images|video|news to access other tabs besides web. Full compatibility without these requirements coming soon in a future version."
     }
