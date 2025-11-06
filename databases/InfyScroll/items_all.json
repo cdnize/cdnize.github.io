@@ -721,7 +721,8 @@
       "scrollIframeEnabled": "false",
       "style": "div.ITCGwe { display: none !important; }",
       "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/(?:c(?:se|ustom)|search|webhp|m|#)",
-      "exampleUrl": "https://www.google.com/search?q=infinity"
+      "exampleUrl": "https://www.google.com/search?q=infinity",
+      "comment": "The style hides video moment items, which are supposed to be hidden; can alternatively target [data-visible='false'] elements"
     }
   },
   {
@@ -733,7 +734,7 @@
       "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/search",
       "action": "click",
       "append": "element",
-      "clickElement": "#botstuff div[jsaction] > a[jsaction][data-ve-view][role='button']",
+      "clickElement": "div[jsaction] > a[jsaction][data-ve-view][role='button']",
       "pageElement": "div[data-async-context*='query'] > *",
       "exampleUrl": "https://www.google.com/search?q=infinity"
     }
@@ -1472,7 +1473,8 @@
       "clickElement": "ul.pagination > li.active.next-arrow",
       "pageElement": "ul.list > *",
       "url": "^https://topclassactions\\.com/category/",
-      "exampleUrl": "https://topclassactions.com/category/lawsuit-settlements/open-lawsuit-settlements/"
+      "exampleUrl": "https://topclassactions.com/category/lawsuit-settlements/open-lawsuit-settlements/",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/120"
     }
   },
   {
