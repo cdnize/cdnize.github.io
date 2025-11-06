@@ -1349,13 +1349,11 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "//button[@class='pagination__next-prev-button next']|//button[@class='css-k54ldh']",
-      "pageElement": "id('main')/div",
-      "loadElement": "//img[contains(@class,'css-1tth2jd')]|//img[contains(@class,'css-k35lnn')]",
-      "mirrorPage": "import",
-      "xurl": "^https://(www\\.)?startpage\\.com/",
-      "exampleUrl": "https://www.startpage.com/",
-      "comment": "SPA Mirror Page Import Example. Important: Not for Startpage's Web due to high CPU usage, but Web (and Mobile Web) could be added by adding the following to the pageElement: |//section[contains(@class,'w-gl')]/*[not(self::h3)]|//div[contains(@class,'w-bg')]/*. Not for Images due to links not being clickable, but Images could be added by adding the following to the pageElement: |//div[contains(@class,'image-main-container')]"
+      "clickElement": "#main > div.pagination-container > div.pagination > form > button",
+      "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *, #main div.image-grid-container > *",
+      "url": "^https://www\\.startpage\\.com/.*q(uery)?=",
+      "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
+      "comment": "Currently only for q= or query= URLs or via address bar web searches; use cat=images|video|news to access other tabs besides web. Full compatibility without these requirements coming soon in a future version."
     }
   },
   {
