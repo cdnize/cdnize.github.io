@@ -1354,7 +1354,7 @@
       "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=",
       "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
-      "comment": "Currently only for q= or query= URLs or via address bar web searches; use cat=images|video|news to access other tabs besides web. Full compatibility without these requirements coming soon in a future version."
+      "comment": "Currently only for q= or query= URLs or via address bar web searches. Add &cat=images or &cat=video or &cat=news in the URL to access other tabs besides web. Full compatibility without these requirements coming soon."
     }
   },
   {
