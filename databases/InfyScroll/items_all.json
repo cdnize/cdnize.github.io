@@ -719,6 +719,7 @@
       "pageElement": "id('rso')|id('center_col')/style[contains(.,'relative')][id('rso')]",
       "pageElementIframe": "import",
       "scrollIframeEnabled": "false",
+      "style": "div.ITCGwe { display: none !important; }",
       "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/(?:c(?:se|ustom)|search|webhp|m|#)",
       "exampleUrl": "https://www.google.com/search?q=infinity"
     }
@@ -1371,21 +1372,6 @@
     }
   },
   {
-    "name": "Temu",
-    "created_by": "infy",
-    "created_at": "2025-10-28T16:45:52+00:00",
-    "updated_at": "2025-10-28T16:45:52+00:00",
-    "data": {
-      "action": "click",
-      "append": "element",
-      "clickElement": "div[role='region'] > div[role='link'] > div[role='button']",
-      "pageElement": "div.autoFitGoodsList > *, div.autoFitList > *",
-      "style": ".infy-scroll-divider { margin: 16px auto !important; }",
-      "url": "^https://(www\\.)?temu\\.com/",
-      "exampleUrl": "https://www.temu.com/search_result.html?search_key=infinity"
-    }
-  },
-  {
     "name": "TBS NEWS DIG Articles",
     "created_by": "infy",
     "created_at": "2025-09-22T03:20:58+00:00",
@@ -1417,6 +1403,21 @@
     }
   },
   {
+    "name": "Temu",
+    "created_by": "infy",
+    "created_at": "2025-10-28T16:45:52+00:00",
+    "updated_at": "2025-10-28T16:45:52+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "div[role='region'] > div[role='link'] > div[role='button']",
+      "pageElement": "div.autoFitGoodsList > *, div.autoFitList > *",
+      "style": ".infy-scroll-divider { margin: 16px auto !important; }",
+      "url": "^https://(www\\.)?temu\\.com/",
+      "exampleUrl": "https://www.temu.com/search_result.html?search_key=infinity"
+    }
+  },
+  {
     "name": "Thingiverse",
     "created_by": "FileCR",
     "updated_by": "infy",
@@ -1444,6 +1445,34 @@
       "pageElementIframe": "import",
       "url": "^https://togetter\\.com",
       "exampleUrl": "https://togetter.com/hot?page=2"
+    }
+  },
+  {
+    "name": "Tom's Hardware",
+    "created_by": "infy",
+    "created_at": "2025-11-04T17:58:00+00:00",
+    "updated_at": "2025-11-04T17:58:00+00:00",
+    "data": {
+      "url": "^https://(www\\.)?tomshardware\\.com/",
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.flexi-pagination > span.active + a:not([href*='/archive'])",
+      "pageElement": "div.listingResults > *",
+      "exampleUrl": "https://www.tomshardware.com/news/"
+    }
+  },
+  {
+    "name": "Top Class Actions",
+    "created_by": "infy",
+    "created_at": "2025-11-06T04:02:56+00:00",
+    "updated_at": "2025-11-06T04:02:56+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.pagination > li.active.next-arrow",
+      "pageElement": "ul.list > *",
+      "url": "^https://topclassactions\\.com/category/",
+      "exampleUrl": "https://topclassactions.com/category/lawsuit-settlements/open-lawsuit-settlements/"
     }
   },
   {
@@ -1537,20 +1566,6 @@
     }
   },
   {
-    "name": "Yahoo! Search JP",
-    "created_by": "infy",
-    "created_at": "2025-11-03T00:44:45+00:00",
-    "updated_at": "2025-11-03T00:44:45+00:00",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "div.Pagenation__next > a",
-      "pageElement": "div.Contents__innerGroupBody > *",
-      "url": "^https://search\\.yahoo\\.co\\.jp/search",
-      "exampleUrl": "https://search.yahoo.co.jp/search?p=infinity"
-    }
-  },
-  {
     "name": "Yahoo! News JP",
     "created_by": "infy",
     "created_at": "2025-10-28T18:54:48+00:00",
@@ -1562,6 +1577,20 @@
       "pageElement": ".newsFeed_list > *, #contentsWrap > ul",
       "url": "^https://news\\.yahoo\\.co\\.jp/",
       "exampleUrl": "https://news.yahoo.co.jp/"
+    }
+  },
+  {
+    "name": "Yahoo! Search JP",
+    "created_by": "infy",
+    "created_at": "2025-11-03T00:44:45+00:00",
+    "updated_at": "2025-11-03T00:44:45+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.Pagenation__next > a",
+      "pageElement": "div.Contents__innerGroupBody > *",
+      "url": "^https://search\\.yahoo\\.co\\.jp/search",
+      "exampleUrl": "https://search.yahoo.co.jp/search?p=infinity"
     }
   },
   {
