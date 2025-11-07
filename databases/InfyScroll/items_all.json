@@ -624,6 +624,7 @@
       "append": "element",
       "nextLink": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
       "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
+      "pageElementIframe": "import",
       "xf": "true",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/commits",
       "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
@@ -654,6 +655,7 @@
       "append": "element",
       "nextLink": "//*[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
       "pageElement": "//ul[@data-listview-component='items-list']/* | id('org-packages')/div | id('org-members-table')/ul",
+      "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
       "xf": "true",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(issues|repositories|packages|people)",
