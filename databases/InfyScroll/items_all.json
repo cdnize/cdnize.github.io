@@ -620,12 +620,27 @@
     "created_at": "2025-08-01T00:00:00+00:00",
     "updated_at": "2025-08-01T00:00:00+00:00",
     "data": {
-      "action": "click",
-      "append": "ajax",
-      "clickElement": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
+      "action": "next",
+      "append": "element",
+      "nextLink": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
       "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
       "xf": "true",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/commits",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
+    }
+  },
+  {
+    "name": "GitHub Commits (FF)",
+    "created_by": "infy",
+    "created_at": "2025-11-07T20:38:53+00:00",
+    "updated_at": "2025-11-07T20:38:53+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
+      "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
+      "style": "div[class*='LoadingSkeleton'] { display: none !important; }",
+      "url": "^https://github\\.com/[^/]+/[^/]+/commit",
       "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
     }
   },
