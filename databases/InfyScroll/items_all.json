@@ -37,6 +37,21 @@
     }
   },
   {
+    "name": "Alamy",
+    "created_by": "infy",
+    "created_at": "2025-11-07T20:33:22+00:00",
+    "updated_at": "2025-11-07T20:33:22+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.w-full > div.px-5 > div:has(div.group[data-testid])",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?alamy\\.com/",
+      "exampleUrl": "https://www.alamy.com/stock-photo/infinity.html"
+    }
+  },
+  {
     "name": "Alibaba",
     "created_by": "infy",
     "created_at": "2025-10-20T17:24:17+00:00",
