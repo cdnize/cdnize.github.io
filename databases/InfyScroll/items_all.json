@@ -1158,7 +1158,7 @@
       "action": "next",
       "append": "element",
       "nextLink": "ul.pagination > li.active + li > a",
-      "pageElement": "div.panel.panel-default > table > tbody > *, div.panel.panel-default > div.table-responsive > table > tbody > *",
+      "pageElement": "div.row > div:first-child div.panel.panel-default table > tbody > *",
       "appendDelay": "6000",
       "url": "^https://openuserjs\\.org/",
       "exampleUrl": "https://openuserjs.org/"
