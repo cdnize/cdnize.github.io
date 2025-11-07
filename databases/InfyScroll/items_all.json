@@ -1026,7 +1026,7 @@
     }
   },
   {
-    "name": "Naver Blog",
+    "name": "Naver Blog Section",
     "created_by": "infy",
     "created_at": "2025-10-30T17:07:51+00:00",
     "updated_at": "2025-10-30T17:07:51+00:00",
@@ -1037,6 +1037,37 @@
       "clickElement": "div.pagination > a.button_next, div.pagination > span:has(a[aria-current='page']) + span > a",
       "pageElement": "#content > section[class*='list'] > div[class*='list'] > *",
       "exampleUrl": "https://section.blog.naver.com/BlogHome.naver"
+    }
+  },
+  {
+    "name": "Naver Blog Post (TODO)",
+    "created_by": "infy",
+    "created_at": "2025-10-30T17:17:22+00:00",
+    "updated_at": "2025-10-30T17:17:22+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "document.querySelector(\"#mainFrame\").contentDocument.querySelector(\"div.blog2_paginate > strong.page + a\")",
+      "pageElement": "document.querySelector(\"#mainFrame\").contentDocument.querySelector(\"#PostThumbnailAlbumViewArea > ul.thumblist > *\")",
+      "pageElementIframe": "import",
+      "navigationListener": "false",
+      "xurl": "^https://blog\\.naver\\.com/",
+      "exampleUrl": "https://blog.naver.com/an2gen3"
+    }
+  },
+  {
+    "name": "Naver Blog Post",
+    "created_by": "infy",
+    "created_at": "2025-10-30T17:17:22+00:00",
+    "updated_at": "2025-10-30T17:17:22+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "document.querySelector(\"#mainFrame\").contentDocument.querySelector(\"div.blog2_paginate > strong.page + a\")",
+      "pageElement": "document.querySelector(\"#mainFrame\").contentDocument.querySelector(\"#PostThumbnailAlbumViewArea > ul.thumblist > *\")",
+      "pageElementIframe": "import",
+      "url": "^https://blog\\.naver\\.com/PostList.naver",
+      "exampleUrl": "https://blog.naver.com/PostList.naver?blogId=an2gen3&parentCategoryNo=196"
     }
   },
   {
