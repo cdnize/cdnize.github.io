@@ -935,24 +935,6 @@
     }
   },
   {
-    "name": "Manhua.dmzj.com",
-    "created_by": "infy",
-    "created_at": "2023-03-20T09:10:37+09:00",
-    "updated_at": "2023-05-04T05:41:19+09:00",
-    "resource_url": "http://wedata.net/items/86095",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "id('search_list_div')/div[@class='pages']/a[.='下一页']",
-      "pageElement": "id('search_list_div')//div[contains(@class, 'tcaricature_block')]",
-      "pageElementIframe": "import",
-      "url": "^https?://manhua\\.dmzj\\.com/",
-      "exampleUrl": "http://manhua.dmzj.com/tags/category_search/0-3263-0-all-0-1-0-1.shtml#category_nav_anchor",
-      "comment": "Email. May be http or insecure"
-    }
-  },
-  {
     "name": "Medium",
     "created_by": "infy",
     "created_at": "2025-11-03T04:49:15+00:00",
@@ -1337,7 +1319,7 @@
       "append": "ajax",
       "clickElement": "ul[class*='Pagination-module_wrapper'] > button[aria-label='next']",
       "pageElement": "ul[data-e2e='ugc-search-results'] > *",
-      "url": "^https://(www\\.)?scribd\\.com/search?",
+      "url": "^https://(www\\.)?scribd\\.com/search",
       "exampleUrl": "https://www.scribd.com/search?query=infinity"
     }
   },
@@ -1757,6 +1739,21 @@
       "pageElement": "div[class*='Grid-']:has(a[class*='StyledCard']), table:has(+ nav[class*='Pagination']) > tbody > *",
       "url": "^https://(www\\.)?zillow\\.com/professionals/",
       "exampleUrl": "https://www.zillow.com/professionals/real-estate-agent-reviews/carmel-by-the-sea-ca/"
+    }
+  },
+  {
+    "name": "快看漫画",
+    "created_by": "infy",
+    "created_at": "2025-11-07T20:05:53+00:00",
+    "updated_at": "2025-11-07T20:05:53+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.pagination > li.itemBten.active + li:not(.disabled) >  a",
+      "pageElement": "div.TagPage > div.tagContent > *",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?kuaikanmanhua\\.com/tag/",
+      "exampleUrl": "https://www.kuaikanmanhua.com/tag/0?page=205"
     }
   }
 ]
