@@ -641,6 +641,7 @@
       "nextLink": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
       "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
       "style": "div[class*='LoadingSkeleton'] { display: none !important; }",
+      "spaf": "^https://github\\.com/",
       "url": "^https://github\\.com/[^/]+/[^/]+/commit",
       "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
     }
