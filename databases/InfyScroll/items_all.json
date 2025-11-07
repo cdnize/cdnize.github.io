@@ -1105,6 +1105,21 @@
     }
   },
   {
+    "name": "OpenUserJS",
+    "created_by": "infy",
+    "created_at": "2025-09-05T15:22:26+00:00",
+    "updated_at": "2025-09-05T15:22:26+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul.pagination > li.active + li > a",
+      "pageElement": "div.panel.panel-default table > tbody > *",
+      "appendDelay": "6000",
+      "url": "^https://openuserjs\\.org/",
+      "exampleUrl": "https://openuserjs.org/"
+    }
+  },
+  {
     "name": "Orion Public Issue Tracker",
     "created_by": "infy",
     "created_at": "2024-05-06T13:45:07+09:00",
@@ -1474,6 +1489,64 @@
       "url": "^https://topclassactions\\.com/category/",
       "exampleUrl": "https://topclassactions.com/category/lawsuit-settlements/open-lawsuit-settlements/",
       "comment": "https://github.com/sixcious/infy-scroll/issues/120"
+    }
+  },
+  {
+    "name": "Userscript Zone",
+    "created_by": "infy",
+    "created_at": "2025-09-05T15:10:13+00:00",
+    "updated_at": "2025-09-05T15:10:13+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "#next_page:not(.hidden)",
+      "pageElement": "div.container > div.script",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?userscript\\.zone/search",
+      "exampleUrl": "https://www.userscript.zone/search?q=infinity"
+    }
+  },
+  {
+    "name": "Userstyles.org",
+    "created_by": "infy",
+    "created_at": "2025-09-05T16:38:24+00:00",
+    "updated_at": "2025-09-05T16:38:24+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "button[data-stylish='next-page-button']",
+      "pageElement": "div[data-stylish='grid-styles']",
+      "url": "^https://userstyles\\.org/",
+      "exampleUrl": "https://userstyles.org/styles/browse/youtube"
+    }
+  },
+  {
+    "name": "UserStyles.org Archive (uso.kkx.one)",
+    "created_by": "infy",
+    "created_at": "2025-09-05T16:58:44+00:00",
+    "updated_at": "2025-09-05T16:58:44+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//ul[contains(@class,'pagination')]/li[contains(@class,'active')]/following-sibling::li[1]/button[not(self::button[contains(.,'›')])]",
+      "pageElement": "body > main > *:not(form):not(:has(nav))",
+      "url": "^https://uso\\.kkx\\.one/browse/",
+      "exampleUrl": "https://uso.kkx.one/browse/styles"
+    }
+  },
+  {
+    "name": "UserStyles.world",
+    "created_by": "infy",
+    "created_at": "2025-09-05T17:39:47+00:00",
+    "updated_at": "2025-09-05T17:39:47+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > a.Pagination-button.icon.next",
+      "pageElement": "#content > section > div.grid:has(> div.card) > *",
+      "style": ".infy-scroll-divider a[href^='http']::after { content: none !important;}",
+      "url": "^https://userstyles\\.world/",
+      "exampleUrl": "https://userstyles.world/search?q=youtube"
     }
   },
   {
