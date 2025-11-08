@@ -845,6 +845,7 @@
       "append": "element",
       "nextLink": "nav > ul > li:last-child > a[href*='p']",
       "pageElement": "div.container > div > div.flex.flex-col:has(> a)",
+      "scrollUpdateAddress": "false",
       "url": "^https://huggingface\\.co/blog",
       "exampleUrl": "https://huggingface.co/blog"
     }
@@ -877,6 +878,7 @@
       "nextLink": "section.container > div:has(> article) > div > a:first-child:not(.ml-auto)",
       "pageElement": "section.container > div:has(> article)",
       "style": "section.container > div:has(> article) > *:not(article) { display: none !important; }",
+      "scrollUpdateAddress": "false",
       "url": "^https://huggingface\\.co/papers",
       "exampleUrl": "https://huggingface.co/papers"
     }
