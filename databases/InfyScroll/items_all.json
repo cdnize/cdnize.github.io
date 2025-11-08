@@ -836,6 +836,82 @@
     }
   },
   {
+    "name": "Hugging Face Blog",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:14:19+00:00",
+    "updated_at": "2025-11-08T00:14:19+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > ul > li:last-child > a[href*='p']",
+      "pageElement": "div.container > div > div.flex.flex-col:has(> a)",
+      "url": "^https://huggingface\\.co/blog",
+      "exampleUrl": "https://huggingface.co/blog"
+    }
+  },
+  {
+    "name": "Hugging Face Models/Datasets",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:12:10+00:00",
+    "updated_at": "2025-11-08T00:12:10+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > ul > li:last-child > a[href*='p']",
+      "pageElement": "div.container > section > div > div.grid",
+      "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "xf": "true",
+      "url": "<xf>^https://huggingface\\.co/(models|datasets)",
+      "exampleUrl": "https://huggingface.co/models"
+    }
+  },
+  {
+    "name": "Hugging Face Papers",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:16:20+00:00",
+    "updated_at": "2025-11-08T00:16:20+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "section.container > div:has(> article) > div > a:first-child:not(.ml-auto)",
+      "pageElement": "section.container > div:has(> article)",
+      "style": "section.container > div:has(> article) > *:not(article) { display: none !important; }",
+      "url": "^https://huggingface\\.co/papers",
+      "exampleUrl": "https://huggingface.co/papers"
+    }
+  },
+  {
+    "name": "Hugging Face Posts",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:15:03+00:00",
+    "updated_at": "2025-11-08T00:15:03+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "div.container > div.overflow-hidden > div > div > div > button.btn.text-smd.mx-4:has(> svg)",
+      "pageElement": "div.container > div.overflow-hidden > div > div.mt-7 > div:not(:has(> button))",
+      "url": "^https://huggingface\\.co/posts",
+      "exampleUrl": "https://huggingface.co/posts"
+    }
+  },
+  {
+    "name": "Hugging Face Search/Spaces",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:05:15+00:00",
+    "updated_at": "2025-11-08T00:05:15+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav > ul > li:last-child > a[href*='p']",
+      "pageElement": "div.container > div.overflow-hidden > div.flex.flex-col, div.container > div > div.grid",
+      "scrollUpdateAddress": "false",
+      "xf": "true",
+      "url": "<xf>^https://huggingface\\.co/(search|spaces)",
+      "exampleUrl": "https://huggingface.co/search/full-text?q=infinity"
+    }
+  },
+  {
     "name": "Indeed Companies",
     "created_by": "infy",
     "created_at": "2025-10-29T20:41:59+00:00",
