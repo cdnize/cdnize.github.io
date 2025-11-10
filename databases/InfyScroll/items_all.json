@@ -652,15 +652,15 @@
     "created_at": "2025-08-01T00:00:00+00:00",
     "updated_at": "2025-08-01T00:00:00+00:00",
     "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "//*[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//*[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
       "pageElement": "//ul[@data-listview-component='items-list']/* | id('org-packages')/div | id('org-members-table')/ul",
-      "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
       "xf": "true",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(issues|repositories|packages|people)",
-      "exampleUrl": "https://github.com/actions/toolkit/issues"
+      "exampleUrl": "https://github.com/actions/toolkit/issues",
+      "comment": "AJAX due to issues with pagination"
     }
   },
   {
