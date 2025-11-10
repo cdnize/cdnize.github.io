@@ -1463,6 +1463,21 @@
     }
   },
   {
+    "name": "SlickDeals Comments (New)",
+    "created_by": "infy",
+    "created_at": "2025-11-10T21:20:20+00:00",
+    "updated_at": "2025-11-10T21:20:20+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.slickdealsPagination > span + a",
+      "pageElement": "section.commentsSection > div.commentsSectionComment",
+      "pageElementIframe": "import",
+      "url": "^https://slickdeals\\.net/",
+      "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h"
+    }
+  },
+  {
     "name": "Slickdeals Deals (AJAX)",
     "created_by": "infy",
     "created_at": "2025-10-23T23:32:48+00:00",
