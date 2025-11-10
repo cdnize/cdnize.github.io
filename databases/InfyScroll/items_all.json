@@ -1473,7 +1473,7 @@
       "nextLink": "div.slickdealsPagination > span + a",
       "pageElement": "section.commentsSection > div.commentsSectionComment",
       "pageElementIframe": "import",
-      "url": "^https://slickdeals\\.net/",
+      "url": "^https://slickdeals\\.net/f/",
       "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h"
     }
   },
