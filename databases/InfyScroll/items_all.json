@@ -659,8 +659,7 @@
       "scrollUpdateAddress": "false",
       "xf": "true",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(issues|repositories|packages|people)",
-      "exampleUrl": "https://github.com/actions/toolkit/issues",
-      "comment": "AJAX due to issues with pagination"
+      "exampleUrl": "https://github.com/actions/toolkit/issues"
     }
   },
   {
