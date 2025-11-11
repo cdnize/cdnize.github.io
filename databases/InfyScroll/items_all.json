@@ -647,7 +647,7 @@
     }
   },
   {
-    "name": "GitHub Issues and Orgs",
+    "name": "GitHub Issues/Orgs",
     "created_by": "infy",
     "created_at": "2025-08-01T00:00:00+00:00",
     "updated_at": "2025-08-01T00:00:00+00:00",
@@ -677,7 +677,7 @@
     }
   },
   {
-    "name": "GitHub Search",
+    "name": "GitHub Search/Releases",
     "created_by": "infy",
     "created_at": "2025-10-27T17:42:49+00:00",
     "updated_at": "2025-10-27T17:42:49+00:00",
@@ -685,9 +685,23 @@
       "action": "next",
       "append": "element",
       "nextLink": "[rel='next']",
-      "pageElement": "div[data-testid='results-list'] > *",
-      "url": "^https://github\\.com/search",
+      "pageElement": "div[data-testid='results-list'] > *, div:has(> div.paginate-container) > section",
+      "url": "^https://github\\.com/(search|.*releases)",
       "exampleUrl": "https://github.com/search?q=progress&type=code"
+    }
+  },
+  {
+    "name": "GitHub Stars",
+    "created_by": "infy",
+    "created_at": "2025-11-11T22:33:22+00:00",
+    "updated_at": "2025-11-11T22:33:22+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.paginate-container > div.BtnGroup > *:nth-child(2)",
+      "pageElement": "div:has(> .paginate-container) > *.d-block",
+      "url": "^https://github\\.com/.*stars",
+      "exampleUrl": "https://github.com/me?tab=stars"
     }
   },
   {
