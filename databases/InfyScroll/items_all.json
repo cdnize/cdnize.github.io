@@ -1449,7 +1449,7 @@
     }
   },
   {
-    "name": "Slickdeals Comments/Threads/Search/Deals",
+    "name": "Slickdeals (Classic)",
     "created_by": "infy",
     "created_at": "2025-10-23T23:32:47+00:00",
     "updated_at": "2025-10-23T23:32:47+00:00",
@@ -1458,27 +1458,27 @@
       "append": "element",
       "nextLink": "div.pagenav_box > a.search_pagenav.search_pagenav_current + a",
       "pageElement": "#comment_list > *, #posts > *, #results_table > tbody > *, #hottopic_threadbits > *",
-      "url": "^https://slickdeals\\.net/",
-      "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h?v=1"
-    }
-  },
-  {
-    "name": "SlickDeals Comments (New)",
-    "created_by": "infy",
-    "created_at": "2025-11-10T21:20:20+00:00",
-    "updated_at": "2025-11-10T21:20:20+00:00",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "div.slickdealsPagination > span + a",
-      "pageElement": "section.commentsSection > div.commentsSectionComment",
-      "pageElementIframe": "import",
-      "url": "^https://slickdeals\\.net/f/",
+      "url": "^https://slickdeals\\.net/[classic]?",
       "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h"
     }
   },
   {
-    "name": "Slickdeals Deals (AJAX)",
+    "name": "Slickdeals (Redesign)",
+    "created_by": "infy",
+    "created_at": "2025-11-11T18:23:33+00:00",
+    "updated_at": "2025-11-11T18:23:33+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.slickdealsPagination > *[class='slickdealsPagination__pageNumber'] + a",
+      "pageElement": "section.commentsSection > div.commentsSectionComment, #commentsBox > div[id^='post'], ul#searchPageGrid > li[class*='searchPageGrid__feedItem']",
+      "pageElementIframe": "import",
+      "url": "^https://slickdeals\\.net/[redesign]?",
+      "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h"
+    }
+  },
+  {
+    "name": "Slickdeals Categories",
     "created_by": "infy",
     "created_at": "2025-10-23T23:32:48+00:00",
     "updated_at": "2025-10-23T23:32:48+00:00",
