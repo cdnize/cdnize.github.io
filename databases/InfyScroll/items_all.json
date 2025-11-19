@@ -677,6 +677,21 @@
     }
   },
   {
+    "name": "GitHub Repositories",
+    "created_by": "infy",
+    "created_at": "2025-11-11T23:12:29+00:00",
+    "updated_at": "2025-11-11T23:12:29+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "ul[data-filterable-for='your-repos-filter'] > *",
+      "removeElement": "poll-include-fragment",
+      "url": "^https://github\\.com/[^/]+\\?tab=repositories",
+      "exampleUrl": "https://github.com/me?tab=repositories"
+    }
+  },
+  {
     "name": "GitHub Search/Releases",
     "created_by": "infy",
     "created_at": "2025-10-27T17:42:49+00:00",
@@ -702,21 +717,6 @@
       "pageElement": "div:has(> .paginate-container) > *.d-block",
       "url": "^https://github\\.com/[^/]+\\?tab=stars",
       "exampleUrl": "https://github.com/me?tab=stars"
-    }
-  },
-  {
-    "name": "GitHub Repositories",
-    "created_by": "infy",
-    "created_at": "2025-11-11T23:12:29+00:00",
-    "updated_at": "2025-11-11T23:12:29+00:00",
-    "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "[rel='next']",
-      "pageElement": "ul[data-filterable-for='your-repos-filter'] > *",
-      "removeElement": "poll-include-fragment",
-      "url": "^https://github\\.com/[^/]+\\?tab=repositories",
-      "exampleUrl": "https://github.com/me?tab=repositories"
     }
   },
   {
@@ -1099,6 +1099,20 @@
       "pageElementIframe": "import",
       "url": "^https://jp\\.mercari\\.com/",
       "exampleUrl": "https://jp.mercari.com/search?keyword=infinity"
+    }
+  },
+  {
+    "name": "Microsoft Q&A",
+    "created_by": "infy",
+    "created_at": "2025-11-19T22:47:54+00:00",
+    "updated_at": "2025-11-19T22:47:54+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul.pagination-list > li > a[data-test-id='pagination-button-forward']:not([aria-hidden='true'])",
+      "pageElement": "#main > div[data-bi-name*='question-list'] > div.box, #answers ol:has(> *[id^='answer-']):has(+ nav.pagination) > *",
+      "url": "^https://learn\\.microsoft\\.com/([^/]+/)?answers/questions/",
+      "exampleUrl": "https://learn.microsoft.com/answers/questions/"
     }
   },
   {
