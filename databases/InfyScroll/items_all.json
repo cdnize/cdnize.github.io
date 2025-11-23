@@ -1546,11 +1546,11 @@
       "action": "click",
       "append": "ajax",
       "clickElement": "#main > div.pagination-container > div.pagination > form > button",
-      "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *, #main div.image-grid-container > *",
+      "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *",
       "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=",
       "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
-      "comment": "Currently only for q= or query= URLs or via address bar web searches. Add &cat=images or &cat=video or &cat=news in the URL to access other tabs besides web. Note that images will not be clickable and not have a modal appear when clicked due to the site using scripts. Full compatibility without url query requirements coming soon."
+      "comment": "Currently only for q= or query= URLs or via address bar web searches. Add &cat=video or &cat=news in the URL to access other tabs besides web. Images are not currently supported due to the modals not being openable. Full compatibility without url query requirements coming soon."
     }
   },
   {
