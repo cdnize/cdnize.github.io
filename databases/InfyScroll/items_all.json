@@ -1000,6 +1000,21 @@
       "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
     }
   },
+    {
+    "name": "Kuaikan Manhua",
+    "created_by": "infy",
+    "created_at": "2025-11-07T20:05:53+00:00",
+    "updated_at": "2025-11-07T20:05:53+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.pagination > li.itemBten.active + li:not(.disabled) >  a",
+      "pageElement": "div.TagPage > div.tagContent > *",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?kuaikanmanhua\\.com/tag/",
+      "exampleUrl": "https://www.kuaikanmanhua.com/tag/0?page=205"
+    }
+  },
   {
     "name": "LCSC Electronics",
     "created_by": "infy",
@@ -1492,6 +1507,20 @@
     }
   },
   {
+    "name": "Skidrow & Reloaded Games",
+    "created_by": "400p",
+    "created_at": "2025-11-28T20:58:46+00:00",
+    "updated_at": "2025-11-28T20:58:46+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "id('main-content')//a[.='»']",
+      "pageElement": "#main-content > *",
+      "url": "^https://(www\\.)?skidrowreloaded\\.com/",
+      "exampleUrl": "https://www.skidrowreloaded.com/page/19/"
+    }
+  },
+  {
     "name": "Slickdeals (Classic)",
     "created_by": "infy",
     "created_at": "2025-10-23T23:32:47+00:00",
@@ -1907,21 +1936,6 @@
       "pageElement": "div[class*='Grid-']:has(a[class*='StyledCard']), table:has(+ nav[class*='Pagination']) > tbody > *",
       "url": "^https://(www\\.)?zillow\\.com/professionals/",
       "exampleUrl": "https://www.zillow.com/professionals/real-estate-agent-reviews/carmel-by-the-sea-ca/"
-    }
-  },
-  {
-    "name": "快看漫画",
-    "created_by": "infy",
-    "created_at": "2025-11-07T20:05:53+00:00",
-    "updated_at": "2025-11-07T20:05:53+00:00",
-    "data": {
-      "action": "click",
-      "append": "ajax",
-      "clickElement": "ul.pagination > li.itemBten.active + li:not(.disabled) >  a",
-      "pageElement": "div.TagPage > div.tagContent > *",
-      "scrollUpdateAddress": "false",
-      "url": "^https://(www\\.)?kuaikanmanhua\\.com/tag/",
-      "exampleUrl": "https://www.kuaikanmanhua.com/tag/0?page=205"
     }
   }
 ]
