@@ -1221,6 +1221,22 @@
     }
   },
   {
+    "name": "Neokyo",
+    "created_by": "BillyCool",
+    "updated_by":"infy",
+    "created_at": "2025-12-26T15:43:48+00:00",
+    "updated_at": "2025-12-26T15:43:48+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul.pagination > li.active + li > a.page-link",
+      "pageElement": ".products-listing .listing > .row",
+      "pageElementIframe": "import",
+      "url": "^https://neokyo\\.com/\\D+/search/*",
+      "exampleUrl": "https://neokyo.com/en/search/mercari?page=3&keyword=Nintendo&translate=1&order-tag=created_time%3Adesc&condition=&shipping_charges=&item_shop=3&google_translate=%E4%BB%BB%E5%A4%A9%E5%A0%82&category[level_1]=&category[level_2]=&category[level_3]="
+    }
+  },
+  {
     "name": "NHentai",
     "created_by": "infy",
     "created_at": "2025-01-01T00:00:00+00:00",
