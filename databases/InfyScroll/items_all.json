@@ -1934,7 +1934,7 @@
       "action": "next",
       "append": "element",
       "nextLink": "[rel='next']",
-      "pageElement": "#main-content > ul[class*='list']:has(div[data-testid='search-results-divider']) > *",
+      "pageElement": "#main-content > ul[class*='list']:has(+ ul div[role='navigation']) > *",
       "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?yelp\\.com/search",
       "exampleUrl": "https://www.yelp.com/search?find_desc=Things+To+Do"
