@@ -1,7 +1,11 @@
 [
   {
     "name": "!",
-    "databaseExcludeUrls": ["^https://www\\.flickr\\.com/photos/[^/]+/\\d, ^https://danbooru\\.donmai\\.us/posts/\\d+", "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/"]
+    "databaseExcludeUrls": [
+      "^https://danbooru\\.donmai\\.us/posts/\\d+",
+      "^https://www\\.flickr\\.com/photos/[^/]+/\\d+",
+      "^https://docs\\.riscv\\.org/",
+      "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/"]
   },
   {
     "name": "1337x",
@@ -1478,6 +1482,21 @@
       "pageElement": "ul.feed-list-module__list__UTW6i > *",
       "url": "^https://(www\\.)?reuters\\.com/",
       "exampleUrl": "https://www.reuters.com/technology/artificial-intelligence/"
+    }
+  },
+  {
+    "name": "RISC-V Docs",
+    "created_by": "infy",
+    "created_at": "2026-01-20T19:46:04+00:00",
+    "updated_at": "2026-01-20T19:46:04+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav.pagination > span.next > a",
+      "pageElement": "main.article > div.content > article.doc > *",
+      "url": "^https://docs\\.riscv\\.org/",
+      "exampleUrl": "https://docs.riscv.org/reference/isa/unpriv/unpriv-index.html",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/125"
     }
   },
   {
