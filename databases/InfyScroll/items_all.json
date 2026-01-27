@@ -256,6 +256,20 @@
     }
   },
   {
+    "name": "Best Buy Reviews",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul.pagination li.next > a",
+      "pageElement": "ul.reviews-list > *",
+      "url": "^https://www\\.bestbuy\\.com/site/reviews/",
+      "exampleUrl": ""
+    }
+  },
+  {
     "name": "Bilibili",
     "created_by": "infy",
     "created_at": "2023-04-23T05:03:14+09:00",
@@ -705,6 +719,7 @@
       "append": "element",
       "nextLink": "[rel='next']",
       "pageElement": "div[data-testid='results-list'] > *, div:has(> div.paginate-container) > section",
+      "appendDelay": "4000",
       "url": "^https://github\\.com/(search|.*releases)",
       "exampleUrl": "https://github.com/search?q=progress&type=code"
     }
@@ -846,6 +861,21 @@
       "append": "ajax",
       "clickElement": "div.navbar:not(.hidden) ul > li:not(.disabled) > #nextPanel",
       "pageElement": "#comicImages:not(.hidden) > *",
+      "url": "^https://hitomi\\.la/reader/",
+      "exampleUrl": "https://hitomi.la/reader/3318905.html",
+      "comment": "Updated by infy to use a safe example URL"
+    }
+  },
+  {
+    "name": "Hitomi Reader Mobile",
+    "created_by": "infy",
+    "created_at": "2025-10-16T21:56:34+00:00",
+    "updated_at": "2025-10-16T21:56:34+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.mobile-navbar:not(.hidden) ul > li > a#mobile-nextPanel > img.arrow_active:not(.hidden)",
+      "pageElement": "#mobileImages:not(.hidden) > *",
       "url": "^https://hitomi\\.la/reader/",
       "exampleUrl": "https://hitomi.la/reader/3318905.html",
       "comment": "Updated by infy to use a safe example URL"
@@ -1180,6 +1210,21 @@
     }
   },
   {
+    "name": "Naver Search Mobile",
+    "created_by": "infy",
+    "created_at": "2025-10-27T02:42:13+00:00",
+    "updated_at": "2025-10-27T02:42:13+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.api_subject_bx > div.page_wrap > button.btn_next:not(.dimmmed):not([aria-disabled='true'])",
+      "pageElement": "#ct",
+      "xf": "true",
+      "url": "<xf>^https://m\\.search\\.naver\\.com/",
+      "exampleUrl": "https://m.search.naver.com/search.naver?query=%22infinity"
+    }
+  },
+  {
     "name": "Naver Blog Section",
     "created_by": "infy",
     "created_at": "2025-10-30T17:07:51+00:00",
@@ -1494,6 +1539,7 @@
       "append": "element",
       "nextLink": "nav.pagination > span.next > a",
       "pageElement": "main.article > div.content > article.doc > *",
+      "style": ".infy-scroll-divider { margin-top: 64px !important; }",
       "url": "^https://docs\\.riscv\\.org/",
       "exampleUrl": "https://docs.riscv.org/reference/isa/unpriv/unpriv-index.html",
       "comment": "https://github.com/sixcious/infy-scroll/issues/125"
@@ -1927,6 +1973,19 @@
       "appendDelay": "8000",
       "url": "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/",
       "exampleUrl": "https://yandex.com/search?text=infinity"
+    }
+  },
+  {
+    "name": "Yandex Mobile/Videos",
+    "created_by": "infy",
+    "created_at": "2025-08-23T18:57:07+00:00",
+    "updated_at": "2025-08-23T18:57:07+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "button.Pager-More, button.NextPageButton",
+      "url": "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/(video(/touch)?/)?search",
+      "exampleUrl": "https://yandex.com/video/touch/search?text=infinity"
     }
   },
   {
