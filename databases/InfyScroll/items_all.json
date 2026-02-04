@@ -261,12 +261,12 @@
     "created_at": "2025-08-01T00:00:00+00:00",
     "updated_at": "2025-08-01T00:00:00+00:00",
     "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "ul.pagination li.next > a",
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.pagination li.next > a",
       "pageElement": "ul.reviews-list > *",
-      "url": "^https://www\\.bestbuy\\.com/site/reviews/",
-      "exampleUrl": ""
+      "url": "^https://(www\\.)?bestbuy\\.com/site/reviews/",
+      "exampleUrl": "https://www.bestbuy.com/site/reviews/apple-airpods-pro-3-wireless-active-noise-cancelling-earbuds-with-heart-rate-sensing-feature-white/6376563"
     }
   },
   {
@@ -519,6 +519,40 @@
       "pageElementIframe": "import",
       "url": "^https://(www\\.)?etsy\\.com/search",
       "exampleUrl": "https://www.etsy.com/search?q=infinity"
+    }
+  },
+  {
+    "name": "Etsy Reviews (Same Listing) (TODO)",
+    "created_by": "infy",
+    "created_at": "2025-10-29T22:26:38+00:00",
+    "updated_at": "2025-10-29T22:26:38+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[data-clg-id*='Pagination'] div:has(button[aria-current='true']) + div button:not([disabled])",
+      "pageElement": "div[data-reviews-view-container] > div[data-appears-event-data*='same_listing_reviews'] div[data-reviews] > div.wt-grid > *",
+      "mirrorPage": "puppet",
+      "puppet": "await page.click(\"button[data-view-all-reviews-button='same-listing']\");",
+      "spa": "^https://www\\.etsy\\.com",
+      "xurl": "^https://(www\\.)?etsy\\.com/listing/[same-listing-reviews]?",
+      "exampleUrl": "https://www.etsy.com/listing/1506577518/infinity-train-character-clear-vinyl"
+    }
+  },
+  {
+    "name": "Etsy Reviews (Shop) (TODO)",
+    "created_by": "infy",
+    "created_at": "2025-10-29T22:29:05+00:00",
+    "updated_at": "2025-10-29T22:29:05+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[data-clg-id*='Pagination'] div:has(button[aria-current='true']) + div button:not([disabled])",
+      "pageElement": "div[data-reviews-view-container] > div[data-appears-event-data*='shop_reviews'] div[data-reviews] > div.wt-grid > *",
+      "mirrorPage": "puppet",
+      "puppet": "await page.click(\"button[data-view-all-reviews-button='shop']\");",
+      "spa": "^https://www\\.etsy\\.com",
+      "xurl": "^https://(www\\.)?etsy\\.com/listing/[shop-reviews]?",
+      "exampleUrl": "https://www.etsy.com/listing/1506577518/infinity-train-character-clear-vinyl"
     }
   },
   {
@@ -990,6 +1024,20 @@
     }
   },
   {
+    "name": "Indeed Jobs",
+    "created_by": "infy",
+    "created_at": "2025-10-29T20:16:50+00:00",
+    "updated_at": "2025-10-29T20:16:50+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > ul > li > a[data-testid='pagination-page-next']",
+      "pageElement": "#mosaic-provider-jobcards > div[class*='mosaic-provider-jobcards'] > ul > *",
+      "xurl": "^https://(\\w+\\.)?indeed\\.com/jobs",
+      "exampleUrl": "https://www.indeed.com/jobs?q=teacher"
+    }
+  },
+  {
     "name": "India Times",
     "created_by": "infy",
     "created_at": "2025-11-03T18:11:49+00:00",
@@ -1034,7 +1082,22 @@
       "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
     }
   },
-    {
+  {
+    "name": "Kleinanzeigen Mobile",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "id('paging-next')",
+      "pageElement": "id('srp-results')/*",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/",
+      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
+    }
+  },
+  {
     "name": "Kuaikan Manhua",
     "created_by": "infy",
     "created_at": "2025-11-07T20:05:53+00:00",
@@ -1315,6 +1378,26 @@
       "xf": "true",
       "url": "<xf>^https://(www\\.)?nicovideo.jp/(search|tag)/",
       "exampleUrl": "https://www.nicovideo.jp/search/infinity"
+    }
+  },
+  {
+    "name": "Nike Reviews (TODO)",
+    "created_by": "infy",
+    "created_at": "2023-05-11T08:26:29+09:00",
+    "updated_at": "2023-06-08T04:01:42+09:00",
+    "resource_url": "http://wedata.net/items/86120",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//button[@aria-label='Go to next reviews']",
+      "pageElement": "//div[@class='tt-c-reviews-list__content']/*",
+      "puppet": "await page.click(\"#pdp-info-accordions__reviews-accordion > summary\");\r\nawait page.click(\"button[data-testid='more-reviews-button']\");",
+      "mirrorPage": "puppet",
+      "spa": "^https://(www\\.)?nike\\.com/t/",
+      "xurl": "^https://(www\\.)?nike\\.com/t/",
+      "exampleUrl": "https://www.nike.com/t/p-6000-shoes-XkgpKW/CD6404-403",
+      "comment": "SPA Mirror Page Puppeteer Example"
     }
   },
   {
@@ -2016,6 +2099,23 @@
       "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?yelp\\.com/search",
       "exampleUrl": "https://www.yelp.com/search?find_desc=Things+To+Do"
+    }
+  },
+  {
+    "name": "Zillow",
+    "created_by": "infy",
+    "created_at": "2025-10-29T19:18:27+00:00",
+    "updated_at": "2025-10-29T19:18:27+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "#grid-search-results > ul:has(li[class*='ListItem'])",
+      "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "xurl": "<xf>^https://(www\\.)?zillow\\.com/",
+      "xf": "true",
+      "exampleUrl": "https://www.zillow.com/carmel-by-the-sea-ca/"
     }
   },
   {
