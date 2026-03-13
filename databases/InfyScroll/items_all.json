@@ -3,8 +3,9 @@
     "name": "!",
     "databaseExcludeUrls": [
       "^https://danbooru\\.donmai\\.us/posts/\\d+",
-      "^https://www\\.flickr\\.com/photos/[^/]+/\\d+",
+      "^https://(www\\.)?flickr\\.com/photos/[^/]+/\\d+",
       "^https://docs\\.riscv\\.org/",
+      "^https://(www\\.)?toasteful\\.com/",
       "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/"]
   },
   {
@@ -98,6 +99,21 @@
       "pageElementIframe": "import",
       "url": "^https://aliexpress\\.ru/",
       "exampleUrl": "https://aliexpress.ru/wholesale?SearchText=infinity"
+    }
+  },
+  {
+    "name": "Allegro",
+    "created_by": "infy",
+    "created_at": "2026-03-13T17:14:39+00:00",
+    "updated_at": "2026-03-13T17:14:39+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.opbox-listing > div > ul",
+      "url": "^https://allegro\\.(pl/listing|cz/vyhledavani|sk/vyhladavanie|hu/kereses)",
+      "exampleUrl": "https://allegro.pl/listing?string=szpadel",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/128"
     }
   },
   {
@@ -1747,6 +1763,23 @@
     }
   },
   {
+    "name": "Startpage Images (TODO)",
+    "created_by": "infy",
+    "created_at": "2026-02-15T06:29:08+00:00",
+    "updated_at": "2026-02-15T06:29:08+00:00",
+    "data": {
+      "action": "increment",
+      "append": "element",
+      "infix": "?page=1",
+      "interval": "1",
+      "pageElement": "body > *",
+      "pageElementIframe": "trim",
+      "iframeResize": "false",
+      "xurl": "^https://(www\\.)?startpage\\.com/.*q(uery)?=.*",
+      "exampleUrl": "https://www.startpage.com/do/dsearch?q=infinity&cat=images"
+    }
+  },
+  {
     "name": "Target",
     "created_by": "infy",
     "created_at": "2025-10-31T02:39:11+00:00",
@@ -1819,6 +1852,20 @@
       "pageElement": "div.Layout__content--q0zji > div > div.ItemCardGrid__itemCardGrid--oBQiy",
       "url": "^https://(www\\.)?thingiverse\\.com/",
       "exampleUrl": "https://www.thingiverse.com/?page=3"
+    }
+  },
+  {
+    "name": "Toasteful",
+    "created_by": "infy",
+    "created_at": "2026-02-19T06:44:03+00:00",
+    "updated_at": "2026-02-19T06:44:03+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.ch-bottom > a.next",
+      "pageElement": "div.content-post > *",
+      "url": "^https://(www\\.)?toasteful\\.com/",
+      "exampleUrl": "https://www.toasteful.com/2026/02/yuusha-eiyuu-v6c110.html"
     }
   },
   {
