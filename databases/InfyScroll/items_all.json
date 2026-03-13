@@ -1864,6 +1864,7 @@
       "append": "element",
       "nextLink": "div.ch-bottom > a.next",
       "pageElement": "div.content-post > *",
+      "pageElementIframe": "import",
       "url": "^https://(www\\.)?toasteful\\.com/",
       "exampleUrl": "https://www.toasteful.com/2026/02/yuusha-eiyuu-v6c110.html"
     }
