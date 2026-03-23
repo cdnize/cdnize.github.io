@@ -136,12 +136,12 @@
     "name": "Amazon Reviews",
     "created_by": "infy",
     "created_at": "2024-07-22T00:00:00+00:00",
-    "updated_at": "2025-11-08T20:22:04+00:00",
+    "updated_at": "2026-03-23T18:00:13+00:00",
     "data": {
       "action": "click",
-      "append": "ajax",
-      "clickElement": "ul.a-pagination > li.a-last > a",
-      "pageElement": "#cm_cr-review_list ul:has(> .review) > *",
+      "append": "element",
+      "clickElement": "#cm_cr-pagination_bar a[data-hook='show-more-button']",
+      "pageElement": "#cm_cr-review_list > *",
       "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*[review]?",
       "exampleUrl": "https://www.amazon.com/product-reviews/B0CPP2JGZY"
     }
