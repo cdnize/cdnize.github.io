@@ -708,7 +708,7 @@
       "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list'], #org-packages, #org-members-table",
       "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
-      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(commits)..................",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(commits)(..................)?",
       "usw": "https://github.com/*/*/issues*",
       "xf": "true",
       "comment": "TODO: Add issues to url",
