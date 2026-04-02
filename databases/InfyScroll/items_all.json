@@ -697,52 +697,38 @@
     }
   },
   {
-    "name": "GitHub Commits",
+    "name": "GitHub Commits/Issues",
     "created_by": "infy",
     "created_at": "2025-08-01T00:00:00+00:00",
     "updated_at": "2025-08-01T00:00:00+00:00",
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
-      "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list'], #org-packages, #org-members-table",
       "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(commits)..................",
+      "usw": "https://github.com/*/*/issues*",
       "xf": "true",
-      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/commits",
-      "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
+      "comment": "TODO: Add issues to url",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/actions/toolkit/issues"
     }
   },
   {
-    "name": "GitHub Commits (Alt)",
+    "name": "GitHub Commits (Alt)/Packages/People",
     "created_by": "infy",
     "created_at": "2025-11-07T20:38:53+00:00",
     "updated_at": "2025-11-07T20:38:53+00:00",
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//div/a[@data-testid='pagination-next-button'][not(@aria-disabled)]",
-      "pageElement": "//div[contains(@class,'prc-Timeline-Timeline')][@data-clip-sidebar]/div",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], #org-packages, #org-members-table",
       "style": "div[class*='LoadingSkeleton'] { display: none !important; }",
       "spaf": "^https://github\\.com/",
-      "url": "^https://github\\.com/[^/]+/[^/]+/commit",
-      "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
-    }
-  },
-  {
-    "name": "GitHub Issues/Orgs",
-    "created_by": "infy",
-    "created_at": "2025-08-01T00:00:00+00:00",
-    "updated_at": "2025-08-01T00:00:00+00:00",
-    "data": {
-      "action": "click",
-      "append": "ajax",
-      "clickElement": "//*[@aria-label='Pagination']//a[@rel='next'][not(@aria-disabled)]",
-      "pageElement": "//ul[@data-listview-component='items-list']/* | id('org-packages')/div | id('org-members-table')/ul",
-      "scrollUpdateAddress": "false",
-      "xf": "true",
-      "usw": "https://github.com/*/*/issues*",
-      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(issues|repositories|packages|people)",
-      "exampleUrl": "https://github.com/actions/toolkit/issues"
+      "url": "^https://github\\.com/[^/]+/[^/]+/(commits|packages|people)",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/orgs/microsoft/packages https://github.com/orgs/microsoft/people"
     }
   },
   {
@@ -753,8 +739,8 @@
     "data": {
       "action": "click",
       "append": "element",
-      "clickElement": "//button[@data-test-selector='project-load-more-button']",
-      "pageElement": "id('memexes-results')/div[contains(@class,'Box')]/ul",
+      "clickElement": "button[data-test-selector='project-load-more-button']",
+      "pageElement": "#memexes-results > div[class*='Box'] > ul",
       "url": "^https://github\\.com/[^/]+/[^/]+/projects",
       "exampleUrl": "https://github.com/orgs/microsoft/projects"
     }
@@ -765,13 +751,14 @@
     "created_at": "2025-11-11T23:12:29+00:00",
     "updated_at": "2025-11-11T23:12:29+00:00",
     "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "[rel='next']",
-      "pageElement": "ul[data-filterable-for='your-repos-filter'] > *",
-      "removeElement": "poll-include-fragment",
-      "url": "^https://github\\.com/[^/]+\\?tab=repositories",
-      "exampleUrl": "https://github.com/me?tab=repositories"
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "ul[class*='ListView-module__ul'][data-listview-component='items-list']",
+      "scrollUpdateAddress": "false",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(repositories)",
+      "xf": "true",
+      "exampleUrl": "https://github.com/orgs/microsoft/repositories"
     }
   },
   {
@@ -782,15 +769,30 @@
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "[rel='next']",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
       "pageElement": "div[data-testid='results-list'] > *, div:has(> div.paginate-container) > section",
       "appendDelay": "4000",
       "url": "^https://github\\.com/(search|.*releases)",
-      "exampleUrl": "https://github.com/search?q=progress&type=code"
+      "exampleUrl": "https://github.com/search?q=progress&type=code https://github.com/microsoft/terminal/releases"
     }
   },
   {
-    "name": "GitHub Stars",
+    "name": "GitHub User Repositories",
+    "created_by": "infy",
+    "created_at": "2025-11-11T23:12:29+00:00",
+    "updated_at": "2025-11-11T23:12:29+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "ul[data-filterable-for='your-repos-filter'] > *",
+      "removeElement": "poll-include-fragment",
+      "url": "^https://github\\.com/[^/]+\\?tab=repositories",
+      "exampleUrl": "https://github.com/me?tab=repositories"
+    }
+  },
+  {
+    "name": "GitHub User Stars",
     "created_by": "infy",
     "created_at": "2025-11-11T22:33:22+00:00",
     "updated_at": "2025-11-11T22:33:22+00:00",
