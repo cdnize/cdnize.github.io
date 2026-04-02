@@ -740,7 +740,7 @@
       "pageElement": "//ul[@data-listview-component='items-list']/* | id('org-packages')/div | id('org-members-table')/ul",
       "scrollUpdateAddress": "false",
       "xf": "true",
-      "sw": "https://github.com/*/*/issues*",
+      "usw": "https://github.com/*/*/issues*",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(issues|repositories|packages|people)",
       "exampleUrl": "https://github.com/actions/toolkit/issues"
     }
