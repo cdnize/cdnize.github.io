@@ -1406,7 +1406,7 @@
       "action": "next",
       "append": "element",
       "clickElement": "[rel='next']",
-      "pageElement": "div.cq-t_inline-size div:has(> div[data-anchor-area='main'])",
+      "pageElement": "div.cq-t_inline-size > div:has(> div[data-anchor-area='main'])",
       "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
       "xf": "true",
