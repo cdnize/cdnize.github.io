@@ -1510,9 +1510,9 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
-      "pageElement": "//section/div/ul | //section/div/div/ul | //section/div/div/div/ul | //section/div/div/div/div/ul | //section/div/div/div/div/div/ul | /html/body/div/div/div/div/div/div/div/div/div/div[3]/div/ul",
-      "loadElement": "//div/ul//figure",
+      "clickElement": "nav > button[aria-current='true'] + a:not([hidden]), nav > span[aria-current='page'] + a:not([hidden])",
+      "pageElement": "div:has(> [data-ga4-label='thumbnail']), ul:has(> li a[data-ga4-label='thumbnail_link'])",
+      "loadElement": "div:has(> [data-ga4-label='thumbnail']) a figure, ul:has(> li a[data-ga4-label='thumbnail_link']) a figure",
       "spaf": "^https://(www\\.)?pixiv\\.net/",
       "url": "^https://(www\\.)?pixiv\\.net/",
       "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
