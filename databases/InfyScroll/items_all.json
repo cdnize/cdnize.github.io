@@ -697,7 +697,7 @@
     }
   },
   {
-    "name": "GitHub Commits/Issues",
+    "name": "GitHub Commits",
     "created_by": "infy",
     "created_at": "2025-08-01T00:00:00+00:00",
     "updated_at": "2025-08-01T00:00:00+00:00",
@@ -709,9 +709,27 @@
       "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(commits)(..................)?",
+      "xf": "true",
+      "comment": "Same as GitHub Issues except for usw and url",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/actions/toolkit/issues"
+    }
+  },
+  {
+    "name": "GitHub Issues",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list'], #org-packages, #org-members-table",
+      "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "url": "<usw><xf>^https://github\\.com/[^/]+/[^/]+/(issues)(..................)?",
       "usw": "https://github.com/*/*/issues*",
       "xf": "true",
-      "comment": "TODO: Add issues to url",
+      "comment": "Same as GitHub Commits except for usw and url",
       "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/actions/toolkit/issues"
     }
   },
