@@ -2038,20 +2038,6 @@
       "comment": "Walmart search and reviews (TODO: Fix/Add search again)"
     }
   },
-{
-  "name": "Customer reviews for hello Epic Whitening Charcoal Fluoride Free Toothpaste, Fresh Mint, 4.0 Oz Tube | Walmart.com",
-  "created_by": "xrf",
-  "created_at": "2026-04-28T22:06:12+00:00",
-  "updated_at": "2026-04-28T22:06:12+00:00",
-  "data": {
-    "action": "click",
-    "append": "ajax",
-    "clickElement": "nav[aria-label='pagination'] a[data-testid='NextPage']",
-    "pageElement": "main > div ul:has(li > div[data-test-id='gpt-main'] > a[data-dca-id]),\nmain > section > div > section > div:has(div[data-testid='enhanced-review-section']",
-    "url": "^https://(www\\.)?walmart\\.com/",
-    "exampleUrl": "https://www.walmart.com/reviews/product/529826900?entryPoint=viewAllReviewsBottom&page=2"
-  }
-},
   {
     "name": "XHamster",
     "created_by": "x",
