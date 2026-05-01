@@ -1,0 +1,2219 @@
+[
+  {
+    "name": "!",
+    "databaseExcludeUrls": [
+      "^https://danbooru\\.donmai\\.us/posts/\\d+",
+      "^https://docs\\.riscv\\.org/",
+      "^https://(www\\.)?flickr\\.com/photos/[^/]+/\\d+",
+      "^https://(www\\.)?toasteful\\.com/",
+      "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/"]
+  },
+  {
+    "name": "1337x",
+    "created_by": "x",
+    "created_at": "2025-09-11T04:51:15+00:00",
+    "updated_at": "2025-09-11T04:51:15+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//div[@class='pagination']/ul/li[@class='active']/following-sibling::li/a",
+      "pageElement": "//div[@class='table-list-wrap']/table[contains(@class,'table-list')]/tbody/*",
+      "style": ".table-list td.coll-1.name { padding-right: 70px !important; }",
+      "url": "^https://x?1337x\\.(to|st|ws|eu|se|cc)/",
+      "exampleUrl": "https://1337x.to/search/qxr/1/",
+      "comment": "Add | //div[@class='library-box']/ul/* to the pageElement for the movie library page, but you will need to click on the page divider links"
+    }
+  },
+  {
+    "name": "1337x Comments",
+    "created_by": "infy",
+    "created_at": "2025-09-12T15:49:10+00:00",
+    "updated_at": "2025-09-12T15:49:10+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "id('Pagination')/a[@class='next']",
+      "pageElement": "id('comment')/*",
+      "iframeSandbox": "*disallow-top-navigation*",
+      "xf": "true",
+      "url": "<xf>^https://x?1337x\\.(to|st|ws|eu|se|cc)/torrent/.*/",
+      "exampleUrl": "https://1337x.to/",
+      "comment": "Added for completeness. Full example URL omitted intentionally"
+    }
+  },
+  {
+    "name": "Alamy",
+    "created_by": "infy",
+    "created_at": "2025-11-07T20:33:22+00:00",
+    "updated_at": "2025-11-07T20:33:22+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.w-full > div.px-5 > div:has(div.group[data-testid])",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?alamy\\.com/",
+      "exampleUrl": "https://www.alamy.com/stock-photo/infinity.html"
+    }
+  },
+  {
+    "name": "Alibaba",
+    "created_by": "infy",
+    "created_at": "2025-10-20T17:24:17+00:00",
+    "updated_at": "2025-10-20T17:24:17+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.searchx-pagination-list > *:has(*.pagination-item.current) + a",
+      "pageElement": "div#sse-fluent-offerlist-ssr > div.organic-list.viewtype-gallery, main.container > section.content > div[data-spm='supplier']",
+      "url": "<xf>^https://(www\\.)?alibaba\\.com/.*search",
+      "xf": "true",
+      "exampleUrl": "https://www.alibaba.com/trade/search?SearchText=infinity"
+    }
+  },
+  {
+    "name": "AliExpress",
+    "created_by": "infy",
+    "created_at": "2025-10-28T22:52:05+00:00",
+    "updated_at": "2025-10-28T22:52:05+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.comet-pagination > li.comet-pagination-next > button.comet-pagination-item-link:not([disabled])",
+      "pageElement": "#card-list > *",
+      "spa": "^https://(www\\.)?aliexpress\\.(com|us)",
+      "url": "^https://(www\\.)?aliexpress\\.(com|us)/",
+      "exampleUrl": "https://www.aliexpress.com/w/wholesale-infinity.html"
+    }
+  },
+  {
+    "name": "AliExpress RU",
+    "created_by": "infy",
+    "created_at": "2025-10-28T23:07:30+00:00",
+    "updated_at": "2025-10-28T23:07:30+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div[class*='Pagination__pagination'] > div > a[class*='RedSeoPagination__active'] + a:not([class*='disabled'])",
+      "pageElement": "div[class*='SnowSearchProductFeed_List']",
+      "pageElementIframe": "import",
+      "url": "^https://aliexpress\\.ru/",
+      "exampleUrl": "https://aliexpress.ru/wholesale?SearchText=infinity"
+    }
+  },
+  {
+    "name": "Allegro",
+    "created_by": "infy",
+    "created_at": "2026-03-13T17:14:39+00:00",
+    "updated_at": "2026-03-13T17:14:39+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.opbox-listing > div > ul",
+      "url": "^https://allegro\\.(pl/listing|cz/vyhledavani|sk/vyhladavanie|hu/kereses)",
+      "exampleUrl": "https://allegro.pl/listing?string=szpadel",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/128"
+    }
+  },
+  {
+    "name": "Amazon Order History",
+    "created_by": "infy",
+    "created_at": "2025-02-10T00:00:00+00:00",
+    "updated_at": "2025-02-10T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//ul[@class='a-pagination']/li[@class='a-last']/a",
+      "pageElement": "//div[contains(@class, 'your-orders-content-container__content')]/*[contains(@class, 'order-card')]",
+      "pageElementIframe": "trim",
+      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*(order-history|your-orders)",
+      "exampleUrl": "https://www.amazon.com/gp/your-account/order-history",
+      "comment": "https://discord.gg/Z63tmCx4q5"
+    }
+  },
+  {
+    "name": "Amazon Reviews",
+    "created_by": "infy",
+    "created_at": "2024-07-22T00:00:00+00:00",
+    "updated_at": "2026-04-01T18:00:13+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "#cm_cr-pagination_bar a[data-hook='show-more-button']",
+      "pageElement": "#cm_cr-review_list > *",
+      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*[review]?",
+      "exampleUrl": "https://www.amazon.com/product-reviews/B0CPP2JGZY"
+    }
+  },
+  {
+    "name": "Amazon Search",
+    "created_by": "infy",
+    "created_at": "2024-06-14T08:03:33+09:00",
+    "updated_at": "2025-05-25T08:04:50+09:00",
+    "resource_url": "http://wedata.net/items/86232",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
+      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']",
+      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
+      "exampleUrl": "https://www.amazon.com/s?k=toys"
+    }
+  },
+  {
+    "name": "Amazon Seller Reviews",
+    "created_by": "infy",
+    "created_at": "2026-03-22T16:22:56+00:00",
+    "updated_at": "2026-03-22T16:22:56+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "li.next-action-item > span > span > a",
+      "pageElement": "#feedback-table",
+      "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/sp\\?.*seller=",
+      "exampleUrl": "https://www.amazon.com/sp?seller=AEUGFTC3JVAQT"
+    }
+  },
+  {
+    "name": "Amazon Vine (US)",
+    "created_by": "EK",
+    "created_at": "2024-02-26T10:59:44+09:00",
+    "updated_at": "2024-02-26T10:59:44+09:00",
+    "resource_url": "http://wedata.net/items/86210",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "#vvp-items-grid-container > div.a-text-center > ul.a-pagination > li.a-last > a",
+      "pageElement": "#vvp-items-grid",
+      "url": "^https://(www\\.)?amazon\\.com/vine/vine-items\\?queue=encore",
+      "exampleUrl": "https://www.amazon.com/vine/vine-items?queue=encore&pn=2335752011&cn=&page=37",
+      "comment": "The set in autopagerize database didn't work for me even when I localized it to the US, so I used the ajax method. Incremental URL worked as well, but figured it wouldnt hurt to have multiple methods. It's a completly different experience not being confinded to the 46 -50 it loads by default. I'm working on a method using infyscroll to automate pulling the entire inventory and building a database on it the items and do my own custom sorting, filtering, and alerts. The discords, bots, and userscripts that already exist are good too, but again, Having another independent method to get to the same end is never a negative in my book.Hopefully I labeled everything in the right place. is there a way to automate importing saves to here i missed?"
+    }
+  },
+  {
+    "name": "AOL Search",
+    "created_by": "infy",
+    "created_at": "2025-11-03T22:24:51+00:00",
+    "updated_at": "2025-11-03T22:24:51+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.pagination a.next",
+      "pageElement": "#web > ol.searchCenterMiddle > li:not(.first)",
+      "url": "^https://search\\.aol\\.com/",
+      "exampleUrl": "https://search.aol.com/aol/search?q=infinity"
+    }
+  },
+  {
+    "name": "Ask Search",
+    "created_by": "infy",
+    "created_at": "2025-11-03T22:14:23+00:00",
+    "updated_at": "2025-11-03T22:14:23+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul[data-testid='pagination-list'] > a.next",
+      "pageElement": "div[data-testid='results'] > *:not(.people-also-ask)",
+      "pageElementIframe": "import",
+      "url": "<xf>^https://(www\\.)?ask\\.com/web",
+      "xf": "true",
+      "exampleUrl": "https://www.ask.com/web?q=infinity"
+    }
+  },
+  {
+    "name": "Baidu",
+    "created_by": "infy",
+    "created_at": "2025-10-27T16:38:09+00:00",
+    "updated_at": "2025-10-27T16:38:09+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "#page > div > strong + a",
+      "pageElement": "#content_left",
+      "removeElement": "div.cosc-card",
+      "appendDelay": "8000",
+      "style": ".infy-scroll-divider { margin: 16px 0 !important; width: 608px !important; } #content_left { margin-bottom: 16px !important; } #container.sam_newgrid .right-fixed, #container.sam_newgrid .right-ceiling, #container.sam_newgrid .right-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling, #container.sam_newgrid .right-ai-accompanies-ceiling-has-tag, #container.sam_newgrid .right-ai-accompanies-ceiling { position: static !important; }",
+      "url": "^https://(www\\.)?baidu\\.com/s",
+      "exampleUrl": "https://www.baidu.com/s?wd=infinity",
+      "comment": "TODO"
+    }
+  },
+  {
+    "name": "BBC News",
+    "created_by": "infy",
+    "created_at": "2025-10-29T18:20:40+00:00",
+    "updated_at": "2025-10-29T18:20:40+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div[data-testid='pagination'] > button[aria-label*='Next']:not([disabled])",
+      "pageElement": "div[data-testid='alaska-grid'], div[data-testid='nebraska-grid'], div[data-testid='VirginIslands-grid']",
+      "url": "^https://(www\\.)?bbc\\.com/",
+      "exampleUrl": "https://www.bbc.com/innovation"
+    }
+  },
+  {
+    "name": "BBC News UK",
+    "created_by": "infy",
+    "created_at": "2025-10-29T18:47:48+00:00",
+    "updated_at": "2025-10-29T18:47:48+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav ol > li:has(a[aria-current='page']) + li a",
+      "pageElement": "#main-content ol[role='list']:has(div[type='article'])",
+      "url": "^https://(www\\.)?bbc\\.co\\.uk/",
+      "exampleUrl": "https://www.bbc.co.uk/news/technology"
+    }
+  },
+  {
+    "name": "Best Buy",
+    "created_by": "infy",
+    "created_at": "2025-10-29T22:58:43+00:00",
+    "updated_at": "2025-10-29T22:58:43+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.pagination-container > a[aria-label='Next page']",
+      "pageElement": "#main-results > *[class*='product-grid-view-container']",
+      "loadElement": "#main-results > *[class*='product-grid-view-container'] > *:has(div.skeleton-product-grid-view)",
+      "spa": "^https://(www\\.)?bestbuy\\.com/site/",
+      "url": "^https://(www\\.)?bestbuy\\.com/site/",
+      "exampleUrl": "https://www.bestbuy.com/site/searchpage.jsp?st=infinity"
+    }
+  },
+  {
+    "name": "Best Buy Reviews",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.pagination li.next > a",
+      "pageElement": "ul.reviews-list > *",
+      "url": "^https://(www\\.)?bestbuy\\.com/site/reviews/",
+      "exampleUrl": "https://www.bestbuy.com/site/reviews/apple-airpods-pro-3-wireless-active-noise-cancelling-earbuds-with-heart-rate-sensing-feature-white/6376563"
+    }
+  },
+  {
+    "name": "Bilibili",
+    "created_by": "infy",
+    "created_at": "2023-04-23T05:03:14+09:00",
+    "updated_at": "2023-04-26T08:55:41+09:00",
+    "resource_url": "http://wedata.net/items/86109",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.vui_pagenation--btns > button.vui_button--active + button:not([disabled])",
+      "pageElement": "div.video-list.row, div.video-list.grid-mode",
+      "initDelay": "4000",
+      "appendDelay": "10000",
+      "url": "^https://(\\w+\\.)?bilibili\\.com/",
+      "exampleUrl": "https://space.bilibili.com/510856133/video",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/57 (TODO)"
+    }
+  },
+  {
+    "name": "Bing Search",
+    "created_by": "infy",
+    "created_at": "2024-08-28T06:29:56+09:00",
+    "updated_at": "2024-08-28T06:44:39+09:00",
+    "resource_url": "http://wedata.net/items/86243",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[contains(@class,\"sb_pagN\")]",
+      "pageElement": "id(\"b_results\")/li[@class=\"b_algo\"]|id(\"results\")",
+      "pageElementIframe": "import",
+      "url": "^https://(\\w+\\.)?bing\\.com/(?:[^/]+/)*?(?:results\\.aspx|search)",
+      "exampleUrl": "https://www.bing.com/search?q=Edge",
+      "comment": "Credit to: http://wedata.net/items/501 See: https://github.com/sixcious/infy-scroll/issues/92"
+    }
+  },
+  {
+    "name": "Booru Sites (Konachan, Sakugabooru, Yande)",
+    "created_by": "infy",
+    "created_at": "2025-01-01T00:00:00+00:00",
+    "updated_at": "2025-01-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@class='next_page']",
+      "pageElement": "//li[contains(@class, 'creator-id-')]|//div[@id='comment-list']/div[@class='post']|//table[@class='highlightable']",
+      "style": ".javascript-hide { display: inline-block !important; }",
+      "url": "^https://(www\\.)?(konachan\\.com|sakugabooru\\.com|yande\\.re)/(post|comment)($|\\?|#|/search\\?)",
+      "exampleUrl": "https://yande.re/post https://yande.re/comment http://konachan.com/post http://konachan.com/comment https://www.sakugabooru.com/post https://www.sakugabooru.com/comment",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/20 Credit to: http://wedata.net/items/74645"
+    }
+  },
+  {
+    "name": "Brave Search",
+    "created_by": "infy",
+    "created_at": "2025-10-25T21:36:40+00:00",
+    "updated_at": "2025-10-25T21:36:40+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "initDelay": "2000",
+      "nextLink": "div#pagination > div + a.button, div#pagination:has(a.button:first-child:last-child) > a.button",
+      "pageElement": "//div[@id='results']/*[not(contains(@class,'standalone'))] | //div[contains(@class,'results')]/*[not(contains(@class,'standalone'))]",
+      "removeElement": "//div[@id='results']//comment() | //div[contains(@class,'results')]//comment()",
+      "removeElementRootDocument": "true",
+      "url": "^https://search\\.brave\\.com/",
+      "exampleUrl": "https://search.brave.com/search?q=infinity",
+      "comment": "comment()"
+    }
+  },
+  {
+    "name": "Chrome Web Store Reviews",
+    "created_by": "x",
+    "created_at": "2025-10-07T17:13:25+00:00",
+    "updated_at": "2025-10-07T17:13:25+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "body > c-wiz > div > div > main > div > div > div > button",
+      "url": "^https://chromewebstore\\.google\\.com/detail/.*/.*/reviews",
+      "exampleUrl": "https://chromewebstore.google.com/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb/reviews"
+    }
+  },
+  {
+    "name": "Coomer.st",
+    "created_by": "infy",
+    "created_at": "2025-08-08T00:00:00+00:00",
+    "updated_at": "2025-08-08T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "a.pagination-button-current + a",
+      "pageElement": "div.card-list__items",
+      "pageElementIframe": "import",
+      "url": "^https://coomer\\.st/",
+      "exampleUrl": "https://coomer.st/artists?o=100",
+      "comment": "Website Request (https://github.com/sixcious/infy-scroll/issues/113)"
+    }
+  },
+  {
+    "name": "Cốc Cốc Search",
+    "created_by": "infy",
+    "created_at": "2023-04-28T13:12:14+09:00",
+    "updated_at": "2023-04-28T13:12:34+09:00",
+    "resource_url": "http://wedata.net/items/86111",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//div[@class='searchPagination-fN0W1 searchPagination-VM8NV']",
+      "pageElement": "//div[@class='searchResultsMain-HyzAT']/*",
+      "url": "^https://coccoc\\.com/search",
+      "exampleUrl": "https://coccoc.com/search?query=Th%E1%BB%9Di+ti%E1%BA%BFt+ng%C3%A0y+mai",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/44"
+    }
+  },
+  {
+    "name": "Costco",
+    "created_by": "infy",
+    "created_at": "2025-11-03T01:07:54+00:00",
+    "updated_at": "2025-11-03T01:07:54+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[aria-label='pagination'] > ul > li:has(button[aria-current='page']) + li > button:not([disabled])",
+      "pageElement": "#productList > *",
+      "url": "^https://(www\\.)?costco\\.com/",
+      "exampleUrl": "https://www.costco.com/televisions.html"
+    }
+  },
+  {
+    "name": "Coupang",
+    "created_by": "infy",
+    "created_at": "2025-10-29T19:03:50+00:00",
+    "updated_at": "2025-10-29T19:03:50+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div[class*='Pagination'] > a[data-page='next']",
+      "pageElement": "#product-list > *",
+      "url": "^https://(www\\.)?coupang\\.com/",
+      "exampleUrl": "https://www.coupang.com/np/categories/498704"
+    }
+  },
+  {
+    "name": "Danbooru",
+    "created_by": "infy",
+    "created_at": "2025-07-15T00:00:00+00:00",
+    "updated_at": "2025-07-15T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//a[contains(@*,'next')]",
+      "pageElement": "//div[@id='posts'] | //div[starts-with(@id,'a-')]/*[@class='striped' or (contains(@class,'post') and not(contains(@class,'posts'))) or self::section and count(@*)=0]",
+      "url": "^https://danbooru\\.donmai\\.us",
+      "exampleUrl": "https://danbooru.donmai.us",
+      "comment": "Email. Credit: http://wedata.net/items/81554"
+    }
+  },
+  {
+    "name": "DeviantArt",
+    "created_by": "infy",
+    "created_at": "2025-10-25T04:11:13+00:00",
+    "updated_at": "2025-10-25T04:11:13+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.Ams6gx > div > *",
+      "url": "^https://(www\\.)?deviantart\\.com/",
+      "exampleUrl": "https://www.deviantart.com/search?q=joyfool"
+    }
+  },
+  {
+    "name": "DuckDuckGo",
+    "created_by": "infy",
+    "created_at": "2025-10-25T21:20:12+00:00",
+    "updated_at": "2025-10-25T21:20:12+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "//section[@data-testid='mainline']//button[@id='more-results'] | //section[@data-testid='no-results-message']//button[@class][.='Load More']",
+      "url": "^https://duckduckgo\\.com/",
+      "exampleUrl": "https://duckduckgo.com/?q=infinity"
+    }
+  },
+  {
+    "name": "Ebay Search",
+    "created_by": "infy",
+    "created_at": "2025-10-29T00:04:43+00:00",
+    "updated_at": "2025-10-29T00:04:43+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav.pagination > a.pagination__next",
+      "pageElement": "#srp-river-results > ul.srp-results > li[data-listingid]",
+      "lazyLoad": "manual",
+      "lazyLoadDestination": "src",
+      "lazyLoadSource": "data-defer-load",
+      "url": "^https://(\\w+\\.)?ebay\\.(?:\\w{2,3}(?:\\.\\w{2})?)/sch/",
+      "exampleUrl": "https://www.ebay.com/sch/i.html?_nkw=infinity"
+    }
+  },
+  {
+    "name": "Ebay Categories",
+    "created_by": "infy",
+    "created_at": "2025-10-29T00:27:08+00:00",
+    "updated_at": "2025-10-29T00:27:08+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav.pagination > a.pagination__next",
+      "pageElement": "ul.brwrvr__item-results > li:has(div[class*='item-card__body'])",
+      "lazyLoad": "manual",
+      "lazyLoadDestination": "src",
+      "lazyLoadSource": "data-originalsrc",
+      "url": "^https://(\\w+\\.)?ebay\\.(?:\\w{2,3}(?:\\.\\w{2})?)/\\w+/",
+      "exampleUrl": "https://www.ebay.com/b/Blu-ray-Discs/617/bn_230748"
+    }
+  },
+  {
+    "name": "Ecosia",
+    "created_by": "infy",
+    "created_at": "2025-10-25T21:09:02+00:00",
+    "updated_at": "2025-10-25T21:09:02+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@data-test-id='next-button'] | //a[@data-test-id='pagination-control-next']",
+      "pageElement": "//div[@class='mainline__content']/div[.//article] | //div[@class='news__results-content']/* | //div[@class='videos__results-content']/*",
+      "pageElementIframe": "import",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?ecosia\\.org/",
+      "exampleUrl": "https://www.ecosia.org/search?q=infinity"
+    }
+  },
+  {
+    "name": "Etsy",
+    "created_by": "infy",
+    "created_at": "2025-10-29T21:23:44+00:00",
+    "updated_at": "2025-10-29T21:23:44+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav[data-clg-id*='Pagination'] div:has(a[aria-current='true']) + div a",
+      "pageElement": "ul[data-results-grid-container]",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?etsy\\.com/search",
+      "exampleUrl": "https://www.etsy.com/search?q=infinity"
+    }
+  },
+  {
+    "name": "Etsy Reviews (Same Listing) (TODO)",
+    "created_by": "infy",
+    "created_at": "2025-10-29T22:26:38+00:00",
+    "updated_at": "2025-10-29T22:26:38+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[data-clg-id*='Pagination'] div:has(button[aria-current='true']) + div button:not([disabled])",
+      "pageElement": "div[data-reviews-view-container] > div[data-appears-event-data*='same_listing_reviews'] div[data-reviews] > div.wt-grid > *",
+      "mirrorPage": "puppet",
+      "puppet": "await page.click(\"button[data-view-all-reviews-button='same-listing']\");",
+      "spa": "^https://www\\.etsy\\.com",
+      "xurl": "^https://(www\\.)?etsy\\.com/listing/[same-listing-reviews]?",
+      "exampleUrl": "https://www.etsy.com/listing/1506577518/infinity-train-character-clear-vinyl"
+    }
+  },
+  {
+    "name": "Etsy Reviews (Shop) (TODO)",
+    "created_by": "infy",
+    "created_at": "2025-10-29T22:29:05+00:00",
+    "updated_at": "2025-10-29T22:29:05+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[data-clg-id*='Pagination'] div:has(button[aria-current='true']) + div button:not([disabled])",
+      "pageElement": "div[data-reviews-view-container] > div[data-appears-event-data*='shop_reviews'] div[data-reviews] > div.wt-grid > *",
+      "mirrorPage": "puppet",
+      "puppet": "await page.click(\"button[data-view-all-reviews-button='shop']\");",
+      "spa": "^https://www\\.etsy\\.com",
+      "xurl": "^https://(www\\.)?etsy\\.com/listing/[shop-reviews]?",
+      "exampleUrl": "https://www.etsy.com/listing/1506577518/infinity-train-character-clear-vinyl"
+    }
+  },
+  {
+    "name": "Fandom",
+    "created_by": "infy",
+    "created_at": "2025-10-28T19:23:01+00:00",
+    "updated_at": "2025-10-28T19:23:01+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.unified-search-pagination > ul > li > a.paginator-next",
+      "pageElement": "ul.unified-search__results > *",
+      "url": "^https://(\\w+\\.)?fandom\\.com/wiki/Special:Search",
+      "exampleUrl": "https://community.fandom.com/wiki/Special:Search?query=infinity"
+    }
+  },
+  {
+    "name": "FileCR",
+    "created_by": "FileCR",
+    "updated_by": "infy",
+    "created_at": "2025-09-17T19:05:33+00:00",
+    "updated_at": "2025-09-17T19:05:33+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.pagination > button[aria-label='pagination next'], div.pagination > button[aria-label='pagination'][disabled] + button",
+      "pageElement": "div.container > div > main > section > section > div > *",
+      "url": "^https://filecr\\.com/",
+      "exampleUrl": "https://filecr.com/ms-windows/"
+    }
+  },
+  {
+    "name": "Flickr Photos",
+    "created_by": "infy",
+    "created_at": "2025-11-03T05:15:55+00:00",
+    "updated_at": "2025-11-03T05:15:55+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@rel='next']",
+      "pageElement": "//div[@role='main']/div[starts-with(@class,'view photo-list-view')]",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?flickr\\.com/photos/[^/]+/",
+      "exampleUrl": "https://www.flickr.com/photos/photokitten/"
+    }
+  },
+  {
+    "name": "Flickr Tags",
+    "created_by": "infy",
+    "created_at": "2025-11-03T05:29:18+00:00",
+    "updated_at": "2025-11-03T05:29:18+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.view.photo-list-view",
+      "style": ".infy-scroll-divider { margin: 48px auto 32px auto !important; }",
+      "url": "^https://(www\\.)?flickr\\.com/photos/tags/",
+      "exampleUrl": "https://www.flickr.com/photos/tags/infinity"
+    }
+  },
+  {
+    "name": "Flipkart",
+    "created_by": "infy",
+    "created_at": "2025-11-03T20:02:03+00:00",
+    "updated_at": "2025-11-03T20:02:03+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > a._9QVEpD:last-child",
+      "pageElement": "div.DOjaWF.gdgoEp:has(> div.DOjaWF.YJG4Cf) > div.cPHDOP:not(:has(nav)):not(:has(div.b5p4CI))",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?flipkart\\.com/",
+      "exampleUrl": "https://www.flipkart.com/search?q=infinity"
+    }
+  },
+  {
+    "name": "FSHARE.VN",
+    "created_by": "infy",
+    "created_at": "2023-12-24T03:49:21+09:00",
+    "updated_at": "2023-12-24T03:49:29+09:00",
+    "resource_url": "http://wedata.net/items/86197",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "//button[@class='mdc-button mdc-button--raised button-load ng-binding'][not(contains(@class, 'ng-hide'))]",
+      "pageElement": "//div[@class='list mdc-detail-list down-folder']/*",
+      "url": "^https://(www\\.)?fshare\\.vn/folder",
+      "exampleUrl": "https://www.fshare.vn/folder/H7DXADP8PMOA",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/78"
+    }
+  },
+  {
+    "name": "FTP.ACC.UMU.SE (Increment URL Example)",
+    "created_by": "infy",
+    "created_at": "2023-05-25T04:05:53+09:00",
+    "updated_at": "2024-02-19T04:09:17+09:00",
+    "resource_url": "http://wedata.net/items/86124",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "increment",
+      "append": "media",
+      "interval": "1",
+      "selectionStrategy": "smart",
+      "base": "10",
+      "leadingZeros": "true",
+      "mediaType": "image",
+      "url": "^https://ftp\\.acc\\.umu\\.se/mirror/archive/ftp\\.sunet\\.se/pub/pictures/anime-manga/SailorMoon/Images/TV/001/001",
+      "exampleUrl": "https://ftp.acc.umu.se/mirror/archive/ftp.sunet.se/pub/pictures/anime-manga/SailorMoon/Images/TV/001/001usa01.jpg",
+      "comment": "Increment URL Example"
+    }
+  },
+  {
+    "name": "GitHub Commits",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list'], #org-packages, #org-members-table",
+      "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(commits)(..................)?",
+      "xf": "true",
+      "comment": "Same as GitHub Issues except for usw and url",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/actions/toolkit/issues"
+    }
+  },
+  {
+    "name": "GitHub Issues",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list'], #org-packages, #org-members-table",
+      "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "url": "<usw><xf>^https://github\\.com/[^/]+/[^/]+/(issues)(..................)?",
+      "usw": "https://github.com/*/*/issues*",
+      "xf": "true",
+      "comment": "Same as GitHub Commits except for usw and url",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/actions/toolkit/issues"
+    }
+  },
+  {
+    "name": "GitHub Commits (Alt)/Packages/People",
+    "created_by": "infy",
+    "created_at": "2025-11-07T20:38:53+00:00",
+    "updated_at": "2025-11-07T20:38:53+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], #org-packages, #org-members-table",
+      "style": "div[class*='LoadingSkeleton'] { display: none !important; }",
+      "spaf": "^https://github\\.com/",
+      "url": "^https://github\\.com/[^/]+/[^/]+/(commits|packages|people)",
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/orgs/microsoft/packages https://github.com/orgs/microsoft/people"
+    }
+  },
+  {
+    "name": "GitHub Projects",
+    "created_by": "infy",
+    "created_at": "2025-10-15T19:22:35+00:00",
+    "updated_at": "2025-10-15T19:22:35+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "button[data-test-selector='project-load-more-button']",
+      "pageElement": "#memexes-results > div[class*='Box'] > ul",
+      "url": "^https://github\\.com/[^/]+/[^/]+/projects",
+      "exampleUrl": "https://github.com/orgs/microsoft/projects"
+    }
+  },
+  {
+    "name": "GitHub Repositories",
+    "created_by": "infy",
+    "created_at": "2025-11-11T23:12:29+00:00",
+    "updated_at": "2025-11-11T23:12:29+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "ul[class*='ListView-module__ul'][data-listview-component='items-list']",
+      "scrollUpdateAddress": "false",
+      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(repositories)",
+      "xf": "true",
+      "exampleUrl": "https://github.com/orgs/microsoft/repositories"
+    }
+  },
+  {
+    "name": "GitHub Search/Releases",
+    "created_by": "infy",
+    "created_at": "2025-10-27T17:42:49+00:00",
+    "updated_at": "2025-10-27T17:42:49+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "div[data-testid='results-list'] > *, div:has(> div.paginate-container) > section",
+      "appendDelay": "4000",
+      "url": "^https://github\\.com/(search|.*releases)",
+      "exampleUrl": "https://github.com/search?q=progress&type=code https://github.com/microsoft/terminal/releases"
+    }
+  },
+  {
+    "name": "GitHub User Repositories",
+    "created_by": "infy",
+    "created_at": "2025-11-11T23:12:29+00:00",
+    "updated_at": "2025-11-11T23:12:29+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "a[rel='next']:not([aria-disabled])",
+      "pageElement": "ul[data-filterable-for='your-repos-filter'] > *",
+      "removeElement": "poll-include-fragment",
+      "url": "^https://github\\.com/[^/]+\\?tab=repositories",
+      "exampleUrl": "https://github.com/me?tab=repositories"
+    }
+  },
+  {
+    "name": "GitHub User Stars",
+    "created_by": "infy",
+    "created_at": "2025-11-11T22:33:22+00:00",
+    "updated_at": "2025-11-11T22:33:22+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.paginate-container > div.BtnGroup > *:nth-child(2)",
+      "pageElement": "div:has(> .paginate-container) > *.d-block",
+      "url": "^https://github\\.com/[^/]+\\?tab=stars",
+      "exampleUrl": "https://github.com/me?tab=stars"
+    }
+  },
+  {
+    "name": "Globo",
+    "created_by": "infy",
+    "created_at": "2025-10-28T19:11:36+00:00",
+    "updated_at": "2025-10-28T19:11:36+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "#content > div.results.results-- > div.results__content > div.pagination.widget > a.fundo-cor-produto.pagination__load-more",
+      "pageElement": "#content > div.results.results-- > div.results__content > ul.results__list > *",
+      "url": "^https://(www\\.)?globo\\.com/busca/",
+      "exampleUrl": "https://www.globo.com/busca/?q=infinity"
+    }
+  },
+  {
+    "name": "Golem.de",
+    "created_by": "infy",
+    "created_at": "2025-08-24T21:47:18+00:00",
+    "updated_at": "2025-08-24T21:47:18+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//ul[@class='go-pagination__list']/li[contains(@class,'go-pagination__item--next')]/a",
+      "pageElement": "//main[@class='go-grid']/article/* | //main[@class='go-grid go-grid--full-content']/*",
+      "url": "^https://(www\\.)?golem\\.de/",
+      "exampleUrl": "https://www.golem.de/news/relaunch-golem-bekommt-ein-neues-aussehen-und-verliert-ein-de-2508-193783.html",
+      "comment": "Website Request (https://github.com/sixcious/infy-scroll/issues/114)"
+    }
+  },
+  {
+    "name": "Google Programmable Search Engine",
+    "created_by": "infy",
+    "created_at": "2023-06-01T13:16:42+09:00",
+    "updated_at": "2023-11-15T06:05:57+09:00",
+    "resource_url": "http://wedata.net/items/86128",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "ajaxMode": "native",
+      "clickElement": "//div[@class='gsc-wrapper']//div[@class='gsc-cursor']/div[@class='gsc-cursor-page gsc-cursor-current-page']/following-sibling::div[1] | //div[@class='gsc-wrapper']//div[@class='gsc-cursor']/div[@aria-label='Next page']",
+      "pageElement": "//div[@class='gsc-wrapper']//div[@class='gsc-results gsc-webResult']/div[@class='gsc-expansionArea']/*",
+      "disableScrollElement": "//*",
+      "style": ".gsc-loading-resultsRoot { all: unset !important; }",
+      "url": "^https://[G]?",
+      "exampleUrl": "https://gibiru.com/results.html?q=infinity https://www.searchcraigslist.net/results?q=infinity",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/62"
+    }
+  },
+  {
+    "name": "Google Search",
+    "created_by": "infy",
+    "created_at": "2025-10-31T17:53:50+00:00",
+    "updated_at": "2025-10-31T17:53:50+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "id('pnnext')|id('navbar navcnt nav')//td[span]/following-sibling::td[1]/a|id('nn')/parent::a",
+      "pageElement": "id('rso')|id('center_col')/style[contains(.,'relative')][id('rso')]",
+      "pageElementIframe": "import",
+      "scrollIframeEnabled": "false",
+      "style": "div.ITCGwe { display: none !important; }",
+      "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/(?:c(?:se|ustom)|search|webhp|m|#)",
+      "exampleUrl": "https://www.google.com/search?q=infinity",
+      "comment": "The style hides video moment items, which are supposed to be hidden; can alternatively target [data-visible='false'] elements"
+    }
+  },
+  {
+    "name": "Google Search Mobile",
+    "created_by": "infy",
+    "created_at": "2020-08-01T08:00:00+00:00",
+    "updated_at": "2020-08-01T08:00:00+00:00",
+    "data": {
+      "url": "^https://[^./]+\\.google(?:\\.[^./]{2,3}){1,2}/search",
+      "action": "click",
+      "append": "element",
+      "clickElement": "div[jsaction] > a[jsaction][data-ve-view][role='button']",
+      "pageElement": "div[data-async-context*='query'] > *",
+      "exampleUrl": "https://www.google.com/search?q=infinity"
+    }
+  },
+  {
+    "name": "Hitomi",
+    "created_by": "infy",
+    "created_at": "2025-10-19T12:47:13+00:00",
+    "updated_at": "2025-10-19T12:47:13+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//div[@class='page-container']/ul/li[not(.//a)][not(self::li[contains(.,'...')])]/following-sibling::li[1]/a",
+      "pageElement": "//div[@class='container']/div[@class='gallery-content']/*",
+      "pageElementIframe": "import",
+      "url": "^https://hitomi\\.la",
+      "exampleUrl": "https://hitomi.la",
+      "comment": "Added by request and for completeness"
+    }
+  },
+  {
+    "name": "Hitomi Imageset",
+    "created_by": "x",
+    "created_at": "2025-10-16T22:51:32+00:00",
+    "updated_at": "2025-10-16T22:51:32+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul.simplePagerNav > li.currentPage + li > a",
+      "pageElement": "div.simplePagerContainer > ul.thumbnail-list",
+      "pageElementIframe": "import",
+      "url": "^https://hitomi\\.la/.*\\.html",
+      "exampleUrl": "https://hitomi.la/gamecg/muv-luv-girls-garden-cg-3593752.html#1",
+      "comment": "Updated by infy to use a safe example URL"
+    }
+  },
+  {
+    "name": "Hitomi Reader",
+    "created_by": "x",
+    "created_at": "2025-10-16T21:56:34+00:00",
+    "updated_at": "2025-10-16T21:56:34+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.navbar:not(.hidden) ul > li:not(.disabled) > #nextPanel",
+      "pageElement": "#comicImages:not(.hidden) > *",
+      "url": "^https://hitomi\\.la/reader/",
+      "exampleUrl": "https://hitomi.la/reader/3318905.html",
+      "comment": "Updated by infy to use a safe example URL"
+    }
+  },
+  {
+    "name": "Hitomi Reader Mobile",
+    "created_by": "infy",
+    "created_at": "2025-10-16T21:56:34+00:00",
+    "updated_at": "2025-10-16T21:56:34+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.mobile-navbar:not(.hidden) ul > li > a#mobile-nextPanel > img.arrow_active:not(.hidden)",
+      "pageElement": "#mobileImages:not(.hidden) > *",
+      "url": "^https://hitomi\\.la/reader/",
+      "exampleUrl": "https://hitomi.la/reader/3318905.html",
+      "comment": "Updated by infy to use a safe example URL"
+    }
+  },
+  {
+    "name": "Home Depot",
+    "created_by": "infy",
+    "created_at": "2025-10-31T03:18:37+00:00",
+    "updated_at": "2025-10-31T03:18:37+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[role='navigation'] > ul > li > *:has(svg[data-testid='ArrowForwardIcon']):not([aria-disabled='true'])",
+      "pageElement": "div.results-wrapped > div.sui-w-full",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?homedepot\\.com/(b|s)/",
+      "exampleUrl": "https://www.homedepot.com/s/infinity",
+      "comment": "AJAX due to next-to-last pages in the pagination no longer being links"
+    }
+  },
+  {
+    "name": "Hugging Face Blog",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:14:19+00:00",
+    "updated_at": "2025-11-08T00:14:19+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > ul > li:last-child > a[href*='p']",
+      "pageElement": "div.container > div > div.flex.flex-col:has(> a)",
+      "scrollUpdateAddress": "false",
+      "url": "^https://huggingface\\.co/blog",
+      "exampleUrl": "https://huggingface.co/blog"
+    }
+  },
+  {
+    "name": "Hugging Face Models/Datasets",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:12:10+00:00",
+    "updated_at": "2025-11-08T00:12:10+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > ul > li:last-child > a[href*='p']",
+      "pageElement": "div.container > section > div > div.grid",
+      "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "xf": "true",
+      "url": "<xf>^https://huggingface\\.co/(models|datasets)",
+      "exampleUrl": "https://huggingface.co/models"
+    }
+  },
+  {
+    "name": "Hugging Face Papers",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:16:20+00:00",
+    "updated_at": "2025-11-08T00:16:20+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "section.container > div:has(> article) > div > a:first-child:not(.ml-auto)",
+      "pageElement": "section.container > div:has(> article)",
+      "style": "section.container > div:has(> article) > *:not(article) { display: none !important; }",
+      "scrollUpdateAddress": "false",
+      "url": "^https://huggingface\\.co/papers",
+      "exampleUrl": "https://huggingface.co/papers"
+    }
+  },
+  {
+    "name": "Hugging Face Posts",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:15:03+00:00",
+    "updated_at": "2025-11-08T00:15:03+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "div.container > div.overflow-hidden > div > div > div > button.btn.text-smd.mx-4:has(> svg)",
+      "pageElement": "div.container > div.overflow-hidden > div > div.mt-7 > div:not(:has(> button))",
+      "url": "^https://huggingface\\.co/posts",
+      "exampleUrl": "https://huggingface.co/posts"
+    }
+  },
+  {
+    "name": "Hugging Face Search/Spaces",
+    "created_by": "infy",
+    "created_at": "2025-11-08T00:05:15+00:00",
+    "updated_at": "2025-11-08T00:05:15+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav > ul > li:last-child > a[href*='p']",
+      "pageElement": "div.container > div.overflow-hidden > div.flex.flex-col, div.container > div > div.grid",
+      "scrollUpdateAddress": "false",
+      "xf": "true",
+      "url": "<xf>^https://huggingface\\.co/(search|spaces)",
+      "exampleUrl": "https://huggingface.co/search/full-text?q=infinity"
+    }
+  },
+  {
+    "name": "Indeed Companies",
+    "created_by": "infy",
+    "created_at": "2025-10-29T20:41:59+00:00",
+    "updated_at": "2025-10-29T20:41:59+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul[data-testid='pagination'] > li > a[data-testid='next-page']",
+      "pageElement": "ul[data-testid='TopCompaniesList'] > *",
+      "url": "^https://(\\w+\\.)?indeed\\.com/companies/",
+      "exampleUrl": "https://www.indeed.com/companies/best-Information-Technology-companies"
+    }
+  },
+  {
+    "name": "Indeed Jobs",
+    "created_by": "infy",
+    "created_at": "2025-10-29T20:16:50+00:00",
+    "updated_at": "2025-10-29T20:16:50+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > ul > li > a[data-testid='pagination-page-next']",
+      "pageElement": "#mosaic-provider-jobcards > div[class*='mosaic-provider-jobcards'] > ul > *",
+      "xurl": "^https://(\\w+\\.)?indeed\\.com/jobs",
+      "exampleUrl": "https://www.indeed.com/jobs?q=teacher"
+    }
+  },
+  {
+    "name": "India Times",
+    "created_by": "infy",
+    "created_at": "2025-11-03T18:11:49+00:00",
+    "updated_at": "2025-11-03T18:11:49+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[class*='MuiPagination'] > ul > li > button[aria-label*='next page']",
+      "pageElement": "div.card_wrapper.manage-list-pagination:has(nav[class*='MuiPagination']) > a",
+      "url": "^https://(www\\.)?indiatimes\\.com/",
+      "exampleUrl": "https://www.indiatimes.com/topics/infinity"
+    }
+  },
+  {
+    "name": "JanitorAI",
+    "created_by": "Krampus",
+    "created_at": "2024-05-13T08:49:14+09:00",
+    "updated_at": "2024-07-30T13:29:31+09:00",
+    "resource_url": "http://wedata.net/items/86225",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": ".css-1gpctw1",
+      "pageElement": ".css-1gg9wg4",
+      "url": "^https://janitorai\\.com",
+      "exampleUrl": "https://janitorai.com/search?mode=all"
+    }
+  },
+  {
+    "name": "Kleinanzeigen",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')]",
+      "pageElement": "id('srchrslt-adtable')/*",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/",
+      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
+    }
+  },
+  {
+    "name": "Kleinanzeigen Mobile",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "id('paging-next')",
+      "pageElement": "id('srp-results')/*",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/",
+      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
+    }
+  },
+  {
+    "name": "Kuaikan Manhua",
+    "created_by": "infy",
+    "created_at": "2025-11-07T20:05:53+00:00",
+    "updated_at": "2025-11-07T20:05:53+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.pagination > li.itemBten.active + li:not(.disabled) >  a",
+      "pageElement": "div.TagPage > div.tagContent > *",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?kuaikanmanhua\\.com/tag/",
+      "exampleUrl": "https://www.kuaikanmanhua.com/tag/0?page=205"
+    }
+  },
+  {
+    "name": "LCSC Electronics",
+    "created_by": "infy",
+    "created_at": "2024-01-31T14:44:29+09:00",
+    "updated_at": "2024-01-31T14:55:49+09:00",
+    "resource_url": "http://wedata.net/items/86207",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//button[@class='v-pagination__navigation'][@aria-label='Next page']",
+      "pageElement": "//table[@class='tableContentTable']/tbody",
+      "url": "^https://(www\\.)?lcsc\\.com/.*/\\d+",
+      "exampleUrl": "https://www.lcsc.com/category/11068.html",
+      "comment": "https://discord.gg/Z63tmCx4q5"
+    }
+  },
+  {
+    "name": "Leboncoin",
+    "created_by": "infy",
+    "created_at": "2023-05-27T02:31:59+09:00",
+    "updated_at": "2023-09-08T08:29:20+09:00",
+    "resource_url": "http://wedata.net/items/86125",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@data-spark-component='pagination-next-trigger']",
+      "pageElement": "//div[@class='mb-lg']/*",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?leboncoin\\.fr/recherche",
+      "exampleUrl": "https://www.leboncoin.fr/recherche?text=enfant&locations=r_19&page=6",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/60"
+    }
+  },
+  {
+    "name": "LinkedIn Search",
+    "created_by": "infy",
+    "created_at": "2023-02-25T09:16:35+09:00",
+    "updated_at": "2023-07-31T01:34:11+09:00",
+    "resource_url": "http://wedata.net/items/86079",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//button[@aria-label='Next'][contains(.,'Next')]",
+      "pageElement": "//div[@class='search-results-container']",
+      "spa": "^https://(www\\.)?linkedin\\.com/search/results",
+      "xurl": "<>^https://(www\\.)?linkedin\\.com/search/results/",
+      "exampleUrl": "https://www.linkedin.com/search/results/people/?keywords=informatique&origin=SWITCH_SEARCH_VERTICAL&sid=Fpy",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/52"
+    }
+  },
+  {
+    "name": "MangaDex",
+    "created_by": "infy",
+    "created_at": "2023-12-18T04:12:00+09:00",
+    "updated_at": "2023-12-18T04:21:03+09:00",
+    "resource_url": "http://wedata.net/items/86195",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "ajaxMode": "native",
+      "clickElement": "//a[not(contains(@class, 'disabled'))][.//*[contains(@class, 'feather-arrow-right')]]",
+      "pageElement": "//div[@class='page-container wide']/div[2]/*",
+      "removeElement": "//div[@class='relative']",
+      "disableScrollElement": "//*",
+      "url": "^https://mangadex\\.org/titles/(recent|latest)",
+      "exampleUrl": "https://mangadex.org/titles/latest",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/77"
+    }
+  },
+  {
+    "name": "Medium",
+    "created_by": "infy",
+    "created_at": "2025-11-03T04:49:15+00:00",
+    "updated_at": "2025-11-03T04:49:15+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "div > button.aj.fi.al.am.an.ao.ap.aq.ar.as.at:has(> svg)",
+      "url": "^https://medium\\.com/search/",
+      "exampleUrl": "https://medium.com/search/posts?q=infinity"
+    }
+  },
+  {
+    "name": "Mercari JP",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//div[@data-testid='pagination-next-button']/a",
+      "pageElement": "//div[@id='item-grid']",
+      "pageElementIframe": "import",
+      "url": "^https://jp\\.mercari\\.com/",
+      "exampleUrl": "https://jp.mercari.com/search?keyword=infinity"
+    }
+  },
+  {
+    "name": "Microsoft Q&A",
+    "created_by": "infy",
+    "created_at": "2025-11-19T22:47:54+00:00",
+    "updated_at": "2025-11-19T22:47:54+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul.pagination-list > li > a[data-test-id='pagination-button-forward']:not([aria-hidden='true'])",
+      "pageElement": "#main > div[data-bi-name*='question-list'] > div.box, #answers ol:has(> *[id^='answer-']):has(+ nav.pagination) > *",
+      "url": "^https://learn\\.microsoft\\.com/([^/]+/)?answers/questions/",
+      "exampleUrl": "https://learn.microsoft.com/answers/questions/"
+    }
+  },
+  {
+    "name": "Mojeek Search",
+    "created_by": "infy",
+    "created_at": "2025-11-01T01:11:25+00:00",
+    "updated_at": "2025-11-01T01:11:25+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.pagination > ul > li:has(span):not(li:has(a)) + li a",
+      "pageElement": "div.results > ul.results-standard > *",
+      "url": "^https://(www\\.)?mojeek\\.com/search",
+      "exampleUrl": "https://www.mojeek.com/search?q=infinity"
+    }
+  },
+  {
+    "name": "Naver (TODO)",
+    "created_by": "infy",
+    "created_at": "2025-10-25T22:42:46+00:00",
+    "updated_at": "2025-10-25T22:42:46+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "#main_pack div.sc_page > a.btn_next",
+      "pageElement": "div.fds-web-list-root > *",
+      "disableRemoveElement": "div[data-slog-visible='true'] > *",
+      "xurl": "^https://search\\.naver\\.com/",
+      "exampleUrl": "https://search.naver.com/search.naver?query=infinity"
+    }
+  },
+  {
+    "name": "Naver",
+    "created_by": "infy",
+    "created_at": "2025-10-27T02:51:06+00:00",
+    "updated_at": "2025-10-27T02:51:06+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "#main_pack div.sc_page > a.btn_next",
+      "pageElement": "#content",
+      "removeElement": "#sub_pack, .api_sc_page_wrap",
+      "style": "#content.pack_group + .infy-scroll-divider { margin: 0 0 0 28px !important; width: 675px !important; }",
+      "url": "^https://search\\.naver\\.com/",
+      "exampleUrl": "https://search.naver.com/search.naver?query=infinity"
+    }
+  },
+  {
+    "name": "Naver Search Mobile",
+    "created_by": "infy",
+    "created_at": "2025-10-27T02:42:13+00:00",
+    "updated_at": "2025-10-27T02:42:13+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.api_subject_bx > div.page_wrap > button.btn_next:not(.dimmmed):not([aria-disabled='true'])",
+      "pageElement": "#ct",
+      "xf": "true",
+      "url": "<xf>^https://m\\.search\\.naver\\.com/",
+      "exampleUrl": "https://m.search.naver.com/search.naver?query=%22infinity"
+    }
+  },
+  {
+    "name": "Naver Blog Section",
+    "created_by": "infy",
+    "created_at": "2025-10-30T17:07:51+00:00",
+    "updated_at": "2025-10-30T17:07:51+00:00",
+    "data": {
+      "url": "^https://section\\.blog\\.naver\\.com/",
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.pagination > a.button_next, div.pagination > span:has(a[aria-current='page']) + span > a",
+      "pageElement": "#content > section[class*='list'] > div[class*='list'] > *",
+      "exampleUrl": "https://section.blog.naver.com/BlogHome.naver"
+    }
+  },
+  {
+    "name": "Naver Blog Post (TODO)",
+    "created_by": "infy",
+    "created_at": "2025-10-30T17:17:22+00:00",
+    "updated_at": "2025-10-30T17:17:22+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "document.querySelector(\"#mainFrame\").contentDocument.querySelector(\"div.blog2_paginate > strong.page + a\")",
+      "pageElement": "document.querySelector(\"#mainFrame\").contentDocument.querySelector(\"#PostThumbnailAlbumViewArea > ul.thumblist > *\")",
+      "pageElementIframe": "import",
+      "navigationListener": "false",
+      "xurl": "^https://blog\\.naver\\.com/",
+      "exampleUrl": "https://blog.naver.com/an2gen3"
+    }
+  },
+  {
+    "name": "Naver Blog Post",
+    "created_by": "infy",
+    "created_at": "2025-10-30T17:17:22+00:00",
+    "updated_at": "2025-10-30T17:17:22+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "document.querySelector(\"#mainFrame\").contentDocument.querySelector(\"div.blog2_paginate > strong.page + a\")",
+      "pageElement": "document.querySelector(\"#mainFrame\").contentDocument.querySelector(\"#PostThumbnailAlbumViewArea > ul.thumblist > *\")",
+      "pageElementIframe": "import",
+      "url": "^https://blog\\.naver\\.com/PostList.naver",
+      "exampleUrl": "https://blog.naver.com/PostList.naver?blogId=an2gen3&parentCategoryNo=196"
+    }
+  },
+  {
+    "name": "Neokyo",
+    "created_by": "BillyCool",
+    "updated_by":"infy",
+    "created_at": "2025-12-26T15:43:48+00:00",
+    "updated_at": "2025-12-26T15:43:48+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul.pagination > li.active + li > a.page-link",
+      "pageElement": ".products-listing .listing > .row",
+      "pageElementIframe": "import",
+      "url": "^https://neokyo\\.com/\\D+/search/*",
+      "exampleUrl": "https://neokyo.com/en/search/mercari?page=3&keyword=Nintendo&translate=1&order-tag=created_time%3Adesc&condition=&shipping_charges=&item_shop=3&google_translate=%E4%BB%BB%E5%A4%A9%E5%A0%82&category[level_1]=&category[level_2]=&category[level_3]="
+    }
+  },
+  {
+    "name": "NHentai",
+    "created_by": "infy",
+    "created_at": "2025-01-01T00:00:00+00:00",
+    "updated_at": "2025-01-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[@class='next']",
+      "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
+      "style": "html.reader #image-container.fit-both { height: auto !important; }",
+      "url": "^https://nhentai\\.net/",
+      "exampleUrl": "https://nhentai.net/g/446216/1/",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/85 Credit to: http://wedata.net/items/76720"
+    }
+  },
+  {
+    "name": "Niconico Video",
+    "created_by": "infy",
+    "created_at": "2025-11-03T00:00:13+00:00",
+    "updated_at": "2025-11-03T00:00:13+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "clickElement": "[rel='next']",
+      "pageElement": "div.cq-t_inline-size > div:has(> div[data-anchor-area='main'])",
+      "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?nicovideo.jp/(search|tag)/",
+      "exampleUrl": "https://www.nicovideo.jp/search/infinity"
+    }
+  },
+  {
+    "name": "Nike Reviews (TODO)",
+    "created_by": "infy",
+    "created_at": "2023-05-11T08:26:29+09:00",
+    "updated_at": "2023-06-08T04:01:42+09:00",
+    "resource_url": "http://wedata.net/items/86120",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//button[@aria-label='Go to next reviews']",
+      "pageElement": "//div[@class='tt-c-reviews-list__content']/*",
+      "puppet": "await page.click(\"#pdp-info-accordions__reviews-accordion > summary\");\r\nawait page.click(\"button[data-testid='more-reviews-button']\");",
+      "mirrorPage": "puppet",
+      "spa": "^https://(www\\.)?nike\\.com/t/",
+      "xurl": "^https://(www\\.)?nike\\.com/t/",
+      "exampleUrl": "https://www.nike.com/t/p-6000-shoes-XkgpKW/CD6404-403",
+      "comment": "SPA Mirror Page Puppeteer Example"
+    }
+  },
+  {
+    "name": "Novelpia",
+    "created_by": "infy",
+    "created_at": "2025-09-28T05:54:02+00:00",
+    "updated_at": "2025-09-28T05:54:02+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.pagination > button.page-btn.current + button:not(.arrow)",
+      "pageElement": "div.nv-list-wrapper > *, div.list-item-wrapper > div.list-item",
+      "spa": "^https://global\\.novelpia\\.com",
+      "url": "^https://global\\.novelpia\\.com/(novel|search)",
+      "exampleUrl": "https://global.novelpia.com/novel/66",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/117"
+    }
+  },
+  {
+    "name": "Novelpia Viewer",
+    "created_by": "infy",
+    "created_at": "2025-09-28T05:57:13+00:00",
+    "updated_at": "2025-09-28T05:57:13+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "button.next-epi-btn",
+      "pageElement": "#book-box > *",
+      "initDelay": "2000",
+      "spa": "^https://global\\.novelpia\\.com",
+      "url": "^https://global\\.novelpia\\.com/viewer/",
+      "exampleUrl": "https://global.novelpia.com/viewer/31327",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/117 initDelay for Page 2 divider"
+    }
+  },
+  {
+    "name": "OpenUserJS",
+    "created_by": "infy",
+    "created_at": "2025-09-05T15:22:26+00:00",
+    "updated_at": "2025-09-05T15:22:26+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "ul.pagination > li.active + li > a",
+      "pageElement": "div.row > div:first-child div.panel.panel-default table > tbody > *",
+      "appendDelay": "6000",
+      "url": "^https://openuserjs\\.org/",
+      "exampleUrl": "https://openuserjs.org/"
+    }
+  },
+  {
+    "name": "Orion Public Issue Tracker",
+    "created_by": "infy",
+    "created_at": "2024-05-06T13:45:07+09:00",
+    "updated_at": "2024-05-06T13:45:20+09:00",
+    "resource_url": "http://wedata.net/items/86224",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//*[@rel='next']",
+      "pageElement": "//ul[@class='DiscussionList-discussions']/*",
+      "pageElementIframe": "import",
+      "url": "^https://orionfeedback\\.org/",
+      "exampleUrl": "https://orionfeedback.org/",
+      "comment": "https://discord.com/channels/1160637517310210078/1160637517788348558"
+    }
+  },
+  {
+    "name": "Pixiv",
+    "created_by": "infy",
+    "created_at": "2022-08-01T12:28:27+09:00",
+    "updated_at": "2025-06-20T00:00:00+00:00",
+    "resource_url": "http://wedata.net/items/85939",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav > button[aria-current='true'] + a:not([hidden]), nav > span[aria-current='page'] + a:not([hidden])",
+      "pageElement": "div:has(> [data-ga4-label='thumbnail']), ul:not(:is(aside ul)):has(> li a[data-ga4-label='thumbnail_link'])",
+      "loadElement": "div:has(> [data-ga4-label='thumbnail']) a figure, ul:not(:is(aside ul)):has(> li a[data-ga4-label='thumbnail_link']) a figure",
+      "spaf": "^https://(www\\.)?pixiv\\.net/",
+      "url": "^https://(www\\.)?pixiv\\.net/",
+      "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
+    }
+  },
+  {
+    "name": "Pixiv (AJAX Native)",
+    "created_by": "infy",
+    "created_at": "2022-09-01T13:37:25+09:00",
+    "updated_at": "2023-04-29T05:42:10+09:00",
+    "resource_url": "http://wedata.net/items/85950",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "ajaxMode": "native",
+      "clickElement": "//nav/button[@aria-current='true']/following-sibling::a[not(@hidden)]",
+      "pageElement": "html[@lang='ja']//ul[@class='sc-l7cibp-1 krFoBL']/*|html[not(@lang='ja')]//div[@class='sc-l7cibp-0 juyBTC']/*",
+      "removeElement": "//li[@class='sc-l7cibp-2 gpVAva'][not(.//div[@type='illust'])]|//div[@class='sc-1rgyha8-0 leTtkh']|(//*[@class='sc-l7cibp-3 gCRmsl'])[position()<last()]",
+      "spaf": "^https://(www\\.)?pixiv\\.net/",
+      "xurl": "^https://(www\\.)?pixiv\\.net/",
+      "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
+    }
+  },
+  {
+    "name": "Pixiv Mobile",
+    "created_by": "infy",
+    "created_at": "2022-09-01T13:37:57+09:00",
+    "updated_at": "2023-04-29T05:42:33+09:00",
+    "resource_url": "http://wedata.net/items/85951",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//div[@class='pager']/a[contains(@class, 'next')][./div[@class='arrow']]",
+      "pageElement": "//div[contains(@class,'works-grid-list')]",
+      "spaf": "^https://(www\\.)?pixiv\\.net/",
+      "url": "^https://(www\\.)?pixiv\\.net/[mobile]?",
+      "exampleUrl": "https://www.pixiv.net/tags/オリジナル/artworks"
+    }
+  },
+  {
+    "name": "Posfie",
+    "created_by": "htsign",
+    "updated_by": "infy",
+    "created_at": "2025-10-05T02:57:55+00:00",
+    "updated_at": "2025-10-05T02:57:55+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//*[contains(@class,'nav-previous')][not(contains(@class,'pull'))]/a|//*[contains(@class,'current')][number()>0]/following-sibling::a[1]|(//li|//span|//div)[(.//*|.)[contains(@class,'current')]][number()>0]/following-sibling::*[self::li or self::span or self::div][1]/a[not(starts-with(@href, '#'))] | //div[@class='pager']/a[@class='page'][@rel='next']",
+      "pageElement": "//main/div[contains(@class, 'contents_main')]/div[contains(@class, 'user_show_posts_box')] | //article/section[contains(concat(' ', @class, ' '), 'entry_main')]",
+      "pageElementIframe": "import",
+      "url": "^https://posfie\\.com",
+      "exampleUrl": "https://posfie.com/@mumimushunyu/p/fwxsRA6",
+      "comment": "Updated by infy to support lazily loaded images, the front page, and the mobile version of the site"
+    }
+  },
+  {
+    "name": "Presearch",
+    "created_by": "infy",
+    "created_at": "2023-05-05T01:27:51+09:00",
+    "updated_at": "2024-06-14T08:49:43+09:00",
+    "resource_url": "http://wedata.net/items/86113",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//div[contains(@class, 'text-presearch-alternative border-presearch-alternative')]/following-sibling::div/a",
+      "pageElement": "//div[(contains(@class, 'text-gray-300')) and not(contains(@class,'dark:text-gray-300'))]/*\r\n[\r\nnot(self::a[contains(@title,'Report Ad')])\r\nand not(self::div//div[@x-show='!aiResults.authorized'])\r\nand not(local-name()='svg')\r\nand not(self::div//div[contains(@class,'bg-presearch-alternative')])\r\nand not(self::div//div[@x-text='ad.description'])\r\n]",
+      "pageElementIframe": "trim",
+      "url": "^https://presearch\\.com/",
+      "exampleUrl": "https://presearch.com/search?q=infinity",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/44"
+    }
+  },
+  {
+    "name": "Qwant",
+    "created_by": "infy",
+    "created_at": "2025-10-23T18:35:20+00:00",
+    "updated_at": "2025-10-23T18:35:20+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "//button[@data-testid='buttonShowMore']",
+      "url": "^https://(www\\.)?qwant\\.com/\\?",
+      "exampleUrl": "https://www.qwant.com/?q=infinity&t=web"
+    }
+  },
+  {
+    "name": "Rakuten JP Search",
+    "created_by": "infy",
+    "created_at": "2025-11-03T16:50:37+00:00",
+    "updated_at": "2025-11-03T16:50:37+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.dui-pagination > a.item.nextPage",
+      "pageElement": "div.searchResults div[class*='search-results'] > div[class*='grid-container']",
+      "url": "^https://search\\.rakuten\\.co\\.jp/search/",
+      "exampleUrl": "https://search.rakuten.co.jp/search/mall/infinity"
+    }
+  },
+  {
+    "name": "Realestate.com.au",
+    "created_by": "infy",
+    "created_at": "2025-10-20T18:06:42+00:00",
+    "updated_at": "2025-10-20T18:06:42+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "div.results-page div.tiered-results-container > ul.tiered-results > *",
+      "pageElementIframe": "import",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?realestate.com.au/",
+      "exampleUrl": "https://www.realestate.com.au/buy/list-1"
+    }
+  },
+  {
+    "name": "Reuters",
+    "created_by": "infy",
+    "created_at": "2025-11-03T05:02:20+00:00",
+    "updated_at": "2025-11-03T05:02:20+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "span.text-button-module__button_label__0SF4u[data-testid]",
+      "pageElement": "ul.feed-list-module__list__UTW6i > *",
+      "url": "^https://(www\\.)?reuters\\.com/",
+      "exampleUrl": "https://www.reuters.com/technology/artificial-intelligence/"
+    }
+  },
+  {
+    "name": "RISC-V Docs",
+    "created_by": "infy",
+    "created_at": "2026-01-20T19:46:04+00:00",
+    "updated_at": "2026-01-20T19:46:04+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav.pagination > span.next > a",
+      "pageElement": "main.article > div.content > article.doc > *",
+      "style": ".infy-scroll-divider { margin-top: 64px !important; }",
+      "url": "^https://docs\\.riscv\\.org/",
+      "exampleUrl": "https://docs.riscv.org/reference/isa/unpriv/unpriv-index.html",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/125"
+    }
+  },
+  {
+    "name": "Samsung",
+    "created_by": "infy",
+    "created_at": "2025-10-28T23:31:11+00:00",
+    "updated_at": "2025-10-28T23:31:11+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "#results > div.container-wrapper > div.container div[class*='viewMoreButton']",
+      "url": "^https://(www\\.)?samsung.com/",
+      "exampleUrl": "https://www.samsung.com/us/mobile/phones/all-phones/"
+    }
+  },
+  {
+    "name": "Scribd",
+    "created_by": "infy",
+    "created_at": "2025-11-03T17:28:39+00:00",
+    "updated_at": "2025-11-03T17:28:39+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul[class*='Pagination-module_wrapper'] > button[aria-label='next']",
+      "pageElement": "ul[data-e2e='ugc-search-results'] > *",
+      "url": "^https://(www\\.)?scribd\\.com/search",
+      "exampleUrl": "https://www.scribd.com/search?query=infinity"
+    }
+  },
+  {
+    "name": "Shutterstock",
+    "created_by": "infy",
+    "created_at": "2025-11-04T00:57:55+00:00",
+    "updated_at": "2025-11-04T00:57:55+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "#main-content > div.MuiBox-root > div.MuiBox-root > div > div[class*='-gridContainer-root'] > *",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?shutterstock\\.com/([^/]+/)?search/",
+      "exampleUrl": "https://www.shutterstock.com/video/search/infinity"
+    }
+  },
+  {
+    "name": "Skidrow & Reloaded Games",
+    "created_by": "400p",
+    "created_at": "2025-11-28T20:58:46+00:00",
+    "updated_at": "2025-11-28T20:58:46+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "id('main-content')//a[.='»']",
+      "pageElement": "#main-content > *",
+      "url": "^https://(www\\.)?skidrowreloaded\\.com/",
+      "exampleUrl": "https://www.skidrowreloaded.com/page/19/"
+    }
+  },
+  {
+    "name": "Slickdeals (Classic)",
+    "created_by": "infy",
+    "created_at": "2025-10-23T23:32:47+00:00",
+    "updated_at": "2025-10-23T23:32:47+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.pagenav_box > a.search_pagenav.search_pagenav_current + a",
+      "pageElement": "#comment_list > *, #posts > *, #results_table > tbody > *, #hottopic_threadbits > *",
+      "url": "^https://slickdeals\\.net/[classic]?",
+      "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h"
+    }
+  },
+  {
+    "name": "Slickdeals (Redesign)",
+    "created_by": "infy",
+    "created_at": "2025-11-11T18:23:33+00:00",
+    "updated_at": "2025-11-11T18:23:33+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.slickdealsPagination > *[class='slickdealsPagination__pageNumber'] + a",
+      "pageElement": "section.commentsSection > div.commentsSectionComment, #commentsBox > div[id^='post'], ul#searchPageGrid > li[class*='searchPageGrid__feedItem']",
+      "pageElementIframe": "import",
+      "url": "^https://slickdeals\\.net/[redesign]?",
+      "exampleUrl": "https://slickdeals.net/f/18549760-sony-a95l-qd-oled-4k-tv-s-55-xr55a95l-1695-65-xr65a95l-2195-free-s-h"
+    }
+  },
+  {
+    "name": "Slickdeals Categories",
+    "created_by": "infy",
+    "created_at": "2025-10-23T23:32:48+00:00",
+    "updated_at": "2025-10-23T23:32:48+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.bp-c-pagination > div:not(.bp-c-pagination_ends--disabled) > button[data-page='next']",
+      "pageElement": "ul.bp-p-filterGrid_items",
+      "loadElement": "img[data-lazy-src]",
+      "url": "^https://slickdeals\\.net/[^/]+/",
+      "exampleUrl": "https://slickdeals.net/tv-deals/"
+    }
+  },
+  {
+    "name": "Startpage",
+    "created_by": "infy",
+    "created_at": "2023-06-08T03:57:23+09:00",
+    "updated_at": "2023-06-09T02:36:00+09:00",
+    "resource_url": "http://wedata.net/items/86131",
+    "database_resource_url": "http://wedata.net/databases/InfyScroll",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "#main > div.pagination-container > div.pagination > form > button",
+      "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=",
+      "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
+      "comment": "Currently only for q= or query= URLs or via address bar web searches. Add &cat=video or &cat=news in the URL to access other tabs besides web. Images are not currently supported due to the modals not being openable. Full compatibility without url query requirements coming soon."
+    }
+  },
+  {
+    "name": "Startpage Images (TODO)",
+    "created_by": "infy",
+    "created_at": "2026-02-15T06:29:08+00:00",
+    "updated_at": "2026-02-15T06:29:08+00:00",
+    "data": {
+      "action": "increment",
+      "append": "element",
+      "infix": "?page=1",
+      "interval": "1",
+      "pageElement": "body > *",
+      "pageElementIframe": "trim",
+      "iframeResize": "false",
+      "xurl": "^https://(www\\.)?startpage\\.com/.*q(uery)?=.*",
+      "exampleUrl": "https://www.startpage.com/do/dsearch?q=infinity&cat=images"
+    }
+  },
+  {
+    "name": "Target",
+    "created_by": "infy",
+    "created_at": "2025-10-31T02:39:11+00:00",
+    "updated_at": "2025-10-31T02:39:11+00:00",
+    "data": {
+      "url": "^https://(www\\.)?target\\.com/(s|c)(\\?|/)",
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div[data-test='pagination'] > button[data-test='next']:not([disabled])",
+      "pageElement": "div[data-test='product-grid']",
+      "exampleUrl": "https://www.target.com/s?searchTerm=infinity"
+    }
+  },
+  {
+    "name": "TBS NEWS DIG Articles",
+    "created_by": "infy",
+    "created_at": "2025-09-22T03:20:58+00:00",
+    "updated_at": "2025-09-22T03:20:58+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[contains(concat(' ', normalize-space(@class), ' '), ' article-next ')]",
+      "pageElement": "//div[contains(concat(' ', normalize-space(@class), ' '), ' article-body ')]",
+      "style": ".lazy { opacity : 1 !important; }",
+      "url": "^https://newsdig\\.tbs\\.co\\.jp/articles/",
+      "exampleUrl": "https://newsdig.tbs.co.jp/articles/-/162617?display=1",
+      "comment": "Anonymous Database Contribution fulfilled by infy. Originally created by brib2 (http://wedata.net/items/85922)"
+    }
+  },
+  {
+    "name": "TBS NEWS DIG List",
+    "created_by": "infy",
+    "created_at": "2025-09-22T03:24:04+00:00",
+    "updated_at": "2025-09-22T03:24:04+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//ul/li[./a[@class='m-pagination-item__link is-active']]/following-sibling::li[1]/a",
+      "pageElement": "//main/div/article",
+      "style": ".lazy { opacity: 1 !important; }",
+      "url": "^https://newsdig\\.tbs\\.co\\.jp/list/",
+      "exampleUrl": "https://newsdig.tbs.co.jp/list/latest"
+    }
+  },
+  {
+    "name": "Temu",
+    "created_by": "infy",
+    "created_at": "2025-10-28T16:45:52+00:00",
+    "updated_at": "2025-10-28T16:45:52+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": "div[role='region'] > div[role='link'] > div[role='button']",
+      "pageElement": "div.autoFitGoodsList > *, div.autoFitList > *",
+      "style": ".infy-scroll-divider { margin: 16px auto !important; }",
+      "url": "^https://(www\\.)?temu\\.com/",
+      "exampleUrl": "https://www.temu.com/search_result.html?search_key=infinity"
+    }
+  },
+  {
+    "name": "Thingiverse",
+    "created_by": "FileCR",
+    "updated_by": "infy",
+    "created_at": "2025-09-17T19:24:52+00:00",
+    "updated_at": "2025-09-17T19:24:52+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.Pagination__pagination--yQeH6 > a[aria-label='Next page']",
+      "pageElement": "div.Layout__content--q0zji > div > div.ItemCardGrid__itemCardGrid--oBQiy",
+      "url": "^https://(www\\.)?thingiverse\\.com/",
+      "exampleUrl": "https://www.thingiverse.com/?page=3"
+    }
+  },
+  {
+    "name": "Toasteful",
+    "created_by": "infy",
+    "created_at": "2026-02-19T06:44:03+00:00",
+    "updated_at": "2026-02-19T06:44:03+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.ch-bottom > a.next",
+      "pageElement": "div.content-post > *",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?toasteful\\.com/",
+      "exampleUrl": "https://www.toasteful.com/2026/02/yuusha-eiyuu-v6c110.html"
+    }
+  },
+  {
+    "name": "Togetter",
+    "created_by": "infy",
+    "created_at": "2025-10-06T05:28:21+00:00",
+    "updated_at": "2025-10-06T05:28:21+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//link[@rel=\"next\"]",
+      "pageElement": "//ul[@class='simple_list']/li | //article/section[contains(concat(' ', @class, ' '), 'entry_main')]",
+      "pageElementIframe": "import",
+      "url": "^https://togetter\\.com",
+      "exampleUrl": "https://togetter.com/hot?page=2"
+    }
+  },
+  {
+    "name": "Tom's Hardware",
+    "created_by": "infy",
+    "created_at": "2025-11-04T17:58:00+00:00",
+    "updated_at": "2025-11-04T17:58:00+00:00",
+    "data": {
+      "url": "^https://(www\\.)?tomshardware\\.com/",
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.flexi-pagination > span.active + a:not([href*='/archive'])",
+      "pageElement": "div.listingResults > *",
+      "exampleUrl": "https://www.tomshardware.com/news/"
+    }
+  },
+  {
+    "name": "Top Class Actions",
+    "created_by": "infy",
+    "created_at": "2025-11-06T04:02:56+00:00",
+    "updated_at": "2025-11-06T04:02:56+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.pagination > li.active.next-arrow",
+      "pageElement": "ul.list > *",
+      "url": "^https://topclassactions\\.com/category/",
+      "exampleUrl": "https://topclassactions.com/category/lawsuit-settlements/open-lawsuit-settlements/",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/120"
+    }
+  },
+  {
+    "name": "Userscript Zone",
+    "created_by": "infy",
+    "created_at": "2025-09-05T15:10:13+00:00",
+    "updated_at": "2025-09-05T15:10:13+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "#next_page:not(.hidden)",
+      "pageElement": "div.container > div.script",
+      "xf": "true",
+      "url": "<xf>^https://(www\\.)?userscript\\.zone/search",
+      "exampleUrl": "https://www.userscript.zone/search?q=infinity"
+    }
+  },
+  {
+    "name": "Userstyles.org",
+    "created_by": "infy",
+    "created_at": "2025-09-05T16:38:24+00:00",
+    "updated_at": "2025-09-05T16:38:24+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "button[data-stylish='next-page-button']",
+      "pageElement": "div[data-stylish='grid-styles']",
+      "url": "^https://userstyles\\.org/",
+      "exampleUrl": "https://userstyles.org/styles/browse/youtube"
+    }
+  },
+  {
+    "name": "UserStyles.org Archive (uso.kkx.one)",
+    "created_by": "infy",
+    "created_at": "2025-09-05T16:58:44+00:00",
+    "updated_at": "2025-09-05T16:58:44+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "//ul[contains(@class,'pagination')]/li[contains(@class,'active')]/following-sibling::li[1]/button[not(self::button[contains(.,'›')])]",
+      "pageElement": "body > main > *:not(form):not(:has(nav))",
+      "url": "^https://uso\\.kkx\\.one/browse/",
+      "exampleUrl": "https://uso.kkx.one/browse/styles"
+    }
+  },
+  {
+    "name": "UserStyles.world",
+    "created_by": "infy",
+    "created_at": "2025-09-05T17:39:47+00:00",
+    "updated_at": "2025-09-05T17:39:47+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav > a.Pagination-button.icon.next",
+      "pageElement": "#content > section > div.grid:has(> div.card) > *",
+      "style": ".infy-scroll-divider a[href^='http']::after { content: none !important;}",
+      "url": "^https://userstyles\\.world/",
+      "exampleUrl": "https://userstyles.world/search?q=youtube"
+    }
+  },
+  {
+    "name": "V2PH",
+    "created_by": "anonymous",
+    "created_at": "2025-07-31T00:00:00+00:00",
+    "updated_at": "2025-07-31T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//a[contains(text(),'下一页') or contains(text(),'Next')]",
+      "pageElement": "//div[contains(@class,'photos-list')]",
+      "style": ".photos-list img { opacity: 1 !important }",
+      "url": "^https://(www\\.)?v2ph.com/album/",
+      "exampleUrl": "https://www.v2ph.com/album/YTY-9146",
+      "comment": "Anonymous Database Contribution (Requires Authentication)"
+    }
+  },
+  {
+    "name": "Walmart",
+    "created_by": "infy",
+    "created_at": "2025-06-25T00:00:00+00:00",
+    "updated_at": "2025-06-25T00:00:00+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[aria-label='pagination'] a[data-testid='NextPage']",
+      "pageElement": "main > section > div > section > div:has(div[data-testid='enhanced-review-section'])",
+      "url": "^https://(www\\.)?walmart\\.com/",
+      "exampleUrl": "https://www.walmart.com/search?q=toys https://www.walmart.com/reviews/product/724919200",
+      "comment": "Walmart search and reviews (TODO: Fix/Add search again)"
+    }
+  },
+  {
+    "name": "XHamster",
+    "created_by": "x",
+    "created_at": "2025-10-12T21:54:01+00:00",
+    "updated_at": "2025-10-12T21:54:01+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next'], div.pager-container ul > li.next  > a",
+      "pageElement": "div:has(+ *[data-role*='pagination'])",
+      "pageElementIframe": "import",
+      "url": "^https://xhamster\\.com/",
+      "exampleUrl": "https://xhamster.com/",
+      "comment": "Updated to support all pages of the site"
+    }
+  },
+  {
+    "name": "XNXX Multi",
+    "created_by": "x",
+    "created_at": "2025-10-12T18:51:30+00:00",
+    "updated_at": "2025-10-12T18:51:30+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.pagination > span.page.current + a",
+      "pageElement": "div.main > div.container-fluid > div.row",
+      "url": "^https://multi\\.xnxx\\.com/",
+      "exampleUrl": "https://multi.xnxx.com/"
+    }
+  },
+  {
+    "name": "XVIDEOS / XNXX",
+    "created_by": "x",
+    "created_at": "2025-09-12T18:51:30+00:00",
+    "updated_at": "2025-09-12T18:51:30+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "//li[./a[@class='active']]/following-sibling::li[1]/a | //div[contains(@class,'pagination')]/a[@class='current']/following-sibling::a",
+      "pageElement": "//div[contains(@class,'mozaique')]/*",
+      "pageElementIframe": "import",
+      "url": "^https://(www\\.)?(xvideos|xnxx)\\.(com|red)",
+      "exampleUrl": "https://www.xvideos.com/new/2"
+    }
+  },
+  {
+    "name": "XVIDEOS / XNXX Tab",
+    "created_by": "x",
+    "created_at": "2025-09-12T18:55:50+00:00",
+    "updated_at": "2025-09-12T18:55:50+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "a.no-page.next-page",
+      "pageElement": ".tab.active > div.mozaique > div.thumb-block, #psvideos > div.mozaique > div.thumb-block",
+      "url": "^https://(www\\.)?(xvideos|xnxx)\\.(com|red)/.*(tabVideos|tabRed|_videos)",
+      "exampleUrl": "https://www.xvideos.com/models/skye-young2#_tabVideos"
+    }
+  },
+  {
+    "name": "Yahoo! News JP",
+    "created_by": "infy",
+    "created_at": "2025-10-28T18:54:48+00:00",
+    "updated_at": "2025-10-28T18:54:48+00:00",
+    "data": {
+      "action": "click",
+      "append": "element",
+      "clickElement": ".newsFeed_list + div button[data-cl-params], ul + div.newsFeed_more > button[data-cl-params]",
+      "pageElement": ".newsFeed_list > *, #contentsWrap > ul",
+      "url": "^https://news\\.yahoo\\.co\\.jp/",
+      "exampleUrl": "https://news.yahoo.co.jp/"
+    }
+  },
+  {
+    "name": "Yahoo! Search JP",
+    "created_by": "infy",
+    "created_at": "2025-11-03T00:44:45+00:00",
+    "updated_at": "2025-11-03T00:44:45+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.Pagenation__next > a",
+      "pageElement": "div.Contents__innerGroupBody > *",
+      "url": "^https://search\\.yahoo\\.co\\.jp/search",
+      "exampleUrl": "https://search.yahoo.co.jp/search?p=infinity"
+    }
+  },
+  {
+    "name": "Yandex",
+    "created_by": "infy",
+    "created_at": "2025-08-23T18:45:31+00:00",
+    "updated_at": "2025-08-23T18:45:31+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "div.Pager-Content > div.Pager-ListItem_type_next > a.Pager-Item_type_next",
+      "pageElement": "#search-result > *",
+      "pageElementIframe": "import",
+      "initDelay": "4000",
+      "appendDelay": "8000",
+      "url": "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/search/",
+      "exampleUrl": "https://yandex.com/search?text=infinity"
+    }
+  },
+  {
+    "name": "Yandex Mobile/Videos",
+    "created_by": "infy",
+    "created_at": "2025-08-23T18:57:07+00:00",
+    "updated_at": "2025-08-23T18:57:07+00:00",
+    "data": {
+      "action": "click",
+      "append": "none",
+      "clickElement": "button.Pager-More, button.NextPageButton",
+      "url": "^https://(yandex\\.(?:\\w{2,3}(?:\\.\\w{2})?)|ya\\.ru)/(video(/touch)?/)?search",
+      "exampleUrl": "https://yandex.com/video/touch/search?text=infinity"
+    }
+  },
+  {
+    "name": "YCombinator (Hacker News)",
+    "created_by": "infy",
+    "created_at": "2025-08-01T00:00:00+00:00",
+    "updated_at": "2025-08-01T00:00:00+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "#bigbox > td > table > tbody > *",
+      "style": "#bigbox > td > table > tbody > tr:has(a[rel='next']) { display: none !important; }",
+      "url": "^https://news\\.ycombinator\\.com",
+      "exampleUrl": "https://news.ycombinator.com"
+    }
+  },
+  {
+    "name": "Yelp",
+    "created_by": "infy",
+    "created_at": "2025-10-31T01:38:30+00:00",
+    "updated_at": "2025-10-31T01:38:30+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "#main-content > ul[class*='list']:has(+ ul div[role='navigation']) > *",
+      "scrollUpdateAddress": "false",
+      "url": "^https://(www\\.)?yelp\\.com/search",
+      "exampleUrl": "https://www.yelp.com/search?find_desc=Things+To+Do"
+    }
+  },
+  {
+    "name": "Zillow",
+    "created_by": "infy",
+    "created_at": "2025-10-29T19:18:27+00:00",
+    "updated_at": "2025-10-29T19:18:27+00:00",
+    "data": {
+      "action": "next",
+      "append": "element",
+      "nextLink": "[rel='next']",
+      "pageElement": "#grid-search-results > ul:has(li[class*='ListItem'])",
+      "pageElementIframe": "import",
+      "scrollUpdateAddress": "false",
+      "xurl": "<xf>^https://(www\\.)?zillow\\.com/",
+      "xf": "true",
+      "exampleUrl": "https://www.zillow.com/carmel-by-the-sea-ca/"
+    }
+  },
+  {
+    "name": "Zillow Professionals",
+    "created_by": "infy",
+    "created_at": "2025-10-29T19:53:27+00:00",
+    "updated_at": "2025-10-29T19:53:27+00:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "nav[class*='Pagination'] > ul > li > button[rel='next']",
+      "pageElement": "div[class*='Grid-']:has(a[class*='StyledCard']), table:has(+ nav[class*='Pagination']) > tbody > *",
+      "url": "^https://(www\\.)?zillow\\.com/professionals/",
+      "exampleUrl": "https://www.zillow.com/professionals/real-estate-agent-reviews/carmel-by-the-sea-ca/"
+    }
+  }
+]
