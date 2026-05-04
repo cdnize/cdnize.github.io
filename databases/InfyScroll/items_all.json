@@ -1801,7 +1801,8 @@
       "scrollUpdateAddress": "false",
       "mp": "true",
       "url": "<mp>^https://(www\\.)?startpage\\.com/",
-      "exampleUrl": "https://www.startpage.com/sp/search?query=infinity"
+      "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
+      "comment": "Images are intentionally omitted due to popups not working in the appended pages; instead, manually go to URLs in this format to use a different database item: https://www.startpage.com/do/dsearch?q=infinity&cat=images"
     }
   },
   {
@@ -1834,7 +1835,8 @@
       "pageElementIframe": "trim",
       "iframeResize": "false",
       "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=.*",
-      "exampleUrl": "https://www.startpage.com/do/dsearch?q=infinity&cat=images"
+      "exampleUrl": "https://www.startpage.com/do/dsearch?q=infinity&cat=images",
+      "comment": "https://github.com/sixcious/infy-scroll/issues/122"
     }
   },
   {
