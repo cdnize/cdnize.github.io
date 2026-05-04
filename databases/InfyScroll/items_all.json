@@ -1794,7 +1794,7 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "#main > div.pagination-container > div.pagination > form:last-of-type > button",
+      "clickElement": "#main > div.pagination-container > div.pagination > form:last-of-type:not([aria-label*='current']) > button",
       "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *",
       "loadElement": "#main div img.no-script-hide[src='']",
       "mirrorPage": "import",
@@ -1812,7 +1812,7 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "#main > div.pagination-container > div.pagination > form:last-of-type > button",
+      "clickElement": "#main > div.pagination-container > div.pagination > form:last-of-type:not([aria-label*='current']) > button",
       "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *",
       "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=",
