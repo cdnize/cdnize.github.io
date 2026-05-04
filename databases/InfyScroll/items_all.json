@@ -560,13 +560,13 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "nav[data-clg-id*='Pagination'] div:has(button[aria-current='true']) + div button:not([disabled])",
-      "pageElement": "div[data-reviews-view-container] > div[data-appears-event-data*='same_listing_reviews'] div[data-reviews] > div.wt-grid > *",
-      "mirrorPage": "puppet",
+      "clickElement": "nav[data-clg-id='WtPagination'] div.wt-action-group__item-container:has(p) + div > button:not([disabled])",
+      "pageElement": "//div[@aria-modal='true'][.//h3[contains(normalize-space(.), 'Reviews for this item')]]//div[@data-deep-dive-reviews-container='true']/*",
       "puppet": "await page.click(\"button[data-view-all-reviews-button='same-listing']\");",
+      "mirrorPage": "puppet",
       "spa": "^https://www\\.etsy\\.com",
-      "restriction": "true",
-      "url": "<v10>^https://(www\\.)?etsy\\.com/listing/[same-listing-reviews]?",
+      "mp": "true",
+      "url": "<mp>^https://(www\\.)?etsy\\.com/listing/[same-listing-reviews]?",
       "exampleUrl": "https://www.etsy.com/listing/1506577518/infinity-train-character-clear-vinyl"
     }
   },
@@ -578,13 +578,13 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "nav[data-clg-id*='Pagination'] div:has(button[aria-current='true']) + div button:not([disabled])",
-      "pageElement": "div[data-reviews-view-container] > div[data-appears-event-data*='shop_reviews'] div[data-reviews] > div.wt-grid > *",
+      "clickElement": "nav[data-clg-id='WtPagination'] div.wt-action-group__item-container:has(p) + div > button:not([disabled])",
+      "pageElement": "//div[@aria-modal='true'][.//h3[contains(normalize-space(.), 'Reviews for this shop')]]//div[@data-deep-dive-reviews-container='true']/*",
+      "puppet": "await page.click(\"div[data-appears-component-name='listing_page_shop_reviews'] h2 + button[data-clg-id='WtButton']\");",
       "mirrorPage": "puppet",
-      "puppet": "await page.click(\"button[data-view-all-reviews-button='shop']\");",
       "spa": "^https://www\\.etsy\\.com",
-      "restriction": "true",
-      "url": "<v10>^https://(www\\.)?etsy\\.com/listing/[shop-reviews]?",
+      "mp": "true",
+      "url": "<mp>^https://(www\\.)?etsy\\.com/listing/[shop-reviews]?",
       "exampleUrl": "https://www.etsy.com/listing/1506577518/infinity-train-character-clear-vinyl"
     }
   },
@@ -1214,7 +1214,7 @@
       "clickElement": "//button[@aria-label='Next'][contains(.,'Next')]",
       "pageElement": "//div[@class='search-results-container']",
       "spa": "^https://(www\\.)?linkedin\\.com/search/results",
-      "xurl": "<>^https://(www\\.)?linkedin\\.com/search/results/",
+      "xurl": "^https://(www\\.)?linkedin\\.com/search/results/",
       "exampleUrl": "https://www.linkedin.com/search/results/people/?keywords=informatique&origin=SWITCH_SEARCH_VERTICAL&sid=Fpy",
       "comment": "https://github.com/sixcious/infy-scroll/issues/52"
     }
@@ -1445,13 +1445,13 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "//button[@aria-label='Go to next reviews']",
-      "pageElement": "//div[@class='tt-c-reviews-list__content']/*",
-      "puppet": "await page.click(\"#pdp-info-accordions__reviews-accordion > summary\");\r\nawait page.click(\"button[data-testid='more-reviews-button']\");",
+      "clickElement": "div[data-testid='pdp-modal'].open button.tt-o-pagination__next",
+      "pageElement": "div[data-testid='pdp-modal'].open div.tt-c-reviews-list__content > *",
+      "puppet": "await page.click(\"details[data-testid='reviews-accordion'] > summary\");\r\nawait page.click(\"a[data-testid='more-reviews-button']\");",
       "mirrorPage": "puppet",
       "spa": "^https://(www\\.)?nike\\.com/t/",
-      "restriction": "true",
-      "url": "<v10>^https://(www\\.)?nike\\.com/t/",
+      "mp": "true",
+      "url": "<mp>^https://(www\\.)?nike\\.com/t/",
       "exampleUrl": "https://www.nike.com/t/p-6000-shoes-XkgpKW/CD6404-403",
       "comment": "SPA Mirror Page Puppeteer Example"
     }
@@ -1796,10 +1796,27 @@
       "append": "ajax",
       "clickElement": "#main > div.pagination-container > div.pagination > form > button",
       "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *",
+      "mirrorPage": "import",
+      "scrollUpdateAddress": "false",
+      "mp": "true",
+      "url": "<mp>^https://(www\\.)?startpage\\.com/",
+      "exampleUrl": "https://www.startpage.com/sp/search?query=infinity"
+    }
+  },
+  {
+    "name": "Startpage (Alt)",
+    "created_by": "infy",
+    "created_at": "2023-06-08T03:57:23+09:00",
+    "updated_at": "2023-06-09T02:36:00+09:00",
+    "data": {
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "#main > div.pagination-container > div.pagination > form > button",
+      "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *",
       "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=",
       "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
-      "comment": "Currently only for q= or query= URLs or via address bar web searches. Add &cat=video or &cat=news in the URL to access other tabs besides web. Images are not currently supported due to the modals not being openable. Full compatibility without url query requirements coming soon."
+      "comment": "Non-mirror version for V9 only. Planned for removal soon. Currently only for q= or query= URLs or via address bar web searches. Add &cat=video or &cat=news in the URL to access other tabs besides web. Images are not currently supported due to the modals not being openable."
     }
   },
   {
@@ -1815,8 +1832,7 @@
       "pageElement": "body > *",
       "pageElementIframe": "trim",
       "iframeResize": "false",
-      "restriction": "true",
-      "url": "<v10>^https://(www\\.)?startpage\\.com/.*q(uery)?=.*",
+      "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=.*",
       "exampleUrl": "https://www.startpage.com/do/dsearch?q=infinity&cat=images"
     }
   },
