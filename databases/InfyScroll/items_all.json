@@ -1796,6 +1796,7 @@
       "append": "ajax",
       "clickElement": "#main > div.pagination-container > div.pagination > form > button",
       "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *",
+      "loadElement": "#main div img.no-script-hide",
       "mirrorPage": "import",
       "scrollUpdateAddress": "false",
       "mp": "true",
