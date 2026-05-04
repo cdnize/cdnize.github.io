@@ -560,7 +560,7 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "nav[data-clg-id='WtPagination'] div.wt-action-group__item-container:has(p) + div > button:not([disabled])",
+      "clickElement": "nav[data-clg-id='WtPagination'] div.wt-action-group__item-container:has(button[aria-current='true']) + div > button:not([disabled])",
       "pageElement": "//div[@aria-modal='true'][.//h3[contains(normalize-space(.), 'Reviews for this item')]]//div[@data-deep-dive-reviews-container='true']/*",
       "puppet": "await page.click(\"button[data-view-all-reviews-button='same-listing']\");",
       "mirrorPage": "puppet",
@@ -578,7 +578,7 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "nav[data-clg-id='WtPagination'] div.wt-action-group__item-container:has(p) + div > button:not([disabled])",
+      "clickElement": "nav[data-clg-id='WtPagination'] div.wt-action-group__item-container:has(button[aria-current='true']) + div > button:not([disabled])",
       "pageElement": "//div[@aria-modal='true'][.//h3[contains(normalize-space(.), 'Reviews for this shop')]]//div[@data-deep-dive-reviews-container='true']/*",
       "puppet": "await page.click(\"div[data-appears-component-name='listing_page_shop_reviews'] h2 + button[data-clg-id='WtButton']\");",
       "mirrorPage": "puppet",
