@@ -552,7 +552,7 @@
     }
   },
   {
-    "name": "Etsy Reviews (Same Listing) (TODO)",
+    "name": "Etsy Reviews (Same Listing)",
     "created_by": "infy",
     "created_at": "2025-10-29T22:26:38+00:00",
     "updated_at": "2025-10-29T22:26:38+00:00",
@@ -564,12 +564,12 @@
       "mirrorPage": "puppet",
       "puppet": "await page.click(\"button[data-view-all-reviews-button='same-listing']\");",
       "spa": "^https://www\\.etsy\\.com",
-      "xurl": "^https://(www\\.)?etsy\\.com/listing/[same-listing-reviews]?",
+      "url": "<v10>^https://(www\\.)?etsy\\.com/listing/[same-listing-reviews]?",
       "exampleUrl": "https://www.etsy.com/listing/1506577518/infinity-train-character-clear-vinyl"
     }
   },
   {
-    "name": "Etsy Reviews (Shop) (TODO)",
+    "name": "Etsy Reviews (Shop)",
     "created_by": "infy",
     "created_at": "2025-10-29T22:29:05+00:00",
     "updated_at": "2025-10-29T22:29:05+00:00",
@@ -581,7 +581,7 @@
       "mirrorPage": "puppet",
       "puppet": "await page.click(\"button[data-view-all-reviews-button='shop']\");",
       "spa": "^https://www\\.etsy\\.com",
-      "xurl": "^https://(www\\.)?etsy\\.com/listing/[shop-reviews]?",
+      "url": "<v10>^https://(www\\.)?etsy\\.com/listing/[shop-reviews]?",
       "exampleUrl": "https://www.etsy.com/listing/1506577518/infinity-train-character-clear-vinyl"
     }
   },
@@ -1433,7 +1433,7 @@
     }
   },
   {
-    "name": "Nike Reviews (TODO)",
+    "name": "Nike Reviews",
     "created_by": "infy",
     "created_at": "2023-05-11T08:26:29+09:00",
     "updated_at": "2023-06-08T04:01:42+09:00",
@@ -1447,7 +1447,7 @@
       "puppet": "await page.click(\"#pdp-info-accordions__reviews-accordion > summary\");\r\nawait page.click(\"button[data-testid='more-reviews-button']\");",
       "mirrorPage": "puppet",
       "spa": "^https://(www\\.)?nike\\.com/t/",
-      "xurl": "^https://(www\\.)?nike\\.com/t/",
+      "url": "<v10>^https://(www\\.)?nike\\.com/t/",
       "exampleUrl": "https://www.nike.com/t/p-6000-shoes-XkgpKW/CD6404-403",
       "comment": "SPA Mirror Page Puppeteer Example"
     }
@@ -1799,7 +1799,7 @@
     }
   },
   {
-    "name": "Startpage Images (TODO)",
+    "name": "Startpage Images",
     "created_by": "infy",
     "created_at": "2026-02-15T06:29:08+00:00",
     "updated_at": "2026-02-15T06:29:08+00:00",
@@ -1811,7 +1811,7 @@
       "pageElement": "body > *",
       "pageElementIframe": "trim",
       "iframeResize": "false",
-      "xurl": "^https://(www\\.)?startpage\\.com/.*q(uery)?=.*",
+      "url": "<v10>^https://(www\\.)?startpage\\.com/.*q(uery)?=.*",
       "exampleUrl": "https://www.startpage.com/do/dsearch?q=infinity&cat=images"
     }
   },
