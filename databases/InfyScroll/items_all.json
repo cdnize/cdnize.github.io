@@ -929,14 +929,13 @@
     "created_at": "2025-10-16T22:51:32+00:00",
     "updated_at": "2025-10-16T22:51:32+00:00",
     "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "ul.simplePagerNav > li.currentPage + li > a",
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "ul.simplePagerNav > li.currentPage + li > a",
       "pageElement": "div.simplePagerContainer > ul.thumbnail-list",
-      "pageElementIframe": "import",
       "url": "^https://hitomi\\.la/.*\\.html",
       "exampleUrl": "https://hitomi.la/gamecg/muv-luv-girls-garden-cg-3593752.html#1",
-      "comment": "Updated by infy to use a safe example URL"
+      "comment": "Updated by infy to use a safe example URL. Note: Updated to click/ajax because we now disallow hash-only URLs as valid links"
     }
   },
   {
@@ -1129,11 +1128,12 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "id('srchrslt-pagination')/div[@class='pagination']/div[@class='pagination-nav']/*[contains(@class,'pagination-next')]",
-      "pageElement": "id('srchrslt-adtable')/*",
+      "clickElement": "#pagination-container span.cursor-default + a",
+      "pageElement": "#srchrslt-adtable > *",
       "xf": "true",
       "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/",
-      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
+      "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0",
+      "comment": "This site has very similar pages that use a different pagination structure and produce issues with large icons in appended pages; do not provide a click element path for these pages"
     }
   },
   {
@@ -1508,15 +1508,14 @@
     "name": "Orion Public Issue Tracker",
     "created_by": "infy",
     "created_at": "2024-05-06T13:45:07+09:00",
-    "updated_at": "2024-05-06T13:45:20+09:00",
+    "updated_at": "2026-05-10T13:45:20+09:00",
     "resource_url": "http://wedata.net/items/86224",
     "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
-      "action": "next",
-      "append": "element",
-      "nextLink": "//*[@rel='next']",
-      "pageElement": "//ul[@class='DiscussionList-discussions']/*",
-      "pageElementIframe": "import",
+      "action": "click",
+      "append": "ajax",
+      "clickElement": "div.Orion-DiscussionListPagination > a.Button--primary + a:not([disabled])",
+      "pageElement": "ul.DiscussionList-discussions > *",
       "url": "^https://orionfeedback\\.org/",
       "exampleUrl": "https://orionfeedback.org/",
       "comment": "https://discord.com/channels/1160637517310210078/1160637517788348558"
