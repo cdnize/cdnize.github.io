@@ -708,13 +708,11 @@
       "action": "next",
       "append": "element",
       "nextLink": "a[rel='next']:not([aria-disabled])",
-      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list'], #org-packages, #org-members-table",
+      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar]",
       "pageElementIframe": "import",
-      "scrollUpdateAddress": "false",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(commits)(..................)?",
       "xf": "true",
-      "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/actions/toolkit/issues",
-      "comment": "Same as GitHub Issues except for usw and url"
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
     }
   },
   {
@@ -726,14 +724,14 @@
       "action": "next",
       "append": "element",
       "nextLink": "a[rel='next']:not([aria-disabled])",
-      "pageElement": "div[class*='prc-Timeline-Timeline'][data-clip-sidebar], div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list'], #org-packages, #org-members-table",
+      "pageElement": "div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list']",
       "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
       "url": "<usw><xf>^https://github\\.com/[^/]+/[^/]+/(issues)(..................)?",
-      "usw": "https://github.com/*/*/issues*",
+      "usw": "https://github.com/*",
       "xf": "true",
-      "exampleUrl": "https://github.com/actions/toolkit/commits/main/ https://github.com/actions/toolkit/issues",
-      "comment": "Same as GitHub Commits except for usw and url"
+      "exampleUrl": "https://github.com/actions/toolkit/issues",
+      "comment": "Old usw: https://github.com/*/*/issues*"
     }
   },
   {
