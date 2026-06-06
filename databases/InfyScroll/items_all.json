@@ -2120,21 +2120,7 @@
     }
   },
   {
-    "name": "Yahoo! News JP",
-    "created_by": "infy",
-    "created_at": "2025-10-28T18:54:48+00:00",
-    "updated_at": "2025-10-28T18:54:48+00:00",
-    "data": {
-      "action": "click",
-      "append": "element",
-      "clickElement": ".newsFeed_list + div button[data-cl-params], ul + div.newsFeed_more > button[data-cl-params]",
-      "pageElement": ".newsFeed_list > *, #contentsWrap > ul",
-      "url": "^https://news\\.yahoo\\.co\\.jp/",
-      "exampleUrl": "https://news.yahoo.co.jp/"
-    }
-  },
-  {
-    "name": "Yahoo! Search JP",
+    "name": "Yahoo! Japan Search",
     "created_by": "infy",
     "created_at": "2025-11-03T00:44:45+00:00",
     "updated_at": "2025-11-03T00:44:45+00:00",
