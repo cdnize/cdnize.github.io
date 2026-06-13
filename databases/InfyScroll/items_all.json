@@ -713,7 +713,8 @@
       "pageElementIframe": "import",
       "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(commits)(..................)?",
       "xf": "true",
-      "exampleUrl": "https://github.com/actions/toolkit/commits/main/"
+      "exampleUrl": "https://github.com/actions/toolkit/commits/main/",
+      "comment": "(...)? Due to Alt being a longer url"
     }
   },
   {
@@ -728,7 +729,7 @@
       "pageElement": "div[class*='Search-module__SearchContainer'] ul[data-listview-component='items-list']",
       "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
-      "url": "<usw><xf>^https://github\\.com/[^/]+/[^/]+/(issues)(..................)?",
+      "url": "<usw><xf>^https://github\\.com/[^/]+/[^/]+/(issues)",
       "usw": "https://github.com/*",
       "xf": "true",
       "exampleUrl": "https://github.com/actions/toolkit/issues",
@@ -1409,12 +1410,12 @@
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//a[@class='next']",
-      "pageElement": "id('content')//*[@class='container index-container' or @id='image-container' or @id='favcontainer' or @id='tag-container']",
+      "nextLink": "a.next",
+      "pageElement": "#content .container.index-container, #content .container .gallery-grid, #content ul.ts-grid, #tag-container, #favcontainer, #image-container",
       "style": "html.reader #image-container.fit-both { height: auto !important; }",
       "url": "^https://nhentai\\.net/",
       "exampleUrl": "https://nhentai.net/g/446216/1/",
-      "comment": "https://github.com/sixcious/infy-scroll/issues/85 Credit to: http://wedata.net/items/76720"
+      "comment": "https://github.com/sixcious/infy-scroll/issues/85"
     }
   },
   {
@@ -1801,22 +1802,6 @@
       "url": "<mp>^https://(www\\.)?startpage\\.com/",
       "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
       "comment": "Images are intentionally omitted due to popups not working in the appended pages; instead, manually go to URLs in this format to use a different database item: https://www.startpage.com/do/dsearch?q=infinity&cat=images"
-    }
-  },
-  {
-    "name": "Startpage (Alt)",
-    "created_by": "infy",
-    "created_at": "2023-06-08T03:57:23+09:00",
-    "updated_at": "2023-06-09T02:36:00+09:00",
-    "data": {
-      "action": "click",
-      "append": "ajax",
-      "clickElement": "#main > div.pagination-container > div.pagination > form:last-of-type:not([aria-label*='current']) > button",
-      "pageElement": "#main > div:has(.result) > *, #main > div:has(.article) > *",
-      "scrollUpdateAddress": "false",
-      "url": "^https://(www\\.)?startpage\\.com/.*q(uery)?=",
-      "exampleUrl": "https://www.startpage.com/sp/search?query=infinity",
-      "comment": "Non-mirror version for V9 only. Planned for removal soon. Currently only for q= or query= URLs or via address bar web searches. Add &cat=video or &cat=news in the URL to access other tabs besides web. Images are not currently supported due to the modals not being openable."
     }
   },
   {
