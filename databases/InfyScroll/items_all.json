@@ -1128,12 +1128,12 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "#pagination-container span.cursor-default + a",
+      "clickElement": ".pagination-pages .pagination-current + *",
       "pageElement": "#srchrslt-adtable > *",
       "xf": "true",
       "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/",
       "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0",
-      "comment": "This site has very similar pages that use a different pagination structure and produce issues with large icons in appended pages; do not provide a click element path for these pages"
+      "comment": "Badly designed and inconsistent pagination structure starting on page 5"
     }
   },
   {
@@ -1144,10 +1144,10 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "id('paging-next')",
-      "pageElement": "id('srp-results')/*",
+      "clickElement": "#paging-next",
+      "pageElement": "#srp-results > *",
       "xf": "true",
-      "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/",
+      "url": "<xf>^https://(www\\.)?kleinanzeigen\\.de/[mobile]?",
       "exampleUrl": "https://www.kleinanzeigen.de/s-infinity/k0"
     }
   },
