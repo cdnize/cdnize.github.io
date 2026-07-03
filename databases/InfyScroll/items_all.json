@@ -17,12 +17,12 @@
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//div[@class='pagination']/ul/li[@class='active']/following-sibling::li/a",
-      "pageElement": "//div[@class='table-list-wrap']/table[contains(@class,'table-list')]/tbody/*",
+      "nextLink": "div.pagination > ul > li.active + li > a",
+      "pageElement": "div.table-list-wrap > table.table-list > tbody > *",
       "style": ".table-list td.coll-1.name { padding-right: 70px !important; }",
       "url": "^https://x?1337x\\.(to|st|ws|eu|se|cc)/",
       "exampleUrl": "https://1337x.to/search/qxr/1/",
-      "comment": "Add | //div[@class='library-box']/ul/* to the pageElement for the movie library page, but you will need to click on the page divider links"
+      "comment": "Add , div.library-box > ul > * to the pageElement for the movie library page, but you will need to click on the page divider links"
     }
   },
   {
@@ -33,8 +33,8 @@
     "data": {
       "action": "click",
       "append": "ajax",
-      "clickElement": "id('Pagination')/a[@class='next']",
-      "pageElement": "id('comment')/*",
+      "clickElement": "#Pagination > a.next",
+      "pageElement": "#comment > *",
       "iframeSandbox": "*disallow-top-navigation*",
       "xf": "true",
       "url": "<xf>^https://x?1337x\\.(to|st|ws|eu|se|cc)/torrent/.*/",
@@ -125,8 +125,8 @@
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//ul[@class='a-pagination']/li[@class='a-last']/a",
-      "pageElement": "//div[contains(@class, 'your-orders-content-container__content')]/*[contains(@class, 'order-card')]",
+      "nextLink": "ul.a-pagination > li.a-last > a",
+      "pageElement": "div.your-orders-content-container__content > .order-card",
       "pageElementIframe": "trim",
       "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/.*(order-history|your-orders)",
       "exampleUrl": "https://www.amazon.com/gp/your-account/order-history",
@@ -152,13 +152,11 @@
     "created_by": "infy",
     "created_at": "2024-06-14T08:03:33+09:00",
     "updated_at": "2025-05-25T08:04:50+09:00",
-    "resource_url": "http://wedata.net/items/86232",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "//span[contains(@class, 's-pagination-strip')]//a[contains(@class, 's-pagination-next')]",
-      "pageElement": "id('search')//div[contains(@class,'s-result-list')]/*[@data-component-type='s-search-result']",
+      "nextLink": "span.s-pagination-strip a.s-pagination-next",
+      "pageElement": "#search div.s-result-list > *[data-component-type='s-search-result']",
       "url": "^https://(\\w+\\.)?amazon\\.(?:\\w{2,3}(?:\\.\\w{2})?)/",
       "exampleUrl": "https://www.amazon.com/s?k=toys"
     }
@@ -182,8 +180,6 @@
     "created_by": "EK",
     "created_at": "2024-02-26T10:59:44+09:00",
     "updated_at": "2024-02-26T10:59:44+09:00",
-    "resource_url": "http://wedata.net/items/86210",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -305,8 +301,6 @@
     "created_by": "infy",
     "created_at": "2023-04-23T05:03:14+09:00",
     "updated_at": "2023-04-26T08:55:41+09:00",
-    "resource_url": "http://wedata.net/items/86109",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -324,8 +318,6 @@
     "created_by": "infy",
     "created_at": "2024-08-28T06:29:56+09:00",
     "updated_at": "2026-05-25T04:47:24+00:00",
-    "resource_url": "http://wedata.net/items/86243",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "next",
       "append": "element",
@@ -406,8 +398,6 @@
     "created_by": "infy",
     "created_at": "2023-04-28T13:12:14+09:00",
     "updated_at": "2023-04-28T13:12:34+09:00",
-    "resource_url": "http://wedata.net/items/86111",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -668,8 +658,6 @@
     "created_by": "infy",
     "created_at": "2023-12-24T03:49:21+09:00",
     "updated_at": "2023-12-24T03:49:29+09:00",
-    "resource_url": "http://wedata.net/items/86197",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "element",
@@ -685,8 +673,6 @@
     "created_by": "infy",
     "created_at": "2023-05-25T04:05:53+09:00",
     "updated_at": "2024-02-19T04:09:17+09:00",
-    "resource_url": "http://wedata.net/items/86124",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "increment",
       "append": "media",
@@ -860,8 +846,6 @@
     "created_by": "infy",
     "created_at": "2023-06-01T13:16:42+09:00",
     "updated_at": "2023-11-15T06:05:57+09:00",
-    "resource_url": "http://wedata.net/items/86128",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1109,8 +1093,6 @@
     "created_by": "Krampus",
     "created_at": "2024-05-13T08:49:14+09:00",
     "updated_at": "2024-07-30T13:29:31+09:00",
-    "resource_url": "http://wedata.net/items/86225",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1171,8 +1153,6 @@
     "created_by": "infy",
     "created_at": "2024-01-31T14:44:29+09:00",
     "updated_at": "2024-01-31T14:55:49+09:00",
-    "resource_url": "http://wedata.net/items/86207",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1188,8 +1168,6 @@
     "created_by": "infy",
     "created_at": "2023-05-27T02:31:59+09:00",
     "updated_at": "2023-09-08T08:29:20+09:00",
-    "resource_url": "http://wedata.net/items/86125",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "next",
       "append": "element",
@@ -1206,8 +1184,6 @@
     "created_by": "infy",
     "created_at": "2023-02-25T09:16:35+09:00",
     "updated_at": "2023-07-31T01:34:11+09:00",
-    "resource_url": "http://wedata.net/items/86079",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1224,8 +1200,6 @@
     "created_by": "infy",
     "created_at": "2023-12-18T04:12:00+09:00",
     "updated_at": "2023-12-18T04:21:03+09:00",
-    "resource_url": "http://wedata.net/items/86195",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1440,8 +1414,6 @@
     "created_by": "infy",
     "created_at": "2023-05-11T08:26:29+09:00",
     "updated_at": "2023-06-08T04:01:42+09:00",
-    "resource_url": "http://wedata.net/items/86120",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1509,8 +1481,6 @@
     "created_by": "infy",
     "created_at": "2024-05-06T13:45:07+09:00",
     "updated_at": "2026-05-10T13:45:20+09:00",
-    "resource_url": "http://wedata.net/items/86224",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1526,8 +1496,6 @@
     "created_by": "infy",
     "created_at": "2022-08-01T12:28:27+09:00",
     "updated_at": "2025-06-20T00:00:00+00:00",
-    "resource_url": "http://wedata.net/items/85939",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1563,8 +1531,6 @@
     "created_by": "infy",
     "created_at": "2022-09-01T13:37:57+09:00",
     "updated_at": "2023-04-29T05:42:33+09:00",
-    "resource_url": "http://wedata.net/items/85951",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
@@ -1597,8 +1563,6 @@
     "created_by": "infy",
     "created_at": "2023-05-05T01:27:51+09:00",
     "updated_at": "2024-06-14T08:49:43+09:00",
-    "resource_url": "http://wedata.net/items/86113",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "next",
       "append": "element",
@@ -1788,8 +1752,6 @@
     "created_by": "infy",
     "created_at": "2023-06-08T03:57:23+09:00",
     "updated_at": "2023-06-09T02:36:00+09:00",
-    "resource_url": "http://wedata.net/items/86131",
-    "database_resource_url": "http://wedata.net/databases/InfyScroll",
     "data": {
       "action": "click",
       "append": "ajax",
