@@ -2048,7 +2048,7 @@
       "nextLink": "//li[./a[@class='active']]/following-sibling::li[1]/a | //div[contains(@class,'pagination')]/a[@class='current']/following-sibling::a",
       "pageElement": "//div[contains(@class,'mozaique')]/*",
       "pageElementIframe": "import",
-      "url": "^https://(www\\.)?(xvideos|xnxx)\\.(com|red)/",
+      "url": "^https://(www\\.)?(xvideos|xnxx)\\.(com|red)/.+",
       "exampleUrl": "https://www.xvideos.com/new/2"
     }
   },
