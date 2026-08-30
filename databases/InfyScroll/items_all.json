@@ -715,7 +715,8 @@
       "pageElement": "div[class*='ListView-module__container'] ul[data-listview-component='items-list']",
       "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
-      "url": "<xf>^https://github\\.com/[^/]+/[^/]+/(issues)",
+      "url": "<usw><xf>^https://github\\.com/[^/]+/[^/]+/(issues)",
+      "usw": "https://github.com/*",
       "xf": "true",
       "exampleUrl": "https://github.com/actions/toolkit/issues"
     }
