@@ -959,7 +959,7 @@
     "data": {
       "action": "next",
       "append": "element",
-      "nextLink": "nav[role='navigation'] > ul > li > *:has(svg[data-testid='ArrowForwardIcon']):not([aria-disabled='true'])",
+      "nextLink": "nav[role='navigation'] > ul > li > *:has(svg[data-testid='ArrowForwardIcon']):not([disabled])",
       "pageElement": "#plp-grid",
       "pageElementIframe": "import",
       "scrollUpdateAddress": "false",
