@@ -957,14 +957,14 @@
     "created_at": "2025-10-31T03:18:37+00:00",
     "updated_at": "2025-10-31T03:18:37+00:00",
     "data": {
-      "action": "click",
-      "append": "ajax",
-      "clickElement": "nav[role='navigation'] > ul > li > *:has(svg[data-testid='ArrowForwardIcon']):not([aria-disabled='true'])",
-      "pageElement": "div.results-wrapped > div.sui-w-full",
+      "action": "next",
+      "append": "element",
+      "nextLink": "nav[role='navigation'] > ul > li > *:has(svg[data-testid='ArrowForwardIcon']):not([aria-disabled='true'])",
+      "pageElement": "#plp-grid",
       "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?homedepot\\.com/(b|s)/",
       "exampleUrl": "https://www.homedepot.com/s/infinity",
-      "comment": "AJAX due to next-to-last pages in the pagination no longer being links"
+      "comment": "AJAX (used to be?) due to next-to-last pages in the pagination no longer being links"
     }
   },
   {
