@@ -965,7 +965,7 @@
       "scrollUpdateAddress": "false",
       "url": "^https://(www\\.)?homedepot\\.com/(b|s)/",
       "exampleUrl": "https://www.homedepot.com/s/infinity",
-      "comment": "AJAX (used to be?) due to next-to-last pages in the pagination no longer being links"
+      "comment": "Used to be AJAX due to next-to-last pages in the pagination no longer being links"
     }
   },
   {
